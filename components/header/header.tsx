@@ -1,0 +1,75 @@
+const Header = () => {
+    return (
+        <header className="site-header topmain mobexheight norm">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="container-fluid p-0">
+            {/* Brand */}
+            <a className="navbar-brand" href="./">
+              <img
+                src="./images/logo.png"
+                className="navbar-brand-img"
+                alt="logo"
+              />
+            </a>
+            {/* Toggler */}
+            <button
+              className="navbar-toggler openhdas"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i className="fal fa-bars" />
+              <i className="fal fa-times" />
+            </button>
+            {/* Collapse */}
+            <div className="collapse navbar-collapse" id="navbarCollapse">
+              {/* Navigation */}
+              <ul
+                className="navbar-nav mx-auto  position-relative"
+                id="menu-center"
+              >
+                <li className="nav-item submno">
+                  <a className="nav-link active" href="javascript:void(0);">
+                    OUR WORK
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="javascript:void(0);">
+                    SERVICES
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="joinyb.html">
+                    JOIN YB
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="javascript:void(0);">
+                    BECOME Ambassador
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link active" href="javascript:void(0);">
+                    CONTACT US
+                  </a>
+                </li>
+                <li className="nav-item commctas">
+                  <a className="nav-link active" href="index.html">
+                    Ambassador
+                  </a>
+                  <a className="nav-link" href="creator.html">
+                    Creator
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    )
+  }
+  
+  export default Header

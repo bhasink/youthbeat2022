@@ -1,0 +1,108 @@
+.site-header.topmain {
+    background: #fff;
+}
+
+.site-header.topmain .navbar .navbar-nav li a {
+    color: #000;
+}
+
+.site-header.topmain .navbar li.nav-item.commctas a {
+    color: #fff;
+}
+
+.site-header.topmain .navbar-brand img {
+    filter: invert(1);
+}
+
+.site-header.topmain nav.navbar {
+    border: 1.5px solid #000;
+}
+
+.site-header.topmain .navbar li.nav-item.commctas {
+    border: 1.5px solid #000;
+    background: #000;
+}
+
+.letsyoubet,
+.partnersincr,
+.showcaseytbs,
+.ouytbservice,
+.membersytbs,
+.progrmsfrms{
+    background: #000;
+}
+
+.mainhead .centheads, .mainhead .sbhds,
+.mdhouseslide a, .mdhouseslide h4,
+.servnumcounts p {
+    color: #fff;
+}
+
+
+.blacklayers {
+    clip-path: polygon(61% 0, 100% 11%, 100% 48%, 100% 60%, 86% 68%, 32% 68%, 0% 80%, 0 15%);
+    background: #fff;
+    padding: 18px 0 58px 0;
+}
+
+.showcaseytbs {
+    padding: 0px 0 0 0;
+	top:0;
+}
+
+.mnformsty .form-control {
+    background: transparent;
+    border: 1px solid #625656;
+}
+
+.ytthemects:before {
+    background: linear-gradient(211deg,transparent 6px,currentColor 6px,currentColor calc(100% - 6px),transparent calc(100% - 6px),transparent 100%);
+    transition: .25s cubic-bezier(.22,.61,.36,1);
+    top: -1px;
+    left: 6px;
+}
+
+
+.yt-footh:after {
+       filter: invert(1);
+}
+
+.yt-footh, .yt-footh .backshadows {
+    background: #fff;
+}
+
+
+
+.yt-footh h4, .yt-footh ul li a, .yt-footh p {
+    color: #000;
+}
+
+.bottomstrips img {
+    filter: invert(1);
+}
+
+.whygridsphn .owl-nav button span {
+    filter: invert(1);
+}
+
+.homebannnerk{
+    height: calc(98vh - 0px);
+}
+
+
+/* css */
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+	.homebannnerk {
+    height: auto;
+}
+
+.site-header .navbar-light .navbar-toggler {
+    color: #000;
+}
+
+.site-header.topmain.heightexps .collapse:not(.show) {
+    background: #fff;
+}
+
+}
