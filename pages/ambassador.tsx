@@ -1,7 +1,294 @@
+import { useEffect } from 'react'
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
+import AOS from 'aos'
+var $ = require('jquery')
+if (typeof window !== 'undefined') {
+  window.$ = window.jQuery = require('jquery')
+}
+import 'owl.carousel/dist/assets/owl.carousel.css'
+import 'owl.carousel/dist/assets/owl.theme.default.css'
+import dynamic from 'next/dynamic'
+const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
+  ssr: false,
+})
 
 const Ambassador = () => {
+
+    useEffect(() => {
+        AOS.init({
+          duration: 2000,
+        })
+    }, [])
+    
+  const state = {
+    responsive_featuredslide: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: false,
+        loop: true,
+      },
+      300: {
+        items: 2,
+        nav: false,
+        dots: true,
+        margin: 10,
+        loop: true,
+      },
+
+      766: {
+        items: 3,
+        nav: true,
+        center: true,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 3,
+        nav: true,
+        center: true,
+        autoplay: true,
+        margin: 20,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: false,
+        loop: true,
+      },
+    },
+
+    responsive_reviewtestim: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        center: true,
+        autoplayHoverPause: true,
+        loop: true,
+      },
+      300: {
+        items: 1,
+        nav: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        center: true,
+        dots: false,
+        loop: true,
+      },
+
+      766: {
+        items: 2,
+        nav: true,
+        margin: 0,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 3,
+        margin: 40,
+        nav: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        center: true,
+        dots: false,
+      },
+    },
+
+    responsive_advantfeat: {
+      items: 3,
+      loop: true,
+      nav: false,
+      margin: 20,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      autoplayHoverPause: true,
+      center: true,
+
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        loop: true,
+      },
+      300: {
+        items: 1,
+        nav: false,
+        dots: true,
+        center: true,
+        loop: true,
+      },
+
+      766: {
+        items: 2,
+        nav: true,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 3,
+        margin: 20,
+        nav: true,
+        center: true,
+        dots: true,
+      },
+    },
+
+    responsive_homefirstbbn: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        loop: true,
+      },
+      300: {
+        items: 1,
+        nav: true,
+        dots: true,
+        loop: false,
+      },
+
+      766: {
+        items: 1,
+        nav: false,
+        dots: false,
+        loop: false,
+      },
+
+      1200: {
+        items: 1,
+        nav: true,
+        dots: true,
+        loop:false,
+        center: true,
+      },
+    },
+
+    responsive_trust_comp: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        animateOut: 1,
+        animateIn: 0,
+        loop: true,
+      },
+      300: {
+        loop: true,
+        autoplay: true,
+        items: 1,
+        nav: false,
+        animate: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        autoplayHoverPause: true,
+        animateOut: 'slideOutUp',
+        animateIn: 'slideInUp',
+      },
+
+      766: {
+        items: 4,
+        nav: false,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 6,
+        nav: false,
+        autoplay: true,
+        animate: true,
+        autoplaySpeed: 6000,
+        animateOut: 'slideOutUp',
+        animateIn: 'slideInUp',
+        dots: true,
+        loop: true,
+      },
+    },
+
+    responsive_top_curculms: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+      },
+      300: {
+        items: 1,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+      },
+
+      766: {
+        items: 3,
+        nav: true,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 1,
+        nav: true,
+        margin: 30,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: true,
+      },
+    },
+
+    responsive_top_catnew: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+      },
+      300: {
+        items: 1,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        loop: true,
+      },
+
+      766: {
+        items: 3,
+        nav: true,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 4,
+        nav: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: true,
+      },
+    },
+  }
+
   return (
     <div>
       <Header />
@@ -30,6 +317,15 @@ const Ambassador = () => {
           </div>
           <div className="mdhouseslide">
             <div className="whygridsphn owl-carousel owl-theme">
+
+            <OwlCarousel
+            className="featuredslide owl-theme owl-carousel"
+            loop
+            responsive={state.responsive_homefirstbbn}
+            nav
+            >
+
+
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -48,6 +344,7 @@ const Ambassador = () => {
                   <br /> Rewards!
                 </h4>
               </div>
+
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -121,6 +418,14 @@ const Ambassador = () => {
                   <br /> Rewards!
                 </h4>
               </div>
+
+
+            </OwlCarousel>
+
+             
+
+
+
             </div>
           </div>
         </div>
