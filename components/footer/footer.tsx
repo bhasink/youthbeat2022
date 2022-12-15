@@ -1,6 +1,7 @@
 const Footer = () => {
     return (
-        <footer className="yt-footh revealer">
+        <footer className="yt-footh revealer" data-aos="fade-down"
+        data-aos-duration={1500} >
         <div className="backshadows">
           <div className="container">
             <div className="row">

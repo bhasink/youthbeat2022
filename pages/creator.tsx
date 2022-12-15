@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
+import Header from '../components/header/header'
+import Footer from '../components/footer/footer'
 import AOS from 'aos'
 var $ = require('jquery')
 if (typeof window !== 'undefined') {
@@ -32,7 +32,11 @@ const Creator = () => {
       300: {
         items: 2,
         nav: false,
-        dots: true,
+        center: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: false,
         margin: 10,
         loop: true,
       },
@@ -48,7 +52,7 @@ const Creator = () => {
       1200: {
         items: 4,
         nav: true,
-        center: true,
+        center: false,
         autoplay: true,
         margin: 20,
         autoplaySpeed: 3000,
@@ -65,17 +69,17 @@ const Creator = () => {
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        center: true,
+        center: false,
         autoplayHoverPause: true,
         loop: true,
       },
       300: {
-        items: 1,
-        nav: true,
+        items: 3,
+        nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: true,
+        center: false,
         dots: false,
         loop: true,
       },
@@ -89,28 +93,18 @@ const Creator = () => {
       },
 
       1200: {
-        items: 3,
-        margin: 40,
-        nav: true,
+        items: 4,
+        margin: 20,
+        nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: true,
+        center: false,
         dots: false,
       },
     },
 
     responsive_advantfeat: {
-      items: 3,
-      loop: true,
-      nav: false,
-      margin: 20,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      autoplayHoverPause: true,
-      center: true,
-
       0: {
         items: 1,
         nav: false,
@@ -120,7 +114,7 @@ const Creator = () => {
       300: {
         items: 1,
         nav: false,
-        dots: true,
+        dots: false,
         center: true,
         loop: true,
       },
@@ -138,40 +132,15 @@ const Creator = () => {
         nav: true,
         center: true,
         dots: true,
-      },
-    },
-
-    responsive_homefirstbbn: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
         loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+       
       },
     },
 
-    responsive_trust_comp: {
+    responsive_brandmembs: {
       0: {
         items: 1,
         nav: false,
@@ -179,6 +148,7 @@ const Creator = () => {
         animateOut: 1,
         animateIn: 0,
         loop: true,
+        stagepadding:40,
       },
       300: {
         loop: true,
@@ -186,8 +156,11 @@ const Creator = () => {
         items: 1,
         nav: false,
         animate: true,
-        autoplay: true,
-        autoplaySpeed: 6000,
+        dots:false,
+        margin:30,
+        center:true,
+        stagepadding:40,
+        autoplaySpeed: '6000',
         autoplayHoverPause: true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
@@ -201,11 +174,12 @@ const Creator = () => {
       },
 
       1200: {
-        items: 6,
+        items: 3,
         nav: false,
+        margin:30,
         autoplay: true,
         animate: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: '6000',
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
         dots: true,
@@ -213,80 +187,8 @@ const Creator = () => {
       },
     },
 
-    responsive_top_curculms: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-
-      766: {
-        items: 3,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        margin: 30,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: true,
-      },
-    },
-
-    responsive_top_catnew: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-
-      766: {
-        items: 3,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 4,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: true,
-      },
-    },
+  
+    
   }
 
   return (
@@ -320,12 +222,15 @@ const Creator = () => {
             </p>
           </div>
           <div className="mdhouseslide">
+
             <OwlCarousel
-              className="whygridsphn owl-carousel owl-theme"
-              loop
-              responsive={state.responsive_reviewtestim}
-              nav
+            className="whygridsphn owl-theme owl-carousel"
+            loop
+            responsive={state.responsive_featuredslide}
+            nav
             >
+
+
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -344,13 +249,12 @@ const Creator = () => {
                   <br /> Rewards!
                 </h4>
               </div>
-              <div className="item">
+
+              <div className="item" data-aos="fade-down"
+                    data-aos-duration={1500}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/2.jpg"
-                    data-aos="fade-down"
-                    data-aos-duration={1500}
-                  />
+                    src="./images/madhouse/2.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Resonate the tunes of popular brands and work with them!
@@ -363,13 +267,11 @@ const Creator = () => {
                   &amp; Amplify!
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-up"
+                    data-aos-duration={2500}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/3.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={2500}
-                  />
+                    src="./images/madhouse/3.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Hangout with creators and live the trendy Instagram life!
@@ -381,13 +283,11 @@ const Creator = () => {
                   <br /> the buzz!
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-down"
+                    data-aos-duration={3000}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/4.jpg"
-                    data-aos="fade-down"
-                    data-aos-duration={3000}
-                  />
+                    src="./images/madhouse/4.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Land your dream job after receiving certificates and LORs!
@@ -399,13 +299,11 @@ const Creator = () => {
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-up"
+                    data-aos-duration={1000}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/1.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                  />
+                    src="./images/madhouse/1.jpg" />
                   <div className="cse-txts">
                     <p>
                       Get free entry and earn exciting merch from huge brands!{' '}
@@ -417,7 +315,11 @@ const Creator = () => {
                   <br /> Rewards!
                 </h4>
               </div>
+
+
             </OwlCarousel>
+
+             
           </div>
         </div>
       </section>
@@ -507,7 +409,7 @@ const Creator = () => {
             <OwlCarousel
               className="casestslide owl-carousel owl-theme"
               loop
-              responsive={state.responsive_reviewtestim}
+              responsive={state.responsive_advantfeat}
               nav
             >
               <div className="item">
@@ -586,18 +488,18 @@ const Creator = () => {
             <div className="row">
               <div className="col-md-4">
                 <p className="numctn skblues number-item">
-                  <span className="value">250000</span>+
+                  <span className="value">50000</span>+
                 </p>
                 <p>
-                  Campus Reps &amp; <br /> Ambassadors
+                Content creators 
                 </p>
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                  <span className="value">50000</span>+
+                  <span className="value">2000</span>+
                 </p>
                 <p>
-                  Content creator <br /> collaborations
+                  Assets Delivered
                 </p>
               </div>
               <div className="col-md-4">
@@ -605,8 +507,7 @@ const Creator = () => {
                   <span className="value">1500</span>+
                 </p>
                 <p>
-                  Partnered Universities <br />
-                  &amp; Institutions
+                  Project Worked On
                 </p>
               </div>
             </div>
@@ -622,7 +523,7 @@ const Creator = () => {
             <OwlCarousel
               className="bdmembslide owl-carousel owl-theme"
               loop
-              responsive={state.responsive_reviewtestim}
+              responsive={state.responsive_brandmembs}
               nav
             >
               <div className="item">

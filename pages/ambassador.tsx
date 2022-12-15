@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
+import Header from '../components/header/header'
+import Footer from '../components/footer/footer'
 import AOS from 'aos'
 var $ = require('jquery')
 if (typeof window !== 'undefined') {
@@ -32,7 +32,8 @@ const Ambassador = () => {
       300: {
         items: 2,
         nav: false,
-        dots: true,
+        center: true,
+        dots: false,
         margin: 10,
         loop: true,
       },
@@ -48,7 +49,7 @@ const Ambassador = () => {
       1200: {
         items: 4,
         nav: true,
-        center: true,
+        center: false,
         autoplay: true,
         margin: 20,
         autoplaySpeed: 3000,
@@ -65,17 +66,17 @@ const Ambassador = () => {
         dots: true,
         autoplay: true,
         autoplaySpeed: 3000,
-        center: true,
+        center: false,
         autoplayHoverPause: true,
         loop: true,
       },
       300: {
-        items: 1,
-        nav: true,
+        items: 3,
+        nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: true,
+        center: false,
         dots: false,
         loop: true,
       },
@@ -89,28 +90,18 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 3,
-        margin: 40,
-        nav: true,
+        items: 4,
+        margin: 20,
+        nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: true,
+        center: false,
         dots: false,
       },
     },
 
     responsive_advantfeat: {
-      items: 3,
-      loop: true,
-      nav: false,
-      margin: 20,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      autoplayHoverPause: true,
-      center: true,
-
       0: {
         items: 1,
         nav: false,
@@ -120,7 +111,7 @@ const Ambassador = () => {
       300: {
         items: 1,
         nav: false,
-        dots: true,
+        dots: false,
         center: true,
         loop: true,
       },
@@ -138,40 +129,16 @@ const Ambassador = () => {
         nav: true,
         center: true,
         dots: true,
-      },
-    },
-
-    responsive_homefirstbbn: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
         loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop:false,
-        center: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+       
       },
     },
 
-    responsive_trust_comp: {
+    
+    responsive_brandmembs: {
       0: {
         items: 1,
         nav: false,
@@ -179,6 +146,7 @@ const Ambassador = () => {
         animateOut: 1,
         animateIn: 0,
         loop: true,
+        stagepadding:40,
       },
       300: {
         loop: true,
@@ -186,8 +154,10 @@ const Ambassador = () => {
         items: 1,
         nav: false,
         animate: true,
-        autoplay: true,
-        autoplaySpeed: 6000,
+        margin:30,
+        center:true,
+        stagepadding:40,
+        autoplaySpeed: '6000',
         autoplayHoverPause: true,
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
@@ -201,92 +171,21 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 6,
+        items: 3,
         nav: false,
+        margin:30,
         autoplay: true,
         animate: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: '6000',
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
+        center:true,
         dots: true,
         loop: true,
       },
     },
 
-    responsive_top_curculms: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-
-      766: {
-        items: 3,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        margin: 30,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: true,
-      },
-    },
-
-    responsive_top_catnew: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-
-      766: {
-        items: 3,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 4,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: true,
-      },
-    },
+    
   }
 
   return (
@@ -298,7 +197,8 @@ const Ambassador = () => {
         <img src="./images/homemobile.jpg" className="mobstopayout" />
         <div className="container"></div>
       </section>
-      <section className="letsyoubet revealer">
+      <section className="letsyoubet revealer" data-aos=""
+        data-aos-duration={1500} >
         <div className="container">
           <div className="mainhead">
             <h3
@@ -314,6 +214,8 @@ const Ambassador = () => {
             <p className="sbhds">
               We’re young, always evolving, and hungry for more
             </p>
+
+            <p className="subbol"><b>What Our Madhouse Offers</b></p>
           </div>
           <div className="mdhouseslide">
 
@@ -344,13 +246,11 @@ const Ambassador = () => {
                 </h4>
               </div>
 
-              <div className="item">
+              <div className="item" data-aos="fade-down"
+                    data-aos-duration={1500}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/2.jpg"
-                    data-aos="fade-down"
-                    data-aos-duration={1500}
-                  />
+                    src="./images/madhouse/2.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Resonate the tunes of popular brands and work with them!
@@ -363,13 +263,11 @@ const Ambassador = () => {
                   &amp; Amplify!
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-up"
+                    data-aos-duration={2500}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/3.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={2500}
-                  />
+                    src="./images/madhouse/3.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Hangout with creators and live the trendy Instagram life!
@@ -377,17 +275,15 @@ const Ambassador = () => {
                   </div>
                 </div>
                 <h4>
-                  Become
-                  <br /> the buzz!
+                  Own the
+                  <br />  buzz!
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-down"
+                    data-aos-duration={3000}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/4.jpg"
-                    data-aos="fade-down"
-                    data-aos-duration={3000}
-                  />
+                    src="./images/madhouse/4.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Land your dream job after receiving certificates and LORs!
@@ -399,13 +295,11 @@ const Ambassador = () => {
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              <div className="item">
+              <div className="item" data-aos="fade-up"
+                    data-aos-duration={1000}>
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/1.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                  />
+                    src="./images/madhouse/1.jpg" />
                   <div className="cse-txts">
                     <p>
                       Get free entry and earn exciting merch from huge brands!{' '}
@@ -422,13 +316,11 @@ const Ambassador = () => {
             </OwlCarousel>
 
              
-
-
-
           </div>
         </div>
       </section>
-      <section className="partnersincr revealer">
+      <section className="partnersincr revealer" data-aos=""
+        data-aos-duration={1500}>
         <div className="container">
           <div className="mainhead">
             <p className="sbhds">Meet our partners in creativity</p>
@@ -440,36 +332,28 @@ const Ambassador = () => {
             <OwlCarousel
             className="partnrslide owl-carousel owl-theme"
             loop
-            responsive={state.responsive_featuredslide}
+            responsive={state.responsive_reviewtestim}
             nav
             >
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={1000}>
                 <img
-                  src="./images/ourpatner/1.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/ourpatner/1.png"/>
               </div>
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={1500}>
                 <img
-                  src="./images/ourpatner/2.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1500}
-                />
+                  src="./images/ourpatner/2.png" />
               </div>
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={2000}>
                 <img
-                  src="./images/ourpatner/3.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={2000}
-                />
+                  src="./images/ourpatner/3.png"/>
               </div>
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={1000}>
                 <img
-                  src="./images/ourpatner/4.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/ourpatner/4.png" />
               </div>
 
             </OwlCarousel>
@@ -477,7 +361,7 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      <section className="showcaseytbs revealer">
+      <section className="showcaseytbs revealer aos-init" data-aos="" data-aos-duration={3000}>
         <img src="./images/backoutservice.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
@@ -518,19 +402,19 @@ const Ambassador = () => {
             <OwlCarousel
             className="casestslide owl-carousel owl-theme"
             loop
-            responsive={state.responsive_reviewtestim}
+            responsive={state.responsive_advantfeat}
             nav
             >
-              <div className="item">
-                <img
-                  src="./images/madhouse/1.jpg"
-                  data-aos="flip-left"
+              <div className="item" data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration={1000}
+                  data-aos-duration={1000}>
+                <img
+                  src="./images/madhouse/5.jpg"
+                  
                 />
+                <p><b>Myntra</b></p>
                 <h4>
-                  Chase the case
-                  <br /> studies
+                Check out our <br /> trendy work
                 </h4>
                 <a href="#">
                   read more
@@ -538,13 +422,14 @@ const Ambassador = () => {
                   <img src="./images/readmorec.png" />
                 </a>
               </div>
-              <div className="item">
-                <img
-                  src="./images/madhouse/2.jpg"
-                  data-aos="flip-left"
+              <div className="item"  data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration={2000}
+                  data-aos-duration={2000}>
+                <img
+                  src="./images/madhouse/6.jpg"
+                 
                 />
+                <p><b>One Plus</b></p>
                 <h4>
                   See the
                   <br /> innovation
@@ -556,13 +441,12 @@ const Ambassador = () => {
                   <img src="./images/readmorec.png" />
                 </a>
               </div>
-              <div className="item">
-                <img
-                  src="./images/madhouse/3.jpg"
-                  data-aos="flip-left"
+              <div className="item"  data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
-                  data-aos-duration={3000}
-                />
+                  data-aos-duration={3000}>
+                <img src="./images/madhouse/7.jpg"/>
+
+                <p><b>Tinder</b></p>
                 <h4>
                   Learn the ways
                   <br />
@@ -581,19 +465,20 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      <section className="ouytbservice revealer">
+      <section className="ouytbservice revealer" data-aos=""
+        data-aos-duration={1500}>
         <div className="container">
           <div className="mainhead">
-            <p className="sbhds">We’re proud of our work</p>
+            <p className="sbhds">Become the hot trend in your campus! </p>
             <h3
               className="centheads"
               data-aos="flip-down"
               data-aos-duration={3000}
             >
-              Revamp your brand{' '}
+              Join YouthBeat and<br />
+earn new skills!{' '}
               <img src="./images/keycta.png" className="keyemojs" />
-              <br />
-              with our network
+             
             </h3>
           </div>
           <div className="servnumcounts numbers">
@@ -608,14 +493,6 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                  <span className="value">50000</span>+
-                </p>
-                <p>
-                  Content creator <br /> collaborations
-                </p>
-              </div>
-              <div className="col-md-4">
-                <p className="numctn yelnums number-item">
                   <span className="value">1500</span>+
                 </p>
                 <p>
@@ -623,11 +500,20 @@ const Ambassador = () => {
                   &amp; Institutions
                 </p>
               </div>
+              <div className="col-md-4">
+                <p className="numctn yelnums number-item">
+                  <span className="value">250</span>+
+                </p>
+                <p>
+                  Projects Worked On
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="membersytbs revealer">
+      <section className="membersytbs revealer" data-aos=""
+        data-aos-duration={1500}>
         <div className="container">
           <div className="mainhead">
             <p className="sbhds">Our band members</p>
@@ -636,30 +522,23 @@ const Ambassador = () => {
            
             <OwlCarousel
             className="bdmembslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_reviewtestim}
-            nav
+             responsive={state.responsive_brandmembs}
+           
             >
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={1000}>
                 <img
-                  src="./images/members/1.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/members/1.jpg"/>
               </div>
-              <div className="item">
+              <div className="item" data-aos="zoom-in"
+                  data-aos-duration={2000}>
                 <img
-                  src="./images/members/2.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={2000}
-                />
+                  src="./images/members/2.jpg"/>
               </div>
-              <div className="item">
+              <div className="item"  data-aos="zoom-in"
+                  data-aos-duration={3000}>
                 <img
-                  src="./images/members/3.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={3000}
-                />
+                  src="./images/members/3.jpg"/>
               </div>
             </OwlCarousel>
 
@@ -681,69 +560,115 @@ const Ambassador = () => {
           <div className="mnformsty">
             <form>
               <div className="form-group  row">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="First name"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Last name"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Phone"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="DOB"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Gender"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="City"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="College"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Semester"
-                  />
-                </div>
+
+              <div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="Email"/>
+				</div>
+				
+				<div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="Name"/>
+				</div>
+				
+				<div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="Contact Number"/>
+				</div>
+				
+				<div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="Age"/>
+				</div>
+				
+				<div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="Gender"/>
+				</div>
+				
+				<div className="col-md-3">
+					 <input type="text" className="form-control" placeholder="City"/>
+				</div>
+				
+				<div className="col-md-6">
+					 <input type="text" className="form-control" placeholder="Instagram Profile Link"/>
+				</div>
+				
+				<div className="col-md-6">
+					 <input type="text" className="form-control" placeholder="How many Instagram followers do you currently have?"/>
+				</div>
+				
+				<div className="col-md-12">
+					 
+				</div>
+
+        <div className="col-md-4">
+					<label><b>Your presence on other social media platforms</b></label>
+					 
+					  <div className="dropdown">
+  <button className="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown"><span className="dropdown-text"> Select Options</span>
+  <span className="caret"></span></button>
+  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+	
+    <label><input type="checkbox" className="selectall" /><span className="select-text"> Select</span> All</label>
+    
+    <label><input name='options[]' type="checkbox" className="option justone" value='Option 1 '/> Facebook</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 2 '/> Youtube</label>
+    <label><input name='options[]' type="checkbox" className="option justone" value='Option 3 '/> Twitter</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 4 '/> Snapchat</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 5 '/> Moj</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 6 '/> Josh</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 7 '/> Sharechat</label>
+	<label><input name='options[]' type="checkbox" className="option justone" value='Option 8 '/> Other</label>
+	
+	
+	
+	
+  </div>
+</div>
+				</div>
+
+
+        <div className="col-md-4">
+				<label><b>College</b></label>
+					 <input type="text" className="form-control" placeholder="Which city is your college in?"/>
+				</div>
+
+        <div className="col-md-4">
+				 <label><b>What are you studying/planning to study?</b> <br/></label>
+					 <input type="text" className="form-control" placeholder="Please mention your degree of specialisation."/>
+				</div>
+
+        <div className="col-md-4">
+				 <label><b>Select your college year for the upcoming academic session for the year 2023-24</b></label>
+					 <select className="form-control">
+						<option>I</option>
+						<option>II</option>
+						<option>III</option>
+						<option>IV</option>
+						<option>V</option>
+					 </select>
+				</div>
+
+
+        <div className="col-md-4">
+					 <p><b>Have you joined any YouthBeat Campus Programs before?</b></p>
+					 <div className="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" className="custom-control-input"/>
+  <label className="custom-control-label" for="customRadioInline1">Yes</label>
+</div>
+<div className="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" className="custom-control-input"/>
+  <label className="custom-control-label" for="customRadioInline2">No</label>
+</div>
+					<p className="small">(If you are currently a part of any Campus Program by YouthBeat, please select Yes)  </p>
+				</div>
+
+        <div className="col-md-4">
+					 <div className="custom-file">
+  <input type="file" className="custom-file-input" id="customFile"/>
+  <label className="custom-file-label" for="customFile">Please attach your CV</label>
+</div>
+				</div>
+				
+
+                
+                
                 <div className="col-md-12">
                   <button className="ytthemects">Submit</button>
                 </div>
