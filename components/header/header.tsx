@@ -1,16 +1,21 @@
+import Link from 'next/link'
+
 const Header = () => {
     return (
         <header className="site-header topmain mobexheight norm">
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid p-0">
             {/* Brand */}
-            <a className="navbar-brand" href="./">
+
+            <Link className="navbar-brand" href="/">
+
               <img
                 src="./images/logo.png"
                 className="navbar-brand-img"
                 alt="logo"
               />
-            </a>
+           </Link>
+
             {/* Toggler */}
             <button
               className="navbar-toggler openhdas"
@@ -57,12 +62,15 @@ const Header = () => {
                   </a>
                 </li>
                 <li className="nav-item commctas">
-                  <a className="nav-link active" href="index.html">
+                  <Link className="nav-link active" href="/ambassador">
+
                     Ambassador
-                  </a>
-                  <a className="nav-link" href="creator.html">
+                  </Link>
+
+                  <Link className="nav-link " href="/creator">
                     Creator
-                  </a>
+                    </Link>
+
                 </li>
               </ul>
             </div>
