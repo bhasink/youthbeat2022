@@ -38,7 +38,7 @@ const Ambassador = () => {
       },
 
       766: {
-        items: 3,
+        items: 4,
         nav: true,
         center: true,
         dots: false,
@@ -46,7 +46,7 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         nav: true,
         center: true,
         autoplay: true,
@@ -316,12 +316,11 @@ const Ambassador = () => {
             </p>
           </div>
           <div className="mdhouseslide">
-            <div className="whygridsphn owl-carousel owl-theme">
 
             <OwlCarousel
-            className="featuredslide owl-theme owl-carousel"
+            className="whygridsphn owl-theme owl-carousel"
             loop
-            responsive={state.responsive_homefirstbbn}
+            responsive={state.responsive_featuredslide}
             nav
             >
 
@@ -426,7 +425,6 @@ const Ambassador = () => {
 
 
 
-            </div>
           </div>
         </div>
       </section>
@@ -438,7 +436,13 @@ const Ambassador = () => {
         </div>
         <div className="blacklayers">
           <div className="container">
-            <div className="partnrslide owl-carousel owl-theme">
+
+            <OwlCarousel
+            className="partnrslide owl-carousel owl-theme"
+            loop
+            responsive={state.responsive_featuredslide}
+            nav
+            >
               <div className="item">
                 <img
                   src="./images/ourpatner/1.png"
@@ -467,7 +471,9 @@ const Ambassador = () => {
                   data-aos-duration={1000}
                 />
               </div>
-            </div>
+
+            </OwlCarousel>
+           
           </div>
         </div>
       </section>
@@ -508,7 +514,13 @@ const Ambassador = () => {
             </div>
           </div>
           <div className="mdhouseslide">
-            <div className="casestslide owl-carousel owl-theme">
+
+            <OwlCarousel
+            className="casestslide owl-carousel owl-theme"
+            loop
+            responsive={state.responsive_reviewtestim}
+            nav
+            >
               <div className="item">
                 <img
                   src="./images/madhouse/1.jpg"
@@ -562,7 +574,10 @@ const Ambassador = () => {
                   <img src="./images/readmorec.png" />
                 </a>
               </div>
-            </div>
+
+              </OwlCarousel>
+
+
           </div>
         </div>
       </section>
@@ -618,7 +633,13 @@ const Ambassador = () => {
             <p className="sbhds">Our band members</p>
           </div>
           <div className="membslides">
-            <div className="bdmembslide owl-carousel owl-theme">
+           
+            <OwlCarousel
+            className="bdmembslide owl-carousel owl-theme"
+            loop
+            responsive={state.responsive_reviewtestim}
+            nav
+            >
               <div className="item">
                 <img
                   src="./images/members/1.jpg"
@@ -640,7 +661,9 @@ const Ambassador = () => {
                   data-aos-duration={3000}
                 />
               </div>
-            </div>
+            </OwlCarousel>
+
+              
           </div>
         </div>
       </section>
