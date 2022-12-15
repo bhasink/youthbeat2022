@@ -1,0 +1,120 @@
+.site-header.topmain {
+    background: #fff;
+}
+
+.site-header.topmain .navbar .navbar-nav li a {
+    color: #000;
+}
+
+.site-header.topmain .navbar li.nav-item.commctas a {
+    color: #fff;
+}
+
+.site-header.topmain .navbar-brand img {
+    filter: invert(1);
+}
+
+.site-header.topmain nav.navbar {
+    border: 1.5px solid #000;
+}
+
+.site-header.topmain .navbar li.nav-item.commctas {
+    border: 1.5px solid #000;
+    background: #000;
+}
+
+.letsyoubet,
+.partnersincr,
+.showcaseytbs,
+.ouytbservice,
+.membersytbs,
+.progrmsfrms{
+    background: #000;
+}
+
+.mainhead .centheads, .mainhead .sbhds,
+.mdhouseslide a, .mdhouseslide h4,
+.servnumcounts p {
+    color: #fff;
+}
+
+
+.blacklayers {
+   clip-path: polygon(64% -13%, 100% 10%, 100% 82%, 100% 68%, 100% 100%, 100% 100%, 0% 100%, 0 14%);
+    background: #fff;
+    padding: 18px 0 0px 0;
+}
+
+.showcaseytbs {
+    padding: 70px  0;
+	top:0;
+	    clip-path: polygon(10% 4%, 49% 0, 81% 3%, 100% 0, 100% 100%, 0 100%, 0% 68%, 0 4%);
+}
+
+.showcaseytbs:after {
+    height: 32%;
+}
+
+.showcaseytbs .mdhouseslide h4, .showcaseytbs .mdhouseslide a {
+    color: #000;
+}
+
+.mnformsty .form-control {
+    background: transparent;
+    border: 1px solid #625656;
+}
+
+.ytthemects:before {
+    background: #fff;
+    transition: .25s cubic-bezier(.22,.61,.36,1);
+    top: -1px;
+    left: 0px;
+    width: calc(100% + 9px);
+    clip-path: polygon(94% 0, 100% 9%, 100% 60%, 100% 100%, 8% 100%, 0 86%, 0 0);
+    height: calc(99% + 9px);
+}
+
+
+.yt-footh:after {
+       filter: invert(1);
+}
+
+.yt-footh, .yt-footh .backshadows {
+    background: #fff;
+}
+
+
+
+.yt-footh h4, .yt-footh ul li a, .yt-footh p {
+    color: #000;
+}
+
+.bottomstrips img {
+    filter: invert(1);
+}
+
+.whygridsphn .owl-nav button span {
+    filter: invert(1);
+}
+
+.homebannnerk{
+    height: calc(92vh - 0px);
+}
+
+
+/* css */
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+	.homebannnerk {
+    height: auto;
+}
+
+.site-header .navbar-light .navbar-toggler {
+    color: #000;
+}
+
+.site-header.topmain.heightexps .collapse:not(.show) {
+    background: #fff;
+}
+
+}
