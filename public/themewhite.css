@@ -40,14 +40,23 @@
 
 
 .blacklayers {
-    clip-path: polygon(61% 0, 100% 11%, 100% 48%, 100% 60%, 86% 68%, 32% 68%, 0% 80%, 0 15%);
+   clip-path: polygon(64% -13%, 100% 10%, 100% 82%, 100% 68%, 100% 100%, 100% 100%, 0% 100%, 0 14%);
     background: #fff;
-    padding: 18px 0 58px 0;
+    padding: 18px 0 0px 0;
 }
 
 .showcaseytbs {
-    padding: 0px 0 0 0;
+    padding: 70px  0;
 	top:0;
+	    clip-path: polygon(10% 4%, 49% 0, 81% 3%, 100% 0, 100% 100%, 0 100%, 0% 68%, 0 4%);
+}
+
+.showcaseytbs:after {
+    height: 32%;
+}
+
+.showcaseytbs .mdhouseslide h4, .showcaseytbs .mdhouseslide a {
+    color: #000;
 }
 
 .mnformsty .form-control {
@@ -56,10 +65,13 @@
 }
 
 .ytthemects:before {
-    background: linear-gradient(211deg,transparent 6px,currentColor 6px,currentColor calc(100% - 6px),transparent calc(100% - 6px),transparent 100%);
+    background: #fff;
     transition: .25s cubic-bezier(.22,.61,.36,1);
     top: -1px;
-    left: 6px;
+    left: 0px;
+    width: calc(100% + 9px);
+    clip-path: polygon(94% 0, 100% 9%, 100% 60%, 100% 100%, 8% 100%, 0 86%, 0 0);
+    height: calc(99% + 9px);
 }
 
 
@@ -86,7 +98,7 @@
 }
 
 .homebannnerk{
-    height: calc(98vh - 0px);
+    height: calc(92vh - 0px);
 }
 
 

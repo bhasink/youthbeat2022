@@ -14,13 +14,12 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 })
 
 const Ambassador = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    })
+  }, [])
 
-    useEffect(() => {
-        AOS.init({
-          duration: 2000,
-        })
-    }, [])
-    
   const state = {
     responsive_featuredslide: {
       0: {
@@ -166,7 +165,7 @@ const Ambassador = () => {
         items: 1,
         nav: true,
         dots: true,
-        loop:false,
+        loop: false,
         center: true,
       },
     },
@@ -316,15 +315,12 @@ const Ambassador = () => {
             </p>
           </div>
           <div className="mdhouseslide">
-
             <OwlCarousel
-            className="whygridsphn owl-theme owl-carousel"
-            loop
-            responsive={state.responsive_featuredslide}
-            nav
+              className="whygridsphn owl-theme owl-carousel"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
             >
-
-
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -417,14 +413,7 @@ const Ambassador = () => {
                   <br /> Rewards!
                 </h4>
               </div>
-
-
             </OwlCarousel>
-
-             
-
-
-
           </div>
         </div>
       </section>
@@ -436,12 +425,11 @@ const Ambassador = () => {
         </div>
         <div className="blacklayers">
           <div className="container">
-
             <OwlCarousel
-            className="partnrslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_featuredslide}
-            nav
+              className="partnrslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
             >
               <div className="item">
                 <img
@@ -471,9 +459,7 @@ const Ambassador = () => {
                   data-aos-duration={1000}
                 />
               </div>
-
             </OwlCarousel>
-           
           </div>
         </div>
       </section>
@@ -514,12 +500,11 @@ const Ambassador = () => {
             </div>
           </div>
           <div className="mdhouseslide">
-
             <OwlCarousel
-            className="casestslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_reviewtestim}
-            nav
+              className="casestslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_reviewtestim}
+              nav
             >
               <div className="item">
                 <img
@@ -574,10 +559,7 @@ const Ambassador = () => {
                   <img src="./images/readmorec.png" />
                 </a>
               </div>
-
-              </OwlCarousel>
-
-
+            </OwlCarousel>
           </div>
         </div>
       </section>
@@ -633,12 +615,11 @@ const Ambassador = () => {
             <p className="sbhds">Our band members</p>
           </div>
           <div className="membslides">
-           
             <OwlCarousel
-            className="bdmembslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_reviewtestim}
-            nav
+              className="bdmembslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_reviewtestim}
+              nav
             >
               <div className="item">
                 <img
@@ -662,8 +643,6 @@ const Ambassador = () => {
                 />
               </div>
             </OwlCarousel>
-
-              
           </div>
         </div>
       </section>
