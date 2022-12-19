@@ -1,0 +1,8 @@
+.yt-footh:after {
+    content: none;
+}
+
+.yt-footh {
+    transform: none;
+	padding-top: 12px;
+}

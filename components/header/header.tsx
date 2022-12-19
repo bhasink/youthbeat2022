@@ -37,9 +37,9 @@ const Header = () => {
                 id="menu-center"
               >
                 <li className="nav-item submno">
-                  <a className="nav-link active" href="javascript:void(0);">
-                    OUR WORK
-                  </a>
+                    <Link className="nav-link active" href="/our-work">
+                      OUR WORK
+                    </Link>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link active" href="javascript:void(0);">
