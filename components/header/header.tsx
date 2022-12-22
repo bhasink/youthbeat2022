@@ -10,7 +10,7 @@ const Header = () => {
             <Link className="navbar-brand" href="/">
 
               <img
-                src="./images/logo.png"
+                src="/images/logo.png"
                 className="navbar-brand-img"
                 alt="logo"
               />

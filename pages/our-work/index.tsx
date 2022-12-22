@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react'
-import Header from '../components/header/Header'
-import Footer from '../components/footer/Footer'
+import Header from '../../components/header/Header'
+import Footer from '../../components/footer/Footer'
 import AOS from 'aos'
+import Link from 'next/link'
 var $ = require('jquery')
 if (typeof window !== 'undefined') {
   window.$ = window.jQuery = require('jquery')
@@ -134,14 +135,15 @@ const OurWork = () => {
                 {caseStudy &&
                   caseStudy.map((cs_data, key) => (
                     <div className="item">
-                      <a href="casestudy.html">
+                      <Link href={`our-work/${cs_data.slug}`}>
+
                         <img
                           src={
                             `${process.env.NEXT_PUBLIC_B_API}case-study/thumbnail/` +
                             cs_data.thumbnail
                           }
                         />
-                      </a>
+                     </Link>
                       <h4>{cs_data.name}</h4>
                     </div>
                   ))}

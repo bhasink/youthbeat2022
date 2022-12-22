@@ -11,7 +11,7 @@ const Footer = () => {
                   We are a youth community network that gives brands
                   <br /> tailored insights and strategies aiding them in <br />
                   connecting with the young, wild, and free!{' '}
-                  <img src="./images/fireemoj.png" />
+                  <img src="/images/fireemoj.png" />
                 </p>
                 <p>
                   Our network of unique young creators and <br />
@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className="col-6 col-md-6">
                   <a className="logo-brand" href="./">
                     <img
-                      src="./images/logo.png"
+                      src="/images/logo.png"
                       className="navbar-brand-img"
                       alt="logo"
                     />
