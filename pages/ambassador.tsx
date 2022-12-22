@@ -14,13 +14,12 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 })
 
 const Ambassador = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    })
+  }, [])
 
-    useEffect(() => {
-        AOS.init({
-          duration: 2000,
-        })
-    }, [])
-    
   const state = {
     responsive_featuredslide: {
       0: {
@@ -130,10 +129,27 @@ const Ambassador = () => {
         center: true,
         dots: true,
         loop: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-       
+      },
+      300: {
+        items: 1,
+        nav: true,
+        dots: true,
+        loop: false,
+      },
+
+      766: {
+        items: 1,
+        nav: false,
+        dots: false,
+        loop: false,
+      },
+
+      1200: {
+        items: 1,
+        nav: true,
+        dots: true,
+        loop: false,
+        center: true,
       },
     },
 
@@ -218,15 +234,12 @@ const Ambassador = () => {
             <p className="subbol"><b>What Our Madhouse Offers</b></p>
           </div>
           <div className="mdhouseslide">
-
             <OwlCarousel
-            className="whygridsphn owl-theme owl-carousel"
-            loop
-            responsive={state.responsive_featuredslide}
-            nav
+              className="whygridsphn owl-theme owl-carousel"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
             >
-
-
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -311,11 +324,7 @@ const Ambassador = () => {
                   <br /> Rewards!
                 </h4>
               </div>
-
-
             </OwlCarousel>
-
-             
           </div>
         </div>
       </section>
@@ -328,12 +337,11 @@ const Ambassador = () => {
         </div>
         <div className="blacklayers">
           <div className="container">
-
             <OwlCarousel
-            className="partnrslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_reviewtestim}
-            nav
+              className="partnrslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
             >
               <div className="item" data-aos="zoom-in"
                   data-aos-duration={1000}>
@@ -355,9 +363,7 @@ const Ambassador = () => {
                 <img
                   src="./images/ourpatner/4.png" />
               </div>
-
             </OwlCarousel>
-           
           </div>
         </div>
       </section>
@@ -398,12 +404,11 @@ const Ambassador = () => {
             </div>
           </div>
           <div className="mdhouseslide">
-
             <OwlCarousel
-            className="casestslide owl-carousel owl-theme"
-            loop
-            responsive={state.responsive_advantfeat}
-            nav
+              className="casestslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_reviewtestim}
+              nav
             >
               <div className="item" data-aos="flip-left"
                   data-aos-easing="ease-out-cubic"
@@ -458,10 +463,7 @@ const Ambassador = () => {
                   <img src="./images/readmorec.png" />
                 </a>
               </div>
-
-              </OwlCarousel>
-
-
+            </OwlCarousel>
           </div>
         </div>
       </section>
@@ -519,11 +521,11 @@ earn new skills!{' '}
             <p className="sbhds">Our band members</p>
           </div>
           <div className="membslides">
-           
             <OwlCarousel
-            className="bdmembslide owl-carousel owl-theme"
-             responsive={state.responsive_brandmembs}
-           
+              className="bdmembslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_reviewtestim}
+              nav
             >
               <div className="item" data-aos="zoom-in"
                   data-aos-duration={1000}>
@@ -541,8 +543,6 @@ earn new skills!{' '}
                   src="./images/members/3.jpg"/>
               </div>
             </OwlCarousel>
-
-              
           </div>
         </div>
       </section>

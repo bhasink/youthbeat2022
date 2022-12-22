@@ -265,10 +265,6 @@ p {
 	color: #000;
 }
 
-.mainhead .subbol {
-    font-size: 24px;
-}
-
 .centheads .anmemojs {
     width: 58px;
     position: absolute;
@@ -1135,7 +1131,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
    
 }
 
-.usptargt p b, b {font-family: 'Proxima Nova';     color: #000;}
+.usptargt p b, b {font-family: 'Proxima Nova';}
 
 .genfrs .fltsbt {
     position: absolute;
@@ -1649,7 +1645,6 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .mnformsty .dropdown-menu label {
     display: block;
     padding: 3px 7px;
-    margin-bottom: 0;
 }
 
 
@@ -1667,10 +1662,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
-.mdhouseslide .owl-item.active:nth-child(even) {
-    padding-top: 0;
-}
-
+	
 .showcs-ytbs .col-md-6:nth-child(2) {
     padding: 50px 30px;
 }
