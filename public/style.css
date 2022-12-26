@@ -523,9 +523,16 @@ p {
 }
 
 
-.showcaseytbs.revealer.aos-init.aos-animate h2:hover .txstrks svg {
+.showcaseytbs.revealer.aos-init.aos-animate h2:hover .txstrks svg,
+.innershowsl.revealer.aos-init.aos-animate h2:hover .txstrks svg {
     stroke-dashoffset: 0;
 	stroke-width: 1.5px;
+}
+
+.mobsets {
+    max-width: 295px;
+    margin: auto;
+	
 }
 
 /* css for numers services */
@@ -711,7 +718,7 @@ section {
 
 .cultur-comps {
     padding: 60px 0;
-    margin: 51px 0;
+    margin: 51px 0 0 0;
 }
 
 
@@ -726,7 +733,7 @@ section {
 .cultur-comps h6 {
     font-family: 'Proxima Nova';
     font-size: 24px;
-    margin-top: 40px;
+       margin: 40px 0px 30px 40px;
 }
 
 
@@ -754,6 +761,15 @@ section {
 .contactsmids {
     max-width: 800px;
     margin: auto;
+}
+
+.mapopn {
+    padding-top: 50px;
+}
+
+.mapopn iframe {
+    width: 100%;
+    height: 469px;
 }
 
 @keyframes swing {
@@ -893,16 +909,16 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .rightflowrs {
     position: absolute;
-    right: 0;
-    top: 270px;
-    width: 153px;
+    right: -70px;
+    top: -40px;
+    width: 204px;
 }
 
 .outstls {
     padding: 20px;
     position: relative;
     padding-bottom: 0;
-	    max-width: 509px;
+	
     margin: auto;
 }
 
@@ -998,7 +1014,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 
 .opps-services {
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 .wrk p {
@@ -1045,12 +1061,33 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .lastfrms h4 {
     font-size: 50px;
     margin-bottom: 20px;
+	    margin-top: 30px;
 }
 
 .lastfrms .mainhead {
     margin-bottom: 10px;
 }
 
+.coolstds {
+    position: relative;
+}
+
+.coolstds img {
+    position: absolute;
+    width: 125px;
+    left: -5px;
+    z-index: -2;
+}
+
+.jbopenings{
+	padding-top: 40px;
+}
+
+.jbopenings .coolstds img {
+    width: 184px;
+    left: -35px;
+    top: -13px;
+}
 
 /* our services */
 
@@ -1100,6 +1137,10 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     color: #fff;
 }
 
+.innershowsl .txstrks svg {
+    stroke: #63ed29;
+}
+
 .usptargt {
     background: #000;
     padding: 47px 0 0 0;
@@ -1135,7 +1176,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
    
 }
 
-.usptargt p b, b {font-family: 'Proxima Nova';     color: #000;}
+.usptargt p b, b {font-family: 'Proxima Nova';}
 
 .genfrs .fltsbt {
     position: absolute;
@@ -1148,7 +1189,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     width: 80%;
 }
 
-.genfrs p {
+.usptargt .genfrs p {
     color: #2568ef;
     font-family: 'Caveat';
     right: 20px;
@@ -1368,7 +1409,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     background: #000;
     position: relative;
     padding: 60px 0;
-    height: 100vh;
+    height: 643px;
 }
 
 .slidechngrs {
@@ -1412,6 +1453,24 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     position: relative;
 }
 
+.innershowsl {
+    position: relative;
+}
+
+.innershowsl  .mainhead .centheads{
+    font-size: 70px;
+    line-height: 66px;
+}
+
+.innershowsl {
+    height: 637px;
+    padding: 50px 0;
+}
+
+.innershowsl .desktopayout {
+    top: 0;
+}
+
 .tags-ytb {
     display: inline-flex;
 	    margin-bottom: 16px;
@@ -1453,11 +1512,83 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 }
 
 .whatin-yb {
-    padding: 50px 0 0 0;
+    padding: 50px  0;
 }
 
 .tags-ytb.grng-cl img {
     width: 100px;
+}
+
+.innershowsl .mainhead p {
+    font-size: 19px;
+}
+
+/* new testimonial slders */
+
+.testimons-nwytb {
+    padding: 50px 0 0;
+}
+
+.txtpp {
+    position: relative;
+    height: 420px;
+}
+
+.popcolt {
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(79px);
+    width: 100%;
+    transition: all ease 0.5s;
+    background: #f35aed;
+}
+
+.popcolt .usertstm {
+    font-family: 'Proxima Nova';
+    display: block;
+    margin: 0;
+}
+
+.popcolt p {
+    transform: translateY(86px);
+    transition: all ease 0.5s;
+    padding: 9px;
+}
+
+.popcolt  .usertstm {
+    transform: translateY(-78px);
+}
+
+.txtpp:hover .popcolt p {
+    display: block;
+    transform: translateY(0px);
+    margin: 0;
+	    background: #f35aed;
+}
+
+.owl-item.active:nth-child(2) .popcolt p{
+
+}
+
+.txtpp:hover .popcolt {
+    transform: translateY(0px);
+}
+
+.owl-item.active:nth-child(2) .popcolt {
+    background: #37b7e2;
+}
+
+.owl-item.active:nth-child(3) .popcolt {
+    background: #ffe600;
+}
+
+.owl-carousel .owl-item .quoteic {
+    position: absolute;
+    width: 48px;
+    top: 55px;
+    z-index: 3;
+    right: -18px;
 }
 
 

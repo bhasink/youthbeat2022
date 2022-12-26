@@ -10,7 +10,7 @@ const Header = () => {
             <Link className="navbar-brand" href="/">
 
               <img
-                src="./images/logo.png"
+                src="/images/logo.png"
                 className="navbar-brand-img"
                 alt="logo"
               />
@@ -37,29 +37,30 @@ const Header = () => {
                 id="menu-center"
               >
                 <li className="nav-item submno">
-                  <a className="nav-link active" href="javascript:void(0);">
-                    OUR WORK
-                  </a>
+                    <Link className="nav-link active" href="/our-work">
+                      OUR WORK
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/services">
+
                     SERVICES
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="joinyb.html">
+                <Link className="nav-link active" href="/join-us">
                     JOIN YB
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/become-a-ambassador">
                     BECOME Ambassador
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/contact-us">
                     CONTACT US
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item commctas">
                   <Link className="nav-link active" href="/ambassador">
