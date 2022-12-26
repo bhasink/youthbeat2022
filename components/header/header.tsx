@@ -42,24 +42,25 @@ const Header = () => {
                     </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/services">
+
                     SERVICES
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="joinyb.html">
+                <Link className="nav-link active" href="/join-us">
                     JOIN YB
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/become-a-ambassador">
                     BECOME Ambassador
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link active" href="javascript:void(0);">
+                <Link className="nav-link active" href="/contact-us">
                     CONTACT US
-                  </a>
+                    </Link>
                 </li>
                 <li className="nav-item commctas">
                   <Link className="nav-link active" href="/ambassador">
