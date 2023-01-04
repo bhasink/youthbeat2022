@@ -21,7 +21,7 @@ const Services = () => {
   }, [])
 
   const state = {
-    responsive_featuredslide: {
+    responsive_testimblack: {
       0: {
         items: 1,
         nav: true,
@@ -29,8 +29,8 @@ const Services = () => {
         loop: true,
       },
       300: {
-        items: 2,
-        nav: false,
+        items: 1,
+        nav: true,
         center: true,
         dots: false,
         margin: 10,
@@ -46,162 +46,19 @@ const Services = () => {
       },
 
       1200: {
-        items: 4,
-        nav: true,
-        center: false,
-        autoplay: true,
-        margin: 20,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: false,
-        loop: true,
-      },
-    },
-
-    responsive_reviewtestim: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        center: false,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 3,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
-        dots: false,
-        loop: true,
-      },
-
-      766: {
         items: 2,
         nav: true,
-        margin: 0,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 4,
-        margin: 20,
-        nav: false,
+        center: false,
         autoplay: true,
+        margin: 20,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: false,
         dots: false,
-      },
-    },
-
-    responsive_advantfeat: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: false,
-        dots: false,
-        center: true,
-        loop: true,
-      },
-
-      766: {
-        items: 2,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 3,
-        margin: 20,
-        nav: true,
-        center: true,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
-      },
-    },
-
-    
-    responsive_brandmembs: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        animateOut: 1,
-        animateIn: 0,
-        loop: true,
-        stagepadding:40,
-      },
-      300: {
-        loop: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        animate: true,
-        margin:30,
-        center:true,
-        stagepadding:40,
-        autoplaySpeed: '6000',
-        autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-      },
-
-      766: {
-        items: 4,
-        nav: false,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 3,
-        nav: false,
-        margin:30,
-        autoplay: true,
-        animate: true,
-        autoplaySpeed: '6000',
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        center:true,
-        dots: true,
         loop: true,
       },
     },
 
-    
+  
   }
 
   return (
@@ -284,8 +141,8 @@ const Services = () => {
           <div className="col-md-6 align-self-center">
             <p><b>With many new trends rolling out almost everyday, things may get a little challenging for brands. </b></p>
             <p>Sometimes the road of social media might be rocky; this is when an experienced driver takes control.</p>
-            <h4>This is where <br />
-              you give your<br />
+            <h4>This is where 
+              you give<br /> your
               marketing keys<br />
               to YouthBeat.
             </h4>
@@ -298,13 +155,19 @@ const Services = () => {
       </div>
     </div>
   </section>
-  <section className="testimons-ytb">
+  <section className="testimons-ytb revealer">
     <div className="container">
       <div className="mainhead">
-        <p className="sbhds">The Buzz We Create</p>
+        <p className="sbhds">What they say about us on the ‘Gram</p>
       </div>
       <div className="testslid">
-        <div className="slidertst-ytb owl-carousel owl-theme">
+        
+        <OwlCarousel
+                className="slidertst-ytb owl-carousel owl-theme"
+                loop
+                responsive={state.responsive_testimblack}
+                nav
+              >
           <div className="item">
             <div className="dv-shads">
               <p>These guys are passionate about their art and extraordinary creative capabilities. They are young, ambitious, and extremely efficient. Most importantly, they work as an unified and balanced unit.
@@ -331,45 +194,59 @@ const Services = () => {
             </div>
             <p className="usertstm">XYZ, OnePlus</p>
           </div>
-        </div>
+         </OwlCarousel>
+        
       </div>
     </div>
   </section>
   <section className="progrmsfrms revealer">
     <div className="container">
       <div className="mainhead text-left">
-        <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Client enquire form</h3>
+        <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Client Enquiry Form</h3>
       </div>
       <div className="mnformsty">
         <form>
           <div className="form-group  row">
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="First name" />
+              <input type="text" className="form-control" placeholder="Name" />
             </div>
+
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Last name" />
+              <input type="text" className="form-control" placeholder="Company Email" />
             </div>
+
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Email" />
+              <input type="text" className="form-control" placeholder="Mobile Number" />
             </div>
+
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Phone" />
+              <input type="text" className="form-control" placeholder="Designation" />
             </div>
+            
+            
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="DOB" />
+            
+              <select
+                    type="text"
+                    className="form-control">
+					<option>
+          Services Required
+					</option>
+					
+					<option>
+          Ambassador Connect
+					</option>
+
+          <option>
+          Creator Connect
+					</option>
+
+          <option>
+          Both
+					</option>
+				  </select>
             </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Gender" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="City" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="College" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Semester" />
-            </div>
+            
             <div className="col-md-12">
               <button className="ytthemects">Submit</button>
             </div>

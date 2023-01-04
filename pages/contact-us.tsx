@@ -241,20 +241,25 @@ const ContactUs = () => {
       </div>
     </div>
   </section>
-  <section className="progrmsfrms revealer p-0">
+  <section className="progrmsfrms revealer pt-0">
     <div className="container">
       <div className="contactsmids">
         <div className="mnformsty">
           <form>
             <div className="form-group  row">
               <div className="col-md-12">
-                <input type="text" className="form-control" placeholder="First name" />
+                <input type="text" className="form-control" placeholder="Name" />
               </div>
               <div className="col-md-12">
                 <input type="text" className="form-control" placeholder="Email" />
               </div>
+
               <div className="col-md-12">
-                <textarea type="text" className="form-control" placeholder="Message" defaultValue={""} />
+                <input type="text" className="form-control" placeholder="Contact Number" />
+              </div>
+              <div className="col-md-12">
+                <textarea className="form-control" placeholder="Message" defaultValue={""}>
+                  </textarea>
               </div>
               <div className="col-md-12">
                 <button className="ytthemects">Submit</button>

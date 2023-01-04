@@ -29,7 +29,7 @@ const Ambassador = () => {
         loop: true,
       },
       300: {
-        items: 2,
+        items: 1.5,
         nav: false,
         center: true,
         dots: false,
@@ -47,7 +47,7 @@ const Ambassador = () => {
 
       1200: {
         items: 4,
-        nav: true,
+        nav: false,
         center: false,
         autoplay: true,
         margin: 20,
@@ -70,12 +70,12 @@ const Ambassador = () => {
         loop: true,
       },
       300: {
-        items: 3,
+        items: 1,
         nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: false,
+        center: true,
         dots: false,
         loop: true,
       },
@@ -89,7 +89,7 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 4,
+        items: 3,
         margin: 20,
         nav: false,
         autoplay: true,
@@ -108,11 +108,17 @@ const Ambassador = () => {
         loop: true,
       },
       300: {
-        items: 1,
-        nav: false,
-        dots: false,
-        center: true,
         loop: true,
+        autoplay: true,
+        items: 1.5,
+        nav: false,
+        animate: true,
+        dots:false,
+        margin:30,
+        center:true,
+        stagepadding:0,
+        autoplaySpeed: '6000',
+        autoplayHoverPause: true,
       },
 
       766: {
@@ -123,33 +129,12 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         margin: 20,
         nav: true,
-        center: true,
+        center: false,
         dots: true,
         loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
       },
     },
 
@@ -208,10 +193,15 @@ const Ambassador = () => {
     <div>
       <Header />
 
-      <section className="homebannnerk">
+      <section className="homebannnerk revealer" data-aos="" data-aos-duration={1500}>
         <img src="./images/hm9.jpg" className="desktopayout" />
         <img src="./images/homemobile.jpg" className="mobstopayout" />
-        <div className="container"></div>
+        <div className="container">
+		<div  className="layerfires"></div>
+		
+		<div  data-aos="fade-right" data-aos-duration={1500}><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
+OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
+		</div>
       </section>
       <section className="letsyoubet revealer" data-aos=""
         data-aos-duration={1500} >
@@ -240,6 +230,26 @@ const Ambassador = () => {
               responsive={state.responsive_featuredslide}
               nav
             >
+              
+
+              <div className="item" data-aos="fade-down"
+                    data-aos-duration={1500}>
+                <div className="hhcase-txt">
+                  <img
+                    src="./images/madhouse/2.jpg"/>
+                  <div className="cse-txts">
+                    <p>
+                    Resonate the tunes of famous brands and work with them!
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Participate
+                  <br />
+                  &amp; Amplify!
+                </h4>
+              </div>
+
               <div className="item">
                 <div className="hhcase-txt">
                   <img
@@ -258,24 +268,7 @@ const Ambassador = () => {
                   <br /> Rewards!
                 </h4>
               </div>
-
-              <div className="item" data-aos="fade-down"
-                    data-aos-duration={1500}>
-                <div className="hhcase-txt">
-                  <img
-                    src="./images/madhouse/2.jpg"/>
-                  <div className="cse-txts">
-                    <p>
-                      Resonate the tunes of popular brands and work with them!
-                    </p>
-                  </div>
-                </div>
-                <h4>
-                  Participate
-                  <br />
-                  &amp; Amplify!
-                </h4>
-              </div>
+              
               <div className="item" data-aos="fade-up"
                     data-aos-duration={2500}>
                 <div className="hhcase-txt">
@@ -283,7 +276,7 @@ const Ambassador = () => {
                     src="./images/madhouse/3.jpg"/>
                   <div className="cse-txts">
                     <p>
-                      Hangout with creators and live the trendy Instagram life!
+                    Hang out with creators and live the trendy Instagram life! 
                     </p>
                   </div>
                 </div>
@@ -299,7 +292,7 @@ const Ambassador = () => {
                     src="./images/madhouse/4.jpg"/>
                   <div className="cse-txts">
                     <p>
-                      Land your dream job after receiving certificates and LORs!
+                    Learn new skills and earn certificates to land your dream job!
                     </p>
                   </div>
                 </div>
@@ -315,7 +308,7 @@ const Ambassador = () => {
                     src="./images/madhouse/1.jpg" />
                   <div className="cse-txts">
                     <p>
-                      Get free entry and earn exciting merch from huge brands!{' '}
+                    Get free entry and earn exciting merch from huge brands! {' '}
                     </p>
                   </div>
                 </div>
@@ -367,7 +360,7 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      <section className="showcaseytbs revealer aos-init" data-aos="" data-aos-duration={3000}>
+      <section className="showcaseytbs revealer" data-aos="" data-aos-duration={3000}>
         <img src="./images/backoutservice.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
@@ -378,11 +371,11 @@ const Ambassador = () => {
                 data-aos-duration={3000}
               />
             </div>
-            <div className="col-md-7 align-self-center">
+            <div className="col-md-7 align-self-center text-lg-left text-center">
               <h2 data-aos="fade-left" data-aos-duration={3000}>
-                Want to{' '}
+              Ready to {' '} 
                 <span className="txstrks">
-                  make a name{' '}
+                 rule  your 
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -396,9 +389,7 @@ const Ambassador = () => {
                     <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
                   </svg>
                 </span>
-                <br />
-                in your campus?
-                <br />
+               <br></br> campus{' '}
               </h2>
               <p className="curvtxt">Create with YouthBeat</p>
             </div>
@@ -419,12 +410,13 @@ const Ambassador = () => {
                 />
                 <p><b>Myntra</b></p>
                 <h4>
-                Check out our <br /> trendy work
+                Read our <br /> case studies
                 </h4>
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
+                  <div className='rdstrokes'></div>
                 </a>
               </div>
               <div className="item"  data-aos="flip-left"
@@ -443,7 +435,8 @@ const Ambassador = () => {
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
+                  <div className='rdstrokes'></div>
                 </a>
               </div>
               <div className="item"  data-aos="flip-left"
@@ -460,7 +453,8 @@ const Ambassador = () => {
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
             </OwlCarousel>
@@ -473,7 +467,7 @@ const Ambassador = () => {
           <div className="mainhead">
             <p className="sbhds">Become the hot trend in your campus! </p>
             <h3
-              className="centheads"
+              className="centheads mt-3"
               data-aos="flip-down"
               data-aos-duration={3000}
             >
@@ -524,7 +518,7 @@ earn new skills!{' '}
             <OwlCarousel
               className="bdmembslide owl-carousel owl-theme"
               loop
-              responsive={state.responsive_reviewtestim}
+              responsive={state.responsive_advantfeat}
               nav
             >
               <div className="item" data-aos="zoom-in"
@@ -561,12 +555,12 @@ earn new skills!{' '}
             <form>
               <div className="form-group  row">
 
-              <div className="col-md-3">
+        <div className="col-md-3">
+          <input type="text" className="form-control" placeholder="Name"/>
+        </div>
+
+        <div className="col-md-3">
 					 <input type="text" className="form-control" placeholder="Email"/>
-				</div>
-				
-				<div className="col-md-3">
-					 <input type="text" className="form-control" placeholder="Name"/>
 				</div>
 				
 				<div className="col-md-3">
@@ -581,47 +575,26 @@ earn new skills!{' '}
 					 <input type="text" className="form-control" placeholder="Gender"/>
 				</div>
 				
-				<div className="col-md-3">
-					 <input type="text" className="form-control" placeholder="City"/>
-				</div>
 				
 				<div className="col-md-6">
 					 <input type="text" className="form-control" placeholder="Instagram Profile Link"/>
 				</div>
 				
 				<div className="col-md-6">
-					 <input type="text" className="form-control" placeholder="How many Instagram followers do you currently have?"/>
-				</div>
+					 
+           <select className="form-control">
+              <option>How many Instagram followers do you currently have?</option>
+              <option>10-15k</option>
+              <option>20-100k</option>
+					 </select>
+        
+        </div>
 				
 				<div className="col-md-12">
 					 
 				</div>
 
-        <div className="col-md-4">
-					<label><b>Your presence on other social media platforms</b></label>
-					 
-					  <div className="dropdown">
-  <button className="btn btn-default dropdown-toggle form-control" type="button" data-toggle="dropdown"><span className="dropdown-text"> Select Options</span>
-  <span className="caret"></span></button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-	
-    <label><input type="checkbox" className="selectall" /><span className="select-text"> Select</span> All</label>
-    
-    <label><input name='options[]' type="checkbox" className="option justone" value='Option 1 '/> Facebook</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 2 '/> Youtube</label>
-    <label><input name='options[]' type="checkbox" className="option justone" value='Option 3 '/> Twitter</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 4 '/> Snapchat</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 5 '/> Moj</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 6 '/> Josh</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 7 '/> Sharechat</label>
-	<label><input name='options[]' type="checkbox" className="option justone" value='Option 8 '/> Other</label>
-	
-	
-	
-	
-  </div>
-</div>
-				</div>
+        
 
 
         <div className="col-md-4">
@@ -637,38 +610,15 @@ earn new skills!{' '}
         <div className="col-md-4">
 				 <label><b>Select your college year for the upcoming academic session for the year 2023-24</b></label>
 					 <select className="form-control">
-						<option>I</option>
-						<option>II</option>
-						<option>III</option>
-						<option>IV</option>
-						<option>V</option>
+              <option>I</option>
+              <option>II</option>
+              <option>III</option>
+              <option>IV</option>
+              <option>V</option>
 					 </select>
 				</div>
 
-
-        <div className="col-md-4">
-					 <p><b>Have you joined any YouthBeat Campus Programs before?</b></p>
-					 <div className="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="customRadioInline1" className="custom-control-input"/>
-  <label className="custom-control-label" for="customRadioInline1">Yes</label>
-</div>
-<div className="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="customRadioInline1" className="custom-control-input"/>
-  <label className="custom-control-label" for="customRadioInline2">No</label>
-</div>
-					<p className="small">(If you are currently a part of any Campus Program by YouthBeat, please select Yes)  </p>
-				</div>
-
-        <div className="col-md-4">
-					 <div className="custom-file">
-  <input type="file" className="custom-file-input" id="customFile"/>
-  <label className="custom-file-label" for="customFile">Please attach your CV</label>
-</div>
-				</div>
-				
-
-                
-                
+ 
                 <div className="col-md-12">
                   <button className="ytthemects">Submit</button>
                 </div>

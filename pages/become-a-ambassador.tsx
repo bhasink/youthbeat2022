@@ -47,7 +47,7 @@ const BecomeAAmbassador = () => {
 
       1200: {
         items: 4,
-        nav: true,
+        nav: false,
         center: false,
         autoplay: true,
         margin: 20,
@@ -57,131 +57,70 @@ const BecomeAAmbassador = () => {
         loop: true,
       },
     },
-
-    responsive_reviewtestim: {
+	
+	
+	responsive_mobilessslide: {
       0: {
         items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        center: false,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 3,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
+        nav: true,
         dots: false,
         loop: true,
       },
-
-      766: {
-        items: 2,
-        nav: true,
+      300: {
+        items: 1,
+        nav: false,
+        center: false,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        dots: false,
         margin: 0,
+        loop: true,
+      },
+
+      766: {
+        items: 4,
+        nav: true,
+        center: true,
         dots: false,
         loop: true,
       },
 
       1200: {
-        items: 4,
-        margin: 20,
+        items: 1,
         nav: false,
+        center: false,
         autoplay: true,
+        margin: 0,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: false,
+        animateIn: 'fadeIn',
+	      animateOut: 'fadeOut',
         dots: false,
+        loop: true,
       },
     },
 
-    responsive_advantfeat: {
+
+    responsive_testnmslide: {
       0: {
         items: 1,
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
         loop: true,
       },
       300: {
         items: 1,
         nav: false,
-        dots: false,
         center: true,
-        loop: true,
-      },
-
-      766: {
-        items: 2,
-        nav: true,
         dots: false,
+        margin: 10,
         loop: true,
-      },
-
-      1200: {
-        items: 3,
-        margin: 20,
-        nav: true,
-        center: true,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
-      },
-    },
-
-    
-    responsive_brandmembs: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        animateOut: 1,
-        animateIn: 0,
-        loop: true,
-        stagepadding:40,
-      },
-      300: {
-        loop: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        animate: true,
-        margin:30,
-        center:true,
-        stagepadding:40,
-        autoplaySpeed: '6000',
-        autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
       },
 
       766: {
         items: 4,
-        nav: false,
+        nav: true,
+        center: true,
         dots: false,
         loop: true,
       },
@@ -189,15 +128,13 @@ const BecomeAAmbassador = () => {
       1200: {
         items: 3,
         nav: false,
-        margin:30,
+        center: false,
         autoplay: true,
-        animate: true,
-        autoplaySpeed: '6000',
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        center:true,
-        dots: true,
-        loop: true,
+        margin: 20,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: false,
+        loop: false,
       },
     },
 
@@ -212,7 +149,12 @@ const BecomeAAmbassador = () => {
   <section className="connectcrts">
     <div className="container">
       <div className="slidechngrs">
-        <div className="bdmembslide owl-carousel owl-theme">
+         <OwlCarousel
+              className="partnrslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
+            >
           <div className="item">
             <img src="./images/creators/1.png" />
           </div>
@@ -228,14 +170,14 @@ const BecomeAAmbassador = () => {
           <div className="item">
             <img src="./images/creators/2.png" />
           </div>
-        </div>
+        </OwlCarousel>
       </div>
       <div className="mainhead whithd text-left">
         <h3 className="centheads" data-aos="fade-right" data-aos-duration={3000}>Ambassadors<br />
           Connect 
         </h3>
         <p className="sbhds">Make noise and earn enticing rewards!</p>
-        <p className="curvtxt">Lorem Ipsum</p>
+        <p className="curvtxt">By YouthBeat</p>
       </div>
     </div>
   </section>
@@ -281,14 +223,19 @@ const BecomeAAmbassador = () => {
         </div>
         <div className="col-md-5 align-self-center text-center">
           <div className="mobsets">
-            <div className="mobilessslide owl-carousel owl-theme">
+            <OwlCarousel
+              className="partnrslide owl-carousel owl-theme"
+              responsive={state.responsive_mobilessslide} >
+
               <div className="item">
-                <img src="./images/showcase1.png" className="img-fluid" />
+                <img src="./images/showcasein2.png" className="img-fluid" />
               </div>
+
               <div className="item">
-                <img src="./images/showcase2.png" className="img-fluid" />
+                <img src="./images/showcasein.png" className="img-fluid" />
               </div>
-            </div>
+              
+            </OwlCarousel>
           </div>
         </div>
       </div></div></section>
@@ -298,13 +245,16 @@ const BecomeAAmbassador = () => {
         <p className="sbhds">Testimonials</p>
       </div>
       <div className="testslid">
-        <div className="newtestslide owl-carousel owl-theme">
+       
+        <OwlCarousel
+              className="newtestslide owl-carousel owl-theme"
+              responsive={state.responsive_testnmslide} >
           <div className="item">
             <div className="txtpp">
               <img src="./images/testmon/1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>As an ambassador of YouthBeat not only did I enjoy my college but learned a lot of things!</p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -314,7 +264,7 @@ const BecomeAAmbassador = () => {
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>I met a lot of cool people in my community, and also worked with amazing brands while picking up new skills and interests.</p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -324,7 +274,7 @@ const BecomeAAmbassador = () => {
               <img src="./images/testmon/1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>I wish to be a member of YouthBeat forever. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -334,12 +284,24 @@ const BecomeAAmbassador = () => {
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>YouthBeat has given me an opportunity to not just learn but find my true passion for marketing. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
           </div>
-        </div>
+
+          <div className="item">
+            <div className="txtpp">
+              <img src="./images/testmon/1.jpg" />
+              <img src="./images/quotsv.png" className="quoteic" />
+              <div className="popcolt">
+                <p>I will always be thankful for the campaigns I worked on with them and how they helped me grow and find my calling. </p>
+                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+              </div>
+            </div>
+          </div>
+          </OwlCarousel>
+       
       </div>
     </div>
   </section>

@@ -21,84 +21,7 @@ const JoinUs = () => {
   }, [])
 
   const state = {
-    responsive_featuredslide: {
-      0: {
-        items: 1,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-      300: {
-        items: 2,
-        nav: false,
-        center: true,
-        dots: false,
-        margin: 10,
-        loop: true,
-      },
-
-      766: {
-        items: 4,
-        nav: true,
-        center: true,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 4,
-        nav: true,
-        center: false,
-        autoplay: true,
-        margin: 20,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: false,
-        loop: true,
-      },
-    },
-
-    responsive_reviewtestim: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        center: false,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 3,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
-        dots: false,
-        loop: true,
-      },
-
-      766: {
-        items: 2,
-        nav: true,
-        margin: 0,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 4,
-        margin: 20,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
-        dots: false,
-      },
-    },
+    
 
     responsive_advantfeat: {
       0: {
@@ -109,7 +32,7 @@ const JoinUs = () => {
       },
       300: {
         items: 1,
-        nav: false,
+        nav: true,
         dots: false,
         center: true,
         loop: true,
@@ -123,83 +46,17 @@ const JoinUs = () => {
       },
 
       1200: {
-        items: 3,
+        items: 1,
         margin: 20,
         nav: true,
-        center: true,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
+        center: false,
         dots: false,
         loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
-      },
+      }
+      
     },
 
     
-    responsive_brandmembs: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        animateOut: 1,
-        animateIn: 0,
-        loop: true,
-        stagepadding:40,
-      },
-      300: {
-        loop: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        animate: true,
-        margin:30,
-        center:true,
-        stagepadding:40,
-        autoplaySpeed: '6000',
-        autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-      },
-
-      766: {
-        items: 4,
-        nav: false,
-        dots: false,
-        loop: true,
-      },
-
-      1200: {
-        items: 3,
-        nav: false,
-        margin:30,
-        autoplay: true,
-        animate: true,
-        autoplaySpeed: '6000',
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        center:true,
-        dots: true,
-        loop: true,
-      },
-    },
 
     
   }
@@ -217,14 +74,19 @@ const JoinUs = () => {
       </div>
       <div className="row">
         <div className="col-md-7 align-self-center mx-auto">
-          <p>We keep our clients close and our culture even closer! </p>
+          <p>We keep our clients close and our culture even closer!  </p>
           <h6>What is our culture like? <br />
             See for yourself  <img src="./images/handbots.png" className="handemos" /></h6>
         </div>
         <div className="col-md-7 mx-auto">
           <img src="./images/shockyel2.png" className="rightflowrs" />
           <div className="outstls">
-            <div className="culturesslide owl-carousel owl-theme">
+            <OwlCarousel
+              className="owl-theme owl-carousel"
+              
+              responsive={state.responsive_advantfeat}
+              
+            >
               <div className="item">
                 <img src="./images/join1.jpg" />
               </div>
@@ -234,27 +96,24 @@ const JoinUs = () => {
               <div className="item">
                 <img src="./images/join1.jpg" />
               </div>
-            </div>
+            </OwlCarousel>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section className="cultureshowcase">
-    <div className="container">
-    </div>
-  </section>
+ 
   <section className="opps-services">
     <div className="container">
       <div className="mainhead">
-        <p className="sbhds">Opportunities/Services</p>
+        <p className="sbhds">What Our Madhouse Offers</p>
       </div>
       <div className="workconts">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 col-6">
             <div className="wrk frmpnk">
-              <h4>Work with<br />
-                Content<br />
+              <h4>Learn From<br />
+               
                 Creators</h4>
               <p>Flaunt your social game in your
                 hood, work with creators that are
@@ -262,10 +121,10 @@ const JoinUs = () => {
               <img src="./images/oppserv/1.jpg" />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-6">
             <div className="wrk frmskv">
-              <h4>Campus<br />
-                Ambassador<br />
+              <h4>REWARDING<br />
+                
                 Programs
               </h4>
               <p>Work with massive brands on new
@@ -275,7 +134,7 @@ const JoinUs = () => {
               <img src="./images/oppserv/2.jpg" />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-6">
             <div className="wrk frmyel">
               <h4>Meet &amp;<br />
                 CREATE
@@ -286,7 +145,7 @@ const JoinUs = () => {
               <img src="./images/oppserv/3.jpg" />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 col-6">
             <div className="wrk frmorgs">
               <h4>Lucrative<br />
                 Incentives
@@ -320,7 +179,7 @@ const JoinUs = () => {
       </div>
     </div>
   </section>
-  <section className="lastfrms text-center">
+  <section className="lastfrms text-center mb-5">
     <div className="container">
       <button className="ytthemects">Click Here</button>
       <h4>To become <span className="coolstds">cool <img src="./images/toocoolsv.png" /></span> today! </h4>

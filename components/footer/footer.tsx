@@ -1,7 +1,8 @@
+import Link from 'next/link'
+
 const Footer = () => {
     return (
-        <footer className="yt-footh revealer" data-aos="fade-down"
-        data-aos-duration={1500} >
+        <footer className="yt-footh revealer">
         <div className="backshadows">
           <div className="container">
             <div className="row">
@@ -22,22 +23,23 @@ const Footer = () => {
               <div className="col-md-4">
                 <ul>
                   <li>
-                    <a href="#">HOME</a>
+                  <Link href="/">HOME
+                  </Link>
                   </li>
                   <li className="nav-item submno">
-                    <a href="javascript:void(0);">OUR WORK</a>
+                  <Link href="/our-work">OUR WORK </Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">SERVICES</a>
+                  <Link href="/services">SERVICES</Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">JOIN YB</a>
+                  <Link href="/join-us">JOIN YB</Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">BECOME Ambassador</a>
+                  <Link href="/become-a-ambassador">BECOME Ambassador</Link>
                   </li>
                   <li>
-                    <a href="javascript:void(0);">CONTACT US</a>
+                  <Link href="/contact-us">CONTACT US</Link>
                   </li>
                 </ul>
               </div>

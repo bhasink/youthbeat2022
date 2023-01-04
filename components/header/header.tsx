@@ -1,8 +1,14 @@
 import Link from 'next/link'
-
+import { useState,useEffect } from "react"
 const Header = () => {
+
+  const [isActive, setActive] = useState("false");
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
     return (
-        <header className="site-header topmain mobexheight norm">
+        <header className={`site-header topmain mobexheight norm ${isActive ? "" : "heightexps"}`}>
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid p-0">
             {/* Brand */}
@@ -16,19 +22,11 @@ const Header = () => {
               />
            </Link>
 
-            {/* Toggler */}
-            <button
-              className="navbar-toggler openhdas"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarCollapse"
-              aria-controls="navbarCollapse"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+           <button  onClick={handleToggle} className={`navbar-toggler openhdas ${isActive ? "" : "crossshwos"}`}  type="button" >
               <i className="fal fa-bars" />
               <i className="fal fa-times" />
             </button>
+            
             {/* Collapse */}
             <div className="collapse navbar-collapse" id="navbarCollapse">
               {/* Navigation */}

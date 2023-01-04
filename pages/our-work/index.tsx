@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import AOS from 'aos'
 import Link from 'next/link'
 var $ = require('jquery')
@@ -83,13 +83,13 @@ const OurWork = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         margin: 40,
         nav: true,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: true,
+        center: false,
         dots: false,
       },
     }
@@ -100,9 +100,7 @@ const OurWork = () => {
       <Header />
 
       <style>{`
-        .yt-footh:after {
-            content: none;
-        }
+       
         
         .yt-footh {
             transform: none;

@@ -23,6 +23,16 @@
     background: #000;
 }
 
+.site-header.topmain .navbar li.nav-item.commctas .nav-link:nth-child(2){
+    background: #fff;
+    color: #000;
+}
+
+.site-header.topmain .navbar li.nav-item.commctas .nav-link:nth-child(1){
+    background: #000;
+    color: #fff;
+}
+
 .letsyoubet,
 .partnersincr,
 .showcaseytbs,
@@ -97,17 +107,12 @@
     filter: invert(1);
 }
 
-.homebannnerk{
-    height: calc(92vh - 0px);
-}
 
 
 /* css */
 
 @media screen and (max-width: 767px) and (min-width: 320px){
-	.homebannnerk {
-    height: auto;
-}
+	
 
 .site-header .navbar-light .navbar-toggler {
     color: #000;

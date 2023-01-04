@@ -47,141 +47,81 @@ const BecomeACreator = () => {
 
       1200: {
         items: 4,
-        nav: true,
+        nav: false,
         center: false,
         autoplay: true,
         margin: 20,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
+        animateIn: true,
+	      animateOut: false,
         dots: false,
         loop: true,
       },
     },
-
-    responsive_reviewtestim: {
+	
+	
+	responsive_mobilessslide: {
       0: {
         items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        center: false,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 3,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
+        nav: true,
         dots: false,
         loop: true,
       },
-
-      766: {
-        items: 2,
-        nav: true,
+      300: {
+        items: 1,
+        nav: false,
+        center: false,
+        autoplaySpeed: 3000,
+        dots: false,
         margin: 0,
+        loop: true,
+      },
+
+      766: {
+        items: 4,
+        nav: true,
+        center: true,
         dots: false,
         loop: true,
       },
 
       1200: {
-        items: 4,
-        margin: 20,
+        items: 1,
         nav: false,
+        center: false,
         autoplay: true,
+        margin: 0,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
-        center: false,
+        animateIn: 'fadeIn',
+	      animateOut: 'fadeOut',
         dots: false,
+        loop: true,
       },
     },
 
-    responsive_advantfeat: {
+
+    responsive_testnmslide: {
       0: {
         items: 1,
-        nav: false,
-        dots: true,
+        nav: true,
+        dots: false,
         loop: true,
       },
       300: {
         items: 1,
         nav: false,
-        dots: false,
         center: true,
-        loop: true,
-      },
-
-      766: {
-        items: 2,
-        nav: true,
         dots: false,
+        margin: 10,
         loop: true,
-      },
-
-      1200: {
-        items: 3,
-        margin: 20,
-        nav: true,
-        center: true,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
-
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
-
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
-      },
-    },
-
-    
-    responsive_brandmembs: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        animateOut: 1,
-        animateIn: 0,
-        loop: true,
-        stagepadding:40,
-      },
-      300: {
-        loop: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        animate: true,
-        margin:30,
-        center:true,
-        stagepadding:40,
-        autoplaySpeed: '6000',
-        autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
       },
 
       766: {
         items: 4,
-        nav: false,
+        nav: true,
+        center: true,
         dots: false,
         loop: true,
       },
@@ -189,15 +129,13 @@ const BecomeACreator = () => {
       1200: {
         items: 3,
         nav: false,
-        margin:30,
+        center: false,
         autoplay: true,
-        animate: true,
-        autoplaySpeed: '6000',
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        center:true,
-        dots: true,
-        loop: true,
+        margin: 20,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: false,
+        loop: false,
       },
     },
 
@@ -211,7 +149,13 @@ const BecomeACreator = () => {
   <section className="connectcrts">
     <div className="container">
       <div className="slidechngrs">
-        <div className="bdmembslide owl-carousel owl-theme">
+        
+        <OwlCarousel
+              className="bdmembslide owl-carousel owl-theme"
+              loop
+              responsive={state.responsive_featuredslide}
+              nav
+            >
           <div className="item">
             <img src="./images/creators/1.png" />
           </div>
@@ -227,14 +171,15 @@ const BecomeACreator = () => {
           <div className="item">
             <img src="./images/creators/2.png" />
           </div>
-        </div>
+          </OwlCarousel>
+        
       </div>
       <div className="mainhead whithd text-left">
         <h3 className="centheads" data-aos="fade-right" data-aos-duration={3000}>Creator<br />
           Connect 
         </h3>
         <p className="sbhds">Let your content make the noise </p>
-        <p className="curvtxt">Lorem Ipsum</p>
+        <p className="curvtxt">By YouthBeat</p>
       </div>
     </div>
   </section>
@@ -282,14 +227,16 @@ const BecomeACreator = () => {
         </div>
         <div className="col-md-5 align-self-center text-center">
           <div className="mobsets">
-            <div className="mobilessslide owl-carousel owl-theme">
+          <OwlCarousel
+              className="partnrslide owl-carousel owl-theme"
+              responsive={state.responsive_mobilessslide} >
               <div className="item">
-                <img src="./images/showcase1.png" className="img-fluid" />
+              <img src="./images/showcasein2.png" className="img-fluid" />
               </div>
               <div className="item">
-                <img src="./images/showcase2.png" className="img-fluid" />
+              <img src="./images/showcasein.png" className="img-fluid" />
               </div>
-            </div>
+            </OwlCarousel>
           </div>
         </div>
       </div></div></section>
@@ -299,13 +246,15 @@ const BecomeACreator = () => {
         <p className="sbhds">Testimonials</p>
       </div>
       <div className="testslid">
-        <div className="newtestslide owl-carousel owl-theme">
+      <OwlCarousel
+              className="newtestslide owl-carousel owl-theme"
+              responsive={state.responsive_testnmslide} >
           <div className="item">
             <div className="txtpp">
               <img src="./images/testmon/1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>These guys are crazy!! Their art and creative capabilities are extraordinary. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -315,7 +264,7 @@ const BecomeACreator = () => {
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>They are young, ambitious, loud, and extremely efficient. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -325,7 +274,7 @@ const BecomeACreator = () => {
               <img src="./images/testmon/1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>YouthBeat works as a unified and balanced unit. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
@@ -335,12 +284,48 @@ const BecomeACreator = () => {
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>These guys are extremely efficient and possess loads of creativity.</p>
+                <p>With a wide range of solutions, they are complete youth marketing geniuses.</p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
           </div>
-        </div>
+          <div className="item">
+            <div className="txtpp">
+              <img src="./images/testmon/2.jpg" />
+              <img src="./images/quotsv.png" className="quoteic" />
+              <div className="popcolt">
+                <p>If I have to describe YouthBeat in one word, I choose the word "noise."</p>
+                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="item">
+            <div className="txtpp">
+              <img src="./images/testmon/2.jpg" />
+              <img src="./images/quotsv.png" className="quoteic" />
+              <div className="popcolt">
+                <p>The team is adaptable, even when unforeseen challenges arise toward the end, they handle them.</p>
+                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="item">
+            <div className="txtpp">
+              <img src="./images/testmon/2.jpg" />
+              <img src="./images/quotsv.png" className="quoteic" />
+              <div className="popcolt">
+                <p>They are extremely efficient and possess loads of creativity.</p>
+                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+              </div>
+            </div>
+          </div>
+
+
+          
+        </OwlCarousel>
       </div>
     </div>
   </section>

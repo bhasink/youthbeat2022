@@ -144,7 +144,8 @@ const OurWorkDetails = () => {
                             `${process.env.NEXT_PUBLIC_B_API}case-study/about_the_brand_img/` +
                             caseStudy.about_the_brand_img
                           }
-                          className="img-fluid"
+                          className="img-fluid" data-aos="fade-up"
+                          data-aos-duration={3000}
                         />
                   
                 </div>
@@ -163,8 +164,7 @@ const OurWorkDetails = () => {
                 Visuals
               </h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                ipsum dolor sit amet, consectetur adipiscing{' '}
+              See how we make everyone turn their heads and notice you{' '}
               </p>
             </div>
             <div className="col-md-6">
@@ -176,6 +176,18 @@ const OurWorkDetails = () => {
                 responsive={state.responsive_reviewtestim}
                 nav
               >
+                  <div className="item">
+                    <img src="/images/keyvisu.jpg" />
+                  </div>
+
+                  <div className="item">
+                    <img src="/images/keyvisu.jpg" />
+                  </div>
+
+                  <div className="item">
+                    <img src="/images/keyvisu.jpg" />
+                  </div>
+
                   <div className="item">
                     <img src="/images/keyvisu.jpg" />
                   </div>
@@ -199,12 +211,12 @@ const OurWorkDetails = () => {
                           className="img-fluid"
                         />
             <h4>
-            {caseStudy.name}
+            {caseStudy.cs_name} 
             </h4>
           </div>
           <div className="col-md-6 d-flex">
             <div className="col-md-12 align-self-center">
-              <h5>  {caseStudy.cs_name}</h5>
+              <h5>{caseStudy.name}  </h5>
               <p>
               {caseStudy.cs_description}
               </p>

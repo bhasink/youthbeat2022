@@ -30,12 +30,9 @@ const Creator = () => {
         loop: true,
       },
       300: {
-        items: 2,
+        items: 1.5,
         nav: false,
         center: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
         dots: false,
         margin: 10,
         loop: true,
@@ -148,22 +145,22 @@ const Creator = () => {
         animateOut: 1,
         animateIn: 0,
         loop: true,
+        center:true,
         stagepadding:40,
+        autoplaySpeed: '6000',
       },
       300: {
         loop: true,
         autoplay: true,
-        items: 1,
+        items: 1.5,
         nav: false,
         animate: true,
         dots:false,
         margin:30,
         center:true,
-        stagepadding:40,
+        stagepadding:0,
         autoplaySpeed: '6000',
         autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
       },
 
       766: {
@@ -174,7 +171,7 @@ const Creator = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         nav: false,
         margin:30,
         autoplay: true,
@@ -199,10 +196,15 @@ const Creator = () => {
 
       <Header />
 
-      <section className="homebannnerk">
+      <section className="homebannnerk revealer" data-aos="" data-aos-duration={1500}>
         <img src="./images/hm9.jpg" className="desktopayout" />
         <img src="./images/homemobile.jpg" className="mobstopayout" />
-        <div className="container"></div>
+        <div className="container">
+		<div  className="layerfires"></div>
+		
+		<div  data-aos="fade-right" data-aos-duration={1500}><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
+OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
+		</div>
       </section>
       <section className="letsyoubet revealer">
         <div className="container">
@@ -240,12 +242,12 @@ const Creator = () => {
                   />
                   <div className="cse-txts">
                     <p>
-                      Get free entry and earn exciting merch from huge brands!{' '}
+                    Create content and earn exclusive rewards such as vouchers, collaborations, or even a reimbursement! {' '}
                     </p>
                   </div>
                 </div>
                 <h4>
-                  Exclusive
+                Earn
                   <br /> Rewards!
                 </h4>
               </div>
@@ -257,14 +259,13 @@ const Creator = () => {
                     src="./images/madhouse/2.jpg"/>
                   <div className="cse-txts">
                     <p>
-                      Resonate the tunes of popular brands and work with them!
+                    Push the right buttons with your audience and let your results speak for themselves.
                     </p>
                   </div>
                 </div>
                 <h4>
-                  Participate
-                  <br />
-                  &amp; Amplify!
+                Influence <br />your<br /> Audience 
+                
                 </h4>
               </div>
               <div className="item" data-aos="fade-up"
@@ -274,13 +275,13 @@ const Creator = () => {
                     src="./images/madhouse/3.jpg"/>
                   <div className="cse-txts">
                     <p>
-                      Hangout with creators and live the trendy Instagram life!
+                    Partner with various creators and brands to make your content reach new audiences.
                     </p>
                   </div>
                 </div>
                 <h4>
-                  Become
-                  <br /> the buzz!
+                Professional  <br />Collabs
+                  
                 </h4>
               </div>
               <div className="item" data-aos="fade-down"
@@ -290,31 +291,16 @@ const Creator = () => {
                     src="./images/madhouse/4.jpg"/>
                   <div className="cse-txts">
                     <p>
-                      Land your dream job after receiving certificates and LORs!
+                    Get invited to exclusive events and impress new people to fall in love with the content you create. 
                     </p>
                   </div>
                 </div>
                 <h4>
-                  Upgrade
-                  <br /> your CV!{' '}
+                Event 
+                  <br /> Invites {' '}
                 </h4>
               </div>
-              <div className="item" data-aos="fade-up"
-                    data-aos-duration={1000}>
-                <div className="hhcase-txt">
-                  <img
-                    src="./images/madhouse/1.jpg" />
-                  <div className="cse-txts">
-                    <p>
-                      Get free entry and earn exciting merch from huge brands!{' '}
-                    </p>
-                  </div>
-                </div>
-                <h4>
-                  Exclusive
-                  <br /> Rewards!
-                </h4>
-              </div>
+             
 
 
             </OwlCarousel>
@@ -369,7 +355,8 @@ const Creator = () => {
           </div>
         </div>
       </section>
-      <section className="showcaseytbs revealer">
+      <section className="showcaseytbs revealer" data-aos=""
+        data-aos-duration={1500}>
         <img src="./images/backoutservice.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
@@ -382,9 +369,8 @@ const Creator = () => {
             </div>
             <div className="col-md-7 align-self-center">
               <h2 data-aos="fade-left" data-aos-duration={3000}>
-                Want to{' '}
-                <span className="txstrks">
-                  make a name{' '}
+              Want your <span className="txstrks">
+                    content to stand{' '}
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -399,7 +385,7 @@ const Creator = () => {
                   </svg>
                 </span>
                 <br />
-                in your campus?
+                out from the crowd?{' '}
                 <br />
               </h2>
               <p className="curvtxt">Create with YouthBeat</p>
@@ -419,14 +405,15 @@ const Creator = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration={1000}
                 />
+                <p><b>Myntra</b></p>
                 <h4>
-                  Chase the case
-                  <br /> studies
+                Read our 
+                  <br /> case  studies
                 </h4>
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
               <div className="item">
@@ -436,6 +423,7 @@ const Creator = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration={2000}
                 />
+                 <p><b>One Plus</b></p>
                 <h4>
                   See the
                   <br /> innovation
@@ -444,7 +432,7 @@ const Creator = () => {
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
               <div className="item">
@@ -454,6 +442,7 @@ const Creator = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration={3000}
                 />
+                 <p><b>Tinder</b></p>
                 <h4>
                   Learn the ways
                   <br />
@@ -462,7 +451,7 @@ const Creator = () => {
                 <a href="#">
                   read more
                   <br />
-                  <img src="./images/readmorec.png" />
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
             </OwlCarousel>
@@ -472,16 +461,16 @@ const Creator = () => {
       <section className="ouytbservice revealer">
         <div className="container">
           <div className="mainhead">
-            <p className="sbhds">We’re proud of our work</p>
+            <p className="sbhds">Want to make an impact with your content? </p>
             <h3
-              className="centheads"
+              className="centheads mt-3"
               data-aos="flip-down"
               data-aos-duration={3000}
             >
-              Revamp your brand{' '}
+              Join YouthBeat and {' '}
               <img src="./images/keycta.png" className="keyemojs" />
               <br />
-              with our network
+              make  history 
             </h3>
           </div>
           <div className="servnumcounts numbers">
@@ -496,7 +485,7 @@ const Creator = () => {
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                  <span className="value">2000</span>+
+                  <span className="value">xxxx</span>
                 </p>
                 <p>
                   Assets Delivered
@@ -504,7 +493,7 @@ const Creator = () => {
               </div>
               <div className="col-md-4">
                 <p className="numctn yelnums number-item">
-                  <span className="value">1500</span>+
+                  <span className="value">200</span>+
                 </p>
                 <p>
                   Project Worked On
@@ -559,75 +548,121 @@ const Creator = () => {
               data-aos="fade-left"
               data-aos-duration={3000}
             >
-              Join the hood. Be a YB Ambassador
+              Join the hood!
             </h3>
           </div>
           <div className="mnformsty">
             <form>
               <div className="form-group  row">
-                <div className="col-md-6">
+			  
+
+              <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="First name"
+                    placeholder="Name"
                   />
                 </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Last name"
-                  />
-                </div>
-                <div className="col-md-6">
+
+			        <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Email"
                   />
                 </div>
-                <div className="col-md-6">
+				
+				        <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Phone"
+                    placeholder="Contact Number"
                   />
                 </div>
-                <div className="col-md-6">
+				
+                <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="DOB"
+                    placeholder="Age"
                   />
                 </div>
-                <div className="col-md-6">
+				
+				        <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Gender"
                   />
                 </div>
-                <div className="col-md-6">
+                
+                <div className="col-md-4">
                   <input
                     type="text"
                     className="form-control"
                     placeholder="City"
                   />
                 </div>
+
+                <div className="col-md-4">  
+                  <select className="form-control">
+                        <option>
+                          Primary Niche/Category
+                        </option>
+                        
+                        <option>
+                          Lorem Ipsum 2
+                        </option>
+                    </select>
+                </div>
+
+
+                <div className="col-md-4">
+                    <select  className="form-control">
+                      <option>
+                        Secondary Niche/Category
+                      </option>
+                      
+                      <option>
+                        Lorem Ipsum 2
+                      </option>
+                    </select>
+                </div>
+				
+				
+          <div className="col-md-4">
+            <input type="text"className="form-control" placeholder="Followers on Instagram"/>
+          </div>
+				
+				
+				<div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Instagram URL"
+                  />
+                </div>
+				
+
                 <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="College"
+                    placeholder="Presence on other platform"
                   />
                 </div>
+                
                 <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Semester"
+                    placeholder="Presence on other platform"
                   />
                 </div>
+
+
+                
+				
                 <div className="col-md-12">
                   <button className="ytthemects">Submit</button>
                 </div>
