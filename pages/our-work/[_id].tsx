@@ -231,54 +231,7 @@ const OurWorkDetails = () => {
         </div>
       </section>
       <section className="progrmsfrms revealer">
-        <div className="container">
-          <div className="mainhead text-left">
-            <h3
-              className="centheads"
-              data-aos="fade-left"
-              data-aos-duration={3000}
-            >
-              Sign up form
-            </h3>
-          </div>
-          <div className="mnformsty">
-            <form>
-              <div className="form-group  row">
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Name"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Phone"
-                  />
-                </div>
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Details"
-                  />
-                </div>
-                <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        
       </section>
 
       <Footer />

@@ -1970,7 +1970,6 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .mnformsty label {
     text-align: left;
     width: 100%;
-    min-height: 50px;
 }
 
 .mobsets:after {
@@ -1988,6 +1987,30 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     top: 22px;
     margin: auto;
 }
+
+
+/* new form layout css */
+
+.mnformsty.singlefrms {
+    max-width: 618px;
+    margin: auto;
+    height: 288px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.mnformsty.singlefrms .stepform form {
+    width: 100%;
+    margin: auto;
+}
+
+.stepform {
+    margin: auto;
+    display: none;
+    width: 100%;
+}
+
 
 /* css for responsive media */
 

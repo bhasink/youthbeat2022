@@ -330,49 +330,238 @@ const BecomeACreator = () => {
     </div>
   </section>
   <section className="progrmsfrms revealer">
-    <div className="container">
-      <div className="mainhead text-left">
-        <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Join As A Creator
-        </h3>
-      </div>
-      <div className="mnformsty">
-        <form>
-          <div className="form-group  row">
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="First name" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Last name" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Email" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Phone" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="DOB" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Gender" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="City" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="College" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Semester" />
-            </div>
-            <div className="col-md-12">
-              <button className="ytthemects">Submit</button>
-            </div>
+        <div className="container">
+          <div className="mainhead">
+            <h3
+              className="centheads"
+              data-aos="fade-left"
+              data-aos-duration={3000}
+            >
+              Join the hood!
+            </h3>
           </div>
-        </form>
-      </div>
-    </div>
-  </section>
+          <div className="mnformsty singlefrms">
+          <div className="stepform" style={{display:'block'}}>
+            <form>
+              <div className="form-group  row">
+			  
+
+              <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Name"
+                  />
+                </div>
+
+			        <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+				
+				        <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Contact Number"
+                  />
+                </div>
+				
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Age"
+                  />
+                </div>
+				
+				        <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Gender"
+                  />
+                </div>
+                
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="City"
+                  />
+                </div>
+
+                
+                
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              
+
+                <div className="col-md-6">  
+                  <select className="form-control">
+                        <option>
+                          Primary Niche/Category
+                        </option>
+                        
+                        <option>
+                          Lorem Ipsum 2
+                        </option>
+                    </select>
+                </div>
+
+
+                <div className="col-md-6">
+                    <select  className="form-control">
+                      <option>
+                        Secondary Niche/Category
+                      </option>
+                      
+                      <option>
+                        Lorem Ipsum 2
+                      </option>
+                    </select>
+                </div>
+				
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+              <div className="col-md-12">
+                <label><b>Instagram followers</b></label>
+              </div>
+              
+				
+          <div className="col-md-12">
+            <input type="text"className="form-control" placeholder="Followers on Instagram"/>
+          </div>
+				
+				
+				
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              
+              <div className="col-md-12">
+              <label><b>Instagram Profile Link</b></label>
+              </div>
+				<div className="col-md-12">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Instagram URL"
+                  />
+                </div>
+				
+
+               
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              <div className="col-md-12">
+              <label><b>Presence on other platform</b></label>
+              </div>
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Youtube"
+                  />
+                </div>
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Snapchat"
+                  />
+                </div>
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Facebook"
+                  />
+                </div>
+
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Twitter"
+                  />
+                </div>
+
+
+                <div className="col-md-6 mx-auto">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Josh/Moj"
+                  />
+                </div>
+
+
+                
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+          </div>
+
+        </div>
+      </section>
 </div>
 
 

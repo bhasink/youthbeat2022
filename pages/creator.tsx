@@ -542,7 +542,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
       </section>
       <section className="progrmsfrms revealer">
         <div className="container">
-          <div className="mainhead text-left">
+          <div className="mainhead">
             <h3
               className="centheads"
               data-aos="fade-left"
@@ -551,12 +551,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               Join the hood!
             </h3>
           </div>
-          <div className="mnformsty">
+          <div className="mnformsty singlefrms">
+          <div className="stepform" style={{display:'block'}}>
             <form>
               <div className="form-group  row">
 			  
 
-              <div className="col-md-4">
+              <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -564,7 +565,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
 
-			        <div className="col-md-4">
+			        <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -572,7 +573,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
 				
-				        <div className="col-md-4">
+				        <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -580,7 +581,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
 				
-                <div className="col-md-4">
+                <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -588,7 +589,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
 				
-				        <div className="col-md-4">
+				        <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -596,7 +597,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
                 
-                <div className="col-md-4">
+                <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
@@ -604,7 +605,24 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   />
                 </div>
 
-                <div className="col-md-4">  
+                
+                
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              
+
+                <div className="col-md-6">  
                   <select className="form-control">
                         <option>
                           Primary Niche/Category
@@ -617,7 +635,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 </div>
 
 
-                <div className="col-md-4">
+                <div className="col-md-6">
                     <select  className="form-control">
                       <option>
                         Secondary Niche/Category
@@ -630,12 +648,47 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 </div>
 				
 				
-          <div className="col-md-4">
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+              <div className="col-md-12">
+                <label><b>Instagram followers</b></label>
+              </div>
+              
+				
+          <div className="col-md-12">
             <input type="text"className="form-control" placeholder="Followers on Instagram"/>
           </div>
 				
 				
-				<div className="col-md-6">
+				
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              
+              <div className="col-md-12">
+              <label><b>Instagram Profile Link</b></label>
+              </div>
+				<div className="col-md-12">
                   <input
                     type="text"
                     className="form-control"
@@ -644,19 +697,63 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 </div>
 				
 
+               
+				
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div className="stepform">
+          <form>
+              <div className="form-group  row">
+			  
+
+              <div className="col-md-12">
+              <label><b>Presence on other platform</b></label>
+              </div>
+
                 <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Presence on other platform"
+                    placeholder="Youtube"
                   />
                 </div>
-                
+
                 <div className="col-md-6">
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Presence on other platform"
+                    placeholder="Snapchat"
+                  />
+                </div>
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Facebook"
+                  />
+                </div>
+
+
+                <div className="col-md-6">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Twitter"
+                  />
+                </div>
+
+
+                <div className="col-md-6 mx-auto">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Josh/Moj"
                   />
                 </div>
 
@@ -669,6 +766,11 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
             </form>
           </div>
+
+
+
+          </div>
+
         </div>
       </section>
 

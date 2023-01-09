@@ -306,49 +306,181 @@ const BecomeAAmbassador = () => {
     </div>
   </section>
   <section className="progrmsfrms revealer">
-    <div className="container">
-      <div className="mainhead text-left">
-        <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Join As A Creator
-        </h3>
-      </div>
-      <div className="mnformsty">
-        <form>
-          <div className="form-group  row">
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="First name" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Last name" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Email" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Phone" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="DOB" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Gender" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="City" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="College" />
-            </div>
-            <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Semester" />
-            </div>
-            <div className="col-md-12">
-              <button className="ytthemects">Submit</button>
-            </div>
+        <div className="container">
+          <div className="mainhead text-center">
+            <h3
+              className="centheads"
+              data-aos="fade-left"
+              data-aos-duration={3000}
+            >
+              Join the hood. Be a YB Ambassador
+            </h3>
           </div>
-        </form>
-      </div>
-    </div>
-  </section>
+          <div className="mnformsty singlefrms">
+          <div className="stepform" style={{display:'block'}}>
+            <form>
+              <div className="form-group  row">
+
+        <div className="col-md-6">
+          <input type="text" className="form-control" placeholder="Name"/>
+        </div>
+
+        <div className="col-md-6">
+					 <input type="text" className="form-control" placeholder="Email"/>
+				</div>
+				
+				<div className="col-md-6">
+					 <input type="text" className="form-control" placeholder="Contact Number"/>
+				</div>
+				
+				<div className="col-md-6">
+					 <input type="text" className="form-control" placeholder="Age"/>
+				</div>
+				
+				<div className="col-md-12">
+					 <input type="text" className="form-control" placeholder="Gender"/>
+				</div>
+				
+				
+ 
+                <div className="col-md-12">
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+
+            <div className="stepform">
+            <form>
+              <div className="form-group  row">
+
+        
+				
+				<div className="col-md-12">
+           <label><b>Instagram Profile Link</b></label>
+					 <input type="text" className="form-control" placeholder="Your Instagram Profile Link"/>
+				</div>
+				
+				
+        
+
+        
+ 
+                <div className="col-md-12">
+                <button className="ytthemects">back</button>
+                  <button className="ytthemects">Next</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+
+
+            <div className="stepform">
+            <form>
+              <div className="form-group  row">
+
+        
+				
+				<div className="col-md-12">
+        <label><b>Instagram followers</b></label> 
+           <select className="form-control">
+              <option>How many Instagram followers do you currently have?</option>
+              <option>10-15k</option>
+              <option>20-100k</option>
+					 </select>
+        
+        </div>
+				
+                <div className="col-md-12">
+                <button className="ytthemects">back</button>
+                  <button className="ytthemects">Next</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+
+            <div className="stepform">
+            <form>
+              <div className="form-group  row">
+
+        
+				
+				
+        <div className="col-md-12">
+				<label><b>College</b></label>
+					 <input type="text" className="form-control" placeholder="Which city is your college in?"/>
+				</div>
+
+        
+
+ 
+                <div className="col-md-12">
+                <button className="ytthemects">back</button>
+                  <button className="ytthemects">Next</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+
+
+            <div className="stepform">
+            <form>
+              <div className="form-group  row">
+
+        
+				
+
+        <div className="col-md-12">
+				 <label><b>What are you studying/planning to study?</b> <br/></label>
+					 <input type="text" className="form-control" placeholder="Please mention your degree of specialisation."/>
+				</div>
+
+        
+
+ 
+                <div className="col-md-12">
+                <button className="ytthemects">back</button>
+                  <button className="ytthemects">Next</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+
+
+            <div className="stepform">
+            <form>
+              <div className="form-group  row">
+
+        
+
+        <div className="col-md-12">
+				 <label><b>Select your college year for the upcoming academic session for the year 2023-24</b></label>
+					 <select className="form-control">
+              <option>I</option>
+              <option>II</option>
+              <option>III</option>
+              <option>IV</option>
+              <option>V</option>
+					 </select>
+				</div>
+
+ 
+                <div className="col-md-12">
+               
+                  <button className="ytthemects">Submit</button>
+                </div>
+              </div>
+            </form>
+            </div>
+
+          </div>
+        </div>
+      </section>
 </div>
 
 
