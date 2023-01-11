@@ -444,7 +444,7 @@ p {
     position: absolute;
     margin: auto;
     bottom: 0;
-    padding: 55px;
+    padding:65px 15px;
 }
 
 .hhcase-txt:hover .cse-txts {
@@ -1994,7 +1994,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .mnformsty.singlefrms {
     max-width: 618px;
     margin: auto;
-    height: 288px;
+   /* height: 288px; */
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -2007,10 +2007,13 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .stepform {
     margin: auto;
-    display: none;
+    /*display: none;*/
     width: 100%;
 }
 
+.tags-ytb img {
+    display: none;
+}
 
 /* css for responsive media */
 
@@ -2140,7 +2143,42 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 }
 
 .tags-ytb span {
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.innershowsl .desktopayout {
+    width: 188%;
+    left: -40%;
+}
+
+.mnformsty.singlefrms {
+    height: auto;
+}
+
+.mobcton.commctas {
+    margin: auto;
+    max-width: 157px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: flex;
+    border: 1.5px solid #fff;
+    padding: 5px 6px;
+    border-radius: 37px;
+}
+
+
+.mobcton.commctas .nav-link {
+    padding: 0px 8px;
+    color: #fff;
+    font-family: 'Proxima Nova';
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.mobcton.commctas .nav-link.active {
+    background: #fff;
+    color: #000;
 }
 
 .tags-ytb img {

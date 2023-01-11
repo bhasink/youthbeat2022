@@ -546,9 +546,6 @@ const BecomeACreator = () => {
                   />
                 </div>
 
-
-                
-				
                 <div className="col-md-12">
                   <button className="ytthemects">Submit</button>
                 </div>

@@ -26,6 +26,13 @@ const Header = () => {
               <i className="fal fa-bars" />
               <i className="fal fa-times" />
             </button>
+
+            {/*
+            <div class="mobcton commctas">
+              <a class="nav-link active" href="/ambassador">Ambassador</a>
+              <a class="nav-link " href="/creator">Creator</a>
+            </div>
+            */}
             
             {/* Collapse */}
             <div className="collapse navbar-collapse" id="navbarCollapse">
