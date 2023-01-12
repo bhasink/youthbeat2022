@@ -32,7 +32,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           ></script>
 
-          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          {/* <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
         </body>
       </Html>
     )

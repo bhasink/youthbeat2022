@@ -28,10 +28,10 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           type="text/css"
         />
-        <link
+        {/* <link
           href="https://unpkg.com/aos@2.3.1/dist/aos.css"
           rel="stylesheet"
-        />
+        /> */}
         <link rel="stylesheet" type="text/css" href="/style.css" />
       </Head>
 
