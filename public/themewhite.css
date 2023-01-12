@@ -112,6 +112,15 @@
 }
 
 
+.mnformsty .form-control::placeholder,
+.mnformsty select.form-control{
+    color: #e0e0e0;
+}
+
+.mnformsty select.form-control option{
+     color: #000;
+}
+
 /* css */
 
 @media screen and (max-width: 767px) and (min-width: 320px){
