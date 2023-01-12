@@ -95,6 +95,9 @@ const Services = () => {
         </div>
       </div>
     </div>
+
+   {/**<div className="usps"><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p></div> */} 
+
     <div className="usps">
       <img src="./images/usptagsnw.png" />
       <img src="./images/usptagsnw.png" />
@@ -202,7 +205,7 @@ const Services = () => {
   <section className="progrmsfrms revealer">
     <div className="container">
       <div className="mainhead text-left">
-        <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Client Enquiry Form</h3>
+        <h3 className="centheads">Client Enquiry Form</h3>
       </div>
       <div className="mnformsty">
         <form>
