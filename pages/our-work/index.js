@@ -20,9 +20,9 @@ const OurWork = () => {
   const [caseStudy, setCaseStudy] = useState([])
 
   useEffect(() => {
-    AOS.init({
+   /* AOS.init({
       duration: 2000,
-    })
+    })*/
   }, [])
 
   const router = useRouter()

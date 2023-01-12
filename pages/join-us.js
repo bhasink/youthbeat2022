@@ -15,9 +15,9 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 const JoinUs = () => {
   useEffect(() => {
-    AOS.init({
+   /* AOS.init({
       duration: 2000,
-    })
+    }) */
   }, [])
 
   const state = {
@@ -160,12 +160,19 @@ const JoinUs = () => {
       </div>
     </div>
   </section>
-  <section className="jbopenings">
+  <section className="jbopenings text-center">
     <div className="container">
       <div className="mainhead">
         <p className="sbhds"> <span className="coolstds">Work with us <img src="./images/workwistrok.png" /></span></p>
       </div>
-      <div className="jobslts">
+
+      <p>Want to work with crazy brands, live the Insta-trendy lifestyle, and hangout with the best of creators out there? 
+</p>
+
+<p>No need to look any further! Join YouthBeat now!
+ 
+</p>
+      {/* <div className="jobslts">
         <h4>Account Manager <img src="./images/arropinks.png" /></h4>
       </div>
       <div className="jobslts">
@@ -176,7 +183,7 @@ const JoinUs = () => {
       </div>
       <div className="jobslts">
         <h4>Graphic Designer <img src="./images/arropinks.png" /></h4>
-      </div>
+      </div>*/ }
     </div>
   </section>
   <section className="lastfrms text-center mb-5">

@@ -16,9 +16,9 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 const Creator = () => {
   useEffect(() => {
-    AOS.init({
+    /*AOS.init({
       duration: 2000,
-    })
+    })*/
   }, [])
 
   const state = {
@@ -196,13 +196,13 @@ const Creator = () => {
 
       <Header />
 
-      <section className="homebannnerk revealer" data-aos="" data-aos-duration={1500}>
+      <section className="homebannnerk revealer">
         <img src="./images/hm9.jpg" className="desktopayout" />
         <img src="./images/homemobile.jpg" className="mobstopayout" />
         <div className="container">
 		<div  className="layerfires"></div>
 		
-		<div  data-aos="fade-right" data-aos-duration={1500}><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
+		<div><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
 OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
 		</div>
       </section>
@@ -210,10 +210,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
         <div className="container">
           <div className="mainhead">
             <h3
-              className="centheads"
-              data-aos="flip-down"
-              data-aos-duration={3000}
-            >
+              className="centheads">
               <img src="./images/smilheads.png" className="anmemojs" />
               Let YouthBeat
               <br />
@@ -236,10 +233,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/1.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                  />
+                    src="./images/madhouse/1.jpg"/>
                   <div className="cse-txts">
                     <p>
                     Create content and earn exclusive rewards such as vouchers, collaborations, or even a reimbursement! {' '}
@@ -252,8 +246,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 </h4>
               </div>
 
-              <div className="item" data-aos="fade-down"
-                    data-aos-duration={1500}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/2.jpg"/>
@@ -268,8 +261,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 
                 </h4>
               </div>
-              <div className="item" data-aos="fade-up"
-                    data-aos-duration={2500}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/3.jpg"/>
@@ -284,8 +276,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   
                 </h4>
               </div>
-              <div className="item" data-aos="fade-down"
-                    data-aos-duration={3000}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/4.jpg"/>
@@ -325,31 +316,19 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/ourpatner/1.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/ourpatner/1.png"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/ourpatner/2.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1500}
-                />
+                  src="./images/ourpatner/2.png"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/ourpatner/3.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={2000}
-                />
+                  src="./images/ourpatner/3.png"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/ourpatner/4.png"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/ourpatner/4.png"/>
               </div>
             </OwlCarousel>
           </div>
@@ -362,13 +341,10 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
           <div className="row">
             <div className="col-md-5">
               <img
-                src="./images/roundlady.png"
-                data-aos="flip-left"
-                data-aos-duration={3000}
-              />
+                src="./images/roundlady.png"/>
             </div>
             <div className="col-md-7 align-self-center">
-              <h2 data-aos="fade-left" data-aos-duration={3000}>
+              <h2>
               Want your <span className="txstrks">
                     content to stand{' '}
                   <svg
@@ -400,11 +376,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/madhouse/1.jpg"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={1000}
-                />
+                  src="./images/madhouse/1.jpg"/>
                 <p><b>Myntra</b></p>
                 <h4>
                 Read our 
@@ -418,11 +390,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="item">
                 <img
-                  src="./images/madhouse/2.jpg"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={2000}
-                />
+                  src="./images/madhouse/2.jpg"/>
                  <p><b>One Plus</b></p>
                 <h4>
                   See the
@@ -437,11 +405,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="item">
                 <img
-                  src="./images/madhouse/3.jpg"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={3000}
-                />
+                  src="./images/madhouse/3.jpg"/>
                  <p><b>Tinder</b></p>
                 <h4>
                   Learn the ways
@@ -463,10 +427,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
           <div className="mainhead">
             <p className="sbhds">Want to make an impact with your content? </p>
             <h3
-              className="centheads mt-3"
-              data-aos="flip-down"
-              data-aos-duration={3000}
-            >
+              className="centheads mt-3">
               Join YouthBeat and {' '}
               <img src="./images/keycta.png" className="keyemojs" />
               <br />
@@ -485,7 +446,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                  <span className="value">xxxx</span>
+                  <span className="value">300000</span>+
                 </p>
                 <p>
                   Assets Delivered
@@ -517,24 +478,15 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/members/1.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={1000}
-                />
+                  src="./images/members/1.jpg"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/members/2.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={2000}
-                />
+                  src="./images/members/2.jpg"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/members/3.jpg"
-                  data-aos="zoom-in"
-                  data-aos-duration={3000}
-                />
+                  src="./images/members/3.jpg"/>
               </div>
             </OwlCarousel>
           </div>
@@ -544,10 +496,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
         <div className="container">
           <div className="mainhead">
             <h3
-              className="centheads"
-              data-aos="fade-left"
-              data-aos-duration={3000}
-            >
+              className="centheads">
               Join the hood!
             </h3>
           </div>

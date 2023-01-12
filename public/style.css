@@ -255,7 +255,7 @@ p {
 }
 
 .homebannnerk.revealer.aos-init.aos-animate .layerfires {
-    animation: moveline 2s;
+    animation: moveline 2s infinite;
 }
 
 

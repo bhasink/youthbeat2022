@@ -14,7 +14,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 })
 import { useRouter } from 'next/router'
 import axios from 'axios'
-import { json } from 'stream/consumers'
+
 
 const OurWorkDetails = () => {
   const [caseStudy, setCaseStudy] = useState([])
@@ -23,9 +23,9 @@ const OurWorkDetails = () => {
 
   useEffect(() => {
 
-    AOS.init({
+   /* AOS.init({
         duration: 2000,
-      })
+      })*/
 
     if (router.isReady) {
       const _id = router.query._id
@@ -115,10 +115,7 @@ const OurWorkDetails = () => {
               <div className="col-md-7 align-self-center">
                 <div className="mainhead text-left whitetxt">
                   <h5
-                    className="centheads"
-                    data-aos="flip-down"
-                    data-aos-duration={3000}
-                  >
+                    className="centheads">
                     About The Brand{' '}
 
                   </h5>
@@ -134,18 +131,14 @@ const OurWorkDetails = () => {
                 <div className="genfrs position-relative">
                   <img
                     src="/images/creobj.png"
-                    className="fltsbt"
-                    data-aos="flip-right"
-                    data-aos-duration={3000}
-                  />
+                    className="fltsbt" />
 
 <img
                           src={
                             `${process.env.NEXT_PUBLIC_B_API}case-study/about_the_brand_img/` +
                             caseStudy.about_the_brand_img
                           }
-                          className="img-fluid" data-aos="fade-up"
-                          data-aos-duration={3000}
+                          className="img-fluid"
                         />
                   
                 </div>

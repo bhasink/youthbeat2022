@@ -15,9 +15,9 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 const Ambassador = () => {
   useEffect(() => {
-    AOS.init({
+    /*AOS.init({
       duration: 2000,
-    })
+    })*/
   }, [])
 
   const state = {
@@ -193,24 +193,22 @@ const Ambassador = () => {
     <div>
       <Header />
 
-      <section className="homebannnerk revealer" data-aos="" data-aos-duration={1500}>
+      <section className="homebannnerk">
         <img src="./images/hm9.jpg" className="desktopayout" />
         <img src="./images/homemobile.jpg" className="mobstopayout" />
         <div className="container">
 		<div  className="layerfires"></div>
 		
-		<div  data-aos="fade-right" data-aos-duration={1500}><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
+		<div ><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
 OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
 		</div>
       </section>
-      <section className="letsyoubet revealer" data-aos=""
-        data-aos-duration={1500} >
+      <section className="letsyoubet revealer">
         <div className="container">
           <div className="mainhead">
             <h3
               className="centheads"
-              data-aos="flip-down"
-              data-aos-duration={3000}
+              
             >
               <img src="./images/smilheads.png" className="anmemojs" />
               Let YouthBeat
@@ -232,8 +230,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               
 
-              <div className="item" data-aos="fade-down"
-                    data-aos-duration={1500}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/2.jpg"/>
@@ -253,10 +250,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/1.jpg"
-                    data-aos="fade-up"
-                    data-aos-duration={1000}
-                  />
+                    src="./images/madhouse/1.jpg"/>
                   <div className="cse-txts">
                     <p>
                       Get free entry and earn exciting merch from huge brands!{' '}
@@ -269,8 +263,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 </h4>
               </div>
               
-              <div className="item" data-aos="fade-up"
-                    data-aos-duration={2500}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/3.jpg"/>
@@ -285,8 +278,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <br />  buzz!
                 </h4>
               </div>
-              <div className="item" data-aos="fade-down"
-                    data-aos-duration={3000}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/4.jpg"/>
@@ -301,8 +293,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              <div className="item" data-aos="fade-up"
-                    data-aos-duration={1000}>
+              <div className="item">
                 <div className="hhcase-txt">
                   <img
                     src="./images/madhouse/1.jpg" />
@@ -321,8 +312,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
           </div>
         </div>
       </section>
-      <section className="partnersincr revealer" data-aos=""
-        data-aos-duration={1500}>
+      <section className="partnersincr revealer">
         <div className="container">
           <div className="mainhead">
             <p className="sbhds">Meet our partners in creativity</p>
@@ -336,23 +326,19 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               responsive={state.responsive_featuredslide}
               nav
             >
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={1000}>
+              <div className="item">
                 <img
                   src="./images/ourpatner/1.png"/>
               </div>
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={1500}>
+              <div className="item">
                 <img
                   src="./images/ourpatner/2.png" />
               </div>
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={2000}>
+              <div className="item">
                 <img
                   src="./images/ourpatner/3.png"/>
               </div>
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={1000}>
+              <div className="item">
                 <img
                   src="./images/ourpatner/4.png" />
               </div>
@@ -360,19 +346,17 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
           </div>
         </div>
       </section>
-      <section className="showcaseytbs revealer" data-aos="" data-aos-duration={3000}>
+      <section className="showcaseytbs revealer">
         <img src="./images/backoutservice.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
             <div className="col-md-5">
               <img
                 src="./images/roundlady.png"
-                data-aos="flip-left"
-                data-aos-duration={3000}
               />
             </div>
             <div className="col-md-7 align-self-center text-lg-left text-center">
-              <h2 data-aos="fade-left" data-aos-duration={3000}>
+              <h2>
               Ready to {' '} 
                 <span className="txstrks">
                  rule  your 
@@ -401,9 +385,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               responsive={state.responsive_reviewtestim}
               nav
             >
-              <div className="item" data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={1000}>
+              <div className="item">
                 <img
                   src="./images/madhouse/5.jpg"
                   
@@ -419,9 +401,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <div className='rdstrokes'></div>
                 </a>
               </div>
-              <div className="item"  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={2000}>
+              <div className="item">
                 <img
                   src="./images/madhouse/6.jpg"
                  
@@ -439,9 +419,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <div className='rdstrokes'></div>
                 </a>
               </div>
-              <div className="item"  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration={3000}>
+              <div className="item">
                 <img src="./images/madhouse/7.jpg"/>
 
                 <p><b>Tinder</b></p>
@@ -461,16 +439,12 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
           </div>
         </div>
       </section>
-      <section className="ouytbservice revealer" data-aos=""
-        data-aos-duration={1500}>
+      <section className="ouytbservice revealer">
         <div className="container">
           <div className="mainhead">
             <p className="sbhds">Become the hot trend in your campus! </p>
             <h3
-              className="centheads mt-3"
-              data-aos="flip-down"
-              data-aos-duration={3000}
-            >
+              className="centheads mt-3">
               Join YouthBeat and<br />
 earn new skills!{' '}
               <img src="./images/keycta.png" className="keyemojs" />
@@ -508,8 +482,7 @@ earn new skills!{' '}
           </div>
         </div>
       </section>
-      <section className="membersytbs revealer" data-aos=""
-        data-aos-duration={1500}>
+      <section className="membersytbs revealer">
         <div className="container">
           <div className="mainhead">
             <p className="sbhds">Our band members</p>
@@ -521,18 +494,15 @@ earn new skills!{' '}
               responsive={state.responsive_advantfeat}
               nav
             >
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={1000}>
+              <div className="item">
                 <img
                   src="./images/members/1.jpg"/>
               </div>
-              <div className="item" data-aos="zoom-in"
-                  data-aos-duration={2000}>
+              <div className="item">
                 <img
                   src="./images/members/2.jpg"/>
               </div>
-              <div className="item"  data-aos="zoom-in"
-                  data-aos-duration={3000}>
+              <div className="item">
                 <img
                   src="./images/members/3.jpg"/>
               </div>
@@ -543,12 +513,8 @@ earn new skills!{' '}
       <section className="progrmsfrms revealer">
         <div className="container">
           <div className="mainhead text-center">
-            <h3
-              className="centheads"
-              data-aos="fade-left"
-              data-aos-duration={3000}
-            >
-              Join the hood. Be a YB Ambassador
+            <h3>
+              Become a trendsetter today! 
             </h3>
           </div>
           <div className="mnformsty singlefrms">

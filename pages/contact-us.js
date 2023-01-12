@@ -15,9 +15,9 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 const ContactUs = () => {
   useEffect(() => {
-    AOS.init({
+    /*AOS.init({
       duration: 2000,
-    })
+    })*/
   }, [])
 
   const state = {
@@ -210,9 +210,9 @@ const ContactUs = () => {
 
         
 <div>
-  <section className="mapopn">
+{ /* <section className="mapopn">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224246.36813827857!2d77.15449604496055!3d28.574281617598178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8cb290c673%3A0x72690587569280bc!2sSociowash!5e0!3m2!1sen!2sin!4v1671617288617!5m2!1sen!2sin" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-  </section>
+  </section> */}
   <section className="cultur-comps">
     <div className="container">
       <div className="contactsmids">
@@ -227,7 +227,7 @@ const ContactUs = () => {
               Red Brick Centre, Lane 3,<br />
               Westend Marg, Saidulajab,<br />
               Saket - 110030</p>
-            <a href="tel:+1245600034">+124 - 5600034</a>
+            <a href="mailto:hello@youthbeat.in ">hello@youthbeat.in </a>
           </div>
           <div className="col-md-6">
             <h4>MUMBAI </h4>
@@ -235,7 +235,7 @@ const ContactUs = () => {
               1F, 27 MIDC, Marol<br />
               MIDC Industry Estate,<br />
               Andheri East - 400047</p>
-            <a href="tel:+1245800094">+124 - 5800094</a>
+            <a href="mailto:hello@youthbeat.in">hello@youthbeat.in </a>
           </div>
         </div>
       </div>

@@ -15,9 +15,9 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 const Services = () => {
   useEffect(() => {
-    AOS.init({
+   /* AOS.init({
       duration: 2000,
-    })
+    }) */
   }, [])
 
   const state = {
@@ -72,7 +72,7 @@ const Services = () => {
     <div className="container">
       <div className="mainhead whithd">
         <p className="sbhds">What is YouthBeat?</p>
-        <h3 className="centheads" data-aos="flip-down" data-aos-duration={3000}><img src="./images/bombobjs.png" className="sunbom" />We're youthful, full of energy,<br />
+        <h3 className="centheads"><img src="./images/bombobjs.png" className="sunbom" />We're youthful, full of energy,<br />
           and obsessed with making<br />
           companies hotter
         </h3>
@@ -88,9 +88,9 @@ const Services = () => {
         </div>
         <div className="col-md-5">
           <div className="genfrs position-relative">
-            <img src="./images/creobj.png" className="fltsbt" data-aos="flip-right" data-aos-duration={3000} />
-            <img src="./images/genfr.jpg" data-aos="fade-up" data-aos-duration={3000} />
-            <p>Lorem <br />Ipsum</p>
+            <img src="./images/creobj.png" className="fltsbt" />
+            <img src="./images/genfr.jpg" />
+            <p>Vibe  <br />check!</p>
           </div>
         </div>
       </div>
@@ -116,12 +116,12 @@ const Services = () => {
       <div className="pygrphs">
         <div className="row">
           <div className="col-md-6 text-center">
-            <img src="./images/graphpyes.png" data-aos="fade-right" data-aos-duration={3000} />
-            <img src="./images/targargs.png" className="targars" data-aos="fade-left" data-aos-duration={3000} />
+            <img src="./images/graphpyes.png"/>
+            <img src="./images/targargs.png" className="targars"/>
           </div>
           <div className="col-md-6 align-self-center">
             <div className="mainhead text-left">
-              <h3 className="centheads" data-aos="fade-left" data-aos-duration={3000}>Traffic <br />generated<br />
+              <h3 className="centheads">Traffic <br />generated<br />
                 by millennials<br />
                 and Gen-Z
               </h3>
