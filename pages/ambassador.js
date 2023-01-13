@@ -739,13 +739,19 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                    <input
-                      type="text"
+                  
+<select
                       className="form-control"
-                      placeholder="Gender"
                       onChange={(e) => setGender(e.target.value)}
                       value={gender}
-                    />
+                    >
+                      <option value="">
+--Gender--
+                      </option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </div>
 
                   <div className="col-md-12">
@@ -804,12 +810,7 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                    <button
-                      onClick={(e) => handleBack(e, 3, instaId)}
-                      className="ytthemects"
-                    >
-                      back
-                    </button>
+                  
                     <button
                       onClick={(e) => handleNext(e, 3, instaId)}
                       className="ytthemects"
@@ -836,8 +837,12 @@ const Ambassador = () => {
                       <option value="">
                         How many Instagram followers do you currently have?
                       </option>
-                      <option value="10-15k">10-15k</option>
+                      <option value="0-1k">0-1k</option>
+                      <option value="1-5k">1-5k</option>
+                      <option value="5-10k">5-10k</option>
+                      <option value="10-20k">10-20k</option>
                       <option value="20-100k">20-100k</option>
+                      <option value="100k+">100k+</option>
                     </select>
                   </div>
 

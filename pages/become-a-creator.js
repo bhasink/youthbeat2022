@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { useState } from 'react'
+import axios from 'axios'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import AOS from 'aos'
@@ -13,12 +14,210 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 })
 
+import { notification } from 'antd'
+import { useRouter } from "next/router";
+
+
 const BecomeACreator = () => {
-  useEffect(() => {
-   /* AOS.init({
-      duration: 2000,
-    }) */
-  }, [])
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [mobile, setMobile] = useState('')
+  const [age, setAge] = useState('')
+  const [city, setCity] = useState('')
+  const [gender, setGender] = useState('')
+  const [sn, setSn] = useState('')
+  const [pn, setPn] = useState('')
+  const [instaId, setInstaId] = useState('')
+  const [instaFollower, setInstaFollower] = useState('')
+  const [yt, setYt] = useState('')
+  const [snap, setSnap] = useState('')
+  const [fb, setFb] = useState('')
+  const [tw, setTw] = useState('')
+  const [ot, setOt] = useState('')
+  const [currentValue, setCurrentValue] = useState(0)
+  const [lastSaveId, setLastSaveId] = useState(null)  
+  const [loading, setLoading] = useState(false)
+
+  const router = useRouter();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    if (name == '') {
+      openNotificationWithIcon('error', 'Please enter the name!')
+      return false
+    }
+
+    if (email == '') {
+      openNotificationWithIcon('error', 'Please enter the email!')
+      return false
+    }
+
+    if (IsEmail(email) == false) {
+      openNotificationWithIcon('error', 'Please enter the correct email!')
+      return false
+    }
+
+    if (mobile == '') {
+      openNotificationWithIcon('error', 'Please enter the mobile!')
+      return false
+    }
+
+    if (!mobile.match('[0-9]{10}')) {
+      openNotificationWithIcon('error', 'Please enter the valid mobile number!')
+      return false
+    }
+
+    if (age == '') {
+      openNotificationWithIcon('error', 'Please enter the age!')
+      return false
+    }
+
+    var age_v = parseInt(age)
+
+    if (isNaN(age_v)) {
+      openNotificationWithIcon('error', 'Please enter the valid age!')
+      return false
+    }
+
+    if (gender == '') {
+      openNotificationWithIcon('error', 'Please enter the gender!')
+      return false
+    }
+
+    if (city == '') {
+      openNotificationWithIcon('error', 'Please enter the city!')
+      return false
+    }
+
+
+    setLoading(true)
+
+    try {
+      const { data } = await axios.post(
+        `${process.env.NEXT_PUBLIC_API}/creator-form`,
+        {
+          name,
+          email,
+          mobile,
+          age,
+          gender,
+          city
+        },
+      )
+
+      setLastSaveId(data.last_save_id)
+
+      setLoading(false)
+
+      const back_val = currentValue - 1
+
+      $('#s2').css('fadeIn', 'slow')
+      $('#s2').css('display', 'block')
+      $('#s' + back_val).css('display', 'none')
+
+    } catch (err) {
+      setLoading(false)
+    }
+  }
+
+  const IsEmail = (email) => {
+    let regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+    if (!regex.test(email)) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  const openNotificationWithIcon = (type, msg) => {
+    notification[type]({
+      message: 'Error!',
+      description: msg,
+      duration: 5,
+      placement: 'bottomRight',
+      bottom: 65,
+    })
+  }
+
+  const handleBack = (e, page, req_field) => {
+    e.preventDefault()
+
+    const back_val = page - 1
+
+    $('#s' + page).css('fadeIn', 'slow')
+    $('#s' + page).css('display', 'none')
+    $('#s' + back_val).css('display', 'block')
+  }
+
+  const handleNext = async (e, page, req_field1, req_field2) => {
+    e.preventDefault()
+
+
+    const next_val = page + 1
+
+    if (req_field1 == '') {
+      openNotificationWithIcon('error', 'Please enter the field!')
+      return false
+    }
+
+    if (req_field2 != undefined && req_field2 == '') {
+      openNotificationWithIcon('error', 'Please enter the field!')
+      return false
+    }
+
+    if(page != 6){
+    $('#s' + page).css('fadeIn', 'slow')
+    $('#s' + page).css('display', 'none')
+    $('#s' + next_val).css('display', 'block')
+    }
+
+    if(page == 6){
+
+      setLoading(true)
+
+      try {
+        
+
+        const { data } = await axios.post(
+          `${process.env.NEXT_PUBLIC_API}/creator-form-update`,
+          {
+            last_update_id: lastSaveId,
+            instaId,
+            instaFollower,
+            sn,
+            pn,
+            yt,
+            snap,
+            tw,
+            ot,
+            fb
+          },
+        )
+
+        setLoading(false)
+
+        notification['success']({
+          message: 'success!',
+          description: 'Form has been submitted successfully!',
+          duration: 4,
+          placement: 'bottomRight',
+          bottom: 65,
+        })
+
+        router.push('/thanks')
+
+      } catch (err) {
+        setLoading(false)
+      }
+
+    }
+
+    
+  }
+
+
 
   const state = {
     responsive_featuredslide: {
@@ -333,142 +532,293 @@ const BecomeACreator = () => {
         <div className="container">
           <div className="mainhead">
             <h3
-              className="centheads"
-              data-aos="fade-left"
-              data-aos-duration={3000}
-            >
+              className="centheads">
               Join the hood!
             </h3>
           </div>
           <div className="mnformsty singlefrms">
-          <div className="stepform" style={{display:'block'}}>
-            <form>
+          <div id="s1" className="stepform" style={{ display: 'block' }}>
+            <form onSubmit={handleSubmit}>         
               <div className="form-group  row">
 			  
-
               <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Name"
-                  />
-                </div>
+                    <input
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      type="text"
+                      className="form-control"
+                      placeholder="Name"
+                      name="name"
+                      id="name"
+                    />
+                  </div>
 
-			        <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Email"
-                  />
-                </div>
-				
-				        <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Contact Number"
-                  />
-                </div>
-				
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Age"
-                  />
-                </div>
-				
-				        <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Gender"
-                  />
-                </div>
-                
-                <div className="col-md-6">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="City"
-                  />
-                </div>
+                  <div className="col-md-6">
+                    <input
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      id="email"
+                      type="text"
+                      className="form-control"
+                      placeholder="Email"
+                      name="email"
+                    />
+                  </div>
 
-                
-                
-				
-                <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
+                  <div className="col-md-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Contact Number"
+                      onChange={(e) => setMobile(e.target.value)}
+                      value={mobile}
+                    />
+                  </div>
+
+                  <div className="col-md-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Age"
+                      onChange={(e) => setAge(e.target.value)}
+                      value={age}
+                    />
+                  </div>
+
+                  <div className="col-md-6">
+                  <select
+                      className="form-control"
+                      onChange={(e) => setGender(e.target.value)}
+                      value={gender}
+                    >
+                      <option value="">
+--Gender--
+                      </option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+
+                  <div className="col-md-6">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="City"
+                      onChange={(e) => setCity(e.target.value)}
+                      value={city}
+                    />
+                  </div>
+
+
+                  <div className="col-md-12">
+                    <button
+                      id={'2'}
+                      onClick={(e) => setCurrentValue(2)}
+                      className="ytthemects"
+                    >
+                      Submit
+                    </button>
+                  </div>
+            
               </div>
             </form>
           </div>
 
-          <div className="stepform">
+          <div id="s2" className="stepform" style={{ display: 'none' }}>
+              <form>
+                <div className="form-group  row">
+                  <div className="col-md-12">
+                    <label>
+                      {/* <b>!!</b> */}
+                      <br />
+                    </label>
+
+                    <p style={{color:"#ffffff"}}>
+                    Thank you for showing your interest, can you give us the scoop on yourself so we can connect you with the hottest brands?
+                    </p>
+                  </div>
+
+                  <div className="col-md-12">
+                    <button
+                      onClick={(e) => handleNext(e, 2)}
+                      className="ytthemects"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div id="s3" className="stepform" style={{ display: 'none' }}>
           <form>
               <div className="form-group  row">
-			  
-
-              
 
                 <div className="col-md-6">  
-                  <select className="form-control">
-                        <option>
+                  <select 
+                  className="form-control"
+                  onChange={(e) => setPn(e.target.value)}
+                  value={pn}>
+                        <option value="">
                           Primary Niche/Category
                         </option>
                         
-                        <option>
-                          Lorem Ipsum 2
+                        <option value="Fashion">
+                          Fashion
+                        </option>
+                        <option value="Lifestyle">
+                        Lifestyle
+                        </option>
+                        <option value="Beauty">
+                        Beauty
+                        </option>
+                        <option value="Travel">
+                        Travel
+                        </option>
+                        <option value="Food">
+                        Food
+                        </option>
+                        <option value="Fitness">
+                        Fitness
+                        </option>
+                        <option value="Technology">
+                        Technology
+                        </option>
+                        <option value="Finance">
+                        Finance
+                        </option>
+                        <option value="Podcasters">
+                        Podcasters
+                        </option>
+                        <option value="Comic content creators">
+                        Comic content creators
+                        </option>
+                        <option value="Dancers">
+                        Dancers
+                        </option>
+                        <option value="Singers">
+                        Singers
+                        </option>
+                        <option value="Artists">
+                        Artists
+                        </option>
+                        <option value="Illustrators">
+                        Illustrators
+                        </option>
+                        <option value="Parent bloggers">
+                        Parent bloggers
+                        </option>
+                        <option value="Interior Designers & Architects">
+                        Interior Designers & Architects
+                        </option>
+                        <option value="Community pages">
+                        Community pages
+                        </option>
+                        <option value="Sports">
+                        Sports
+                        </option>
+                        <option value="Photographers">
+                        Photographers
+                        </option>
+                        <option value="Gaming">
+                        Gaming
                         </option>
                     </select>
                 </div>
 
 
                 <div className="col-md-6">
-                    <select  className="form-control">
-                      <option>
+                    <select  className="form-control"
+                      onChange={(e) => setSn(e.target.value)}
+                      value={sn}>
+                      <option value="">
                         Secondary Niche/Category
                       </option>
                       
-                      <option>
-                        Lorem Ipsum 2
-                      </option>
+                      <option value="Fashion">
+                          Fashion
+                        </option>
+                        <option value="Lifestyle">
+                        Lifestyle
+                        </option>
+                        <option value="Beauty">
+                        Beauty
+                        </option>
+                        <option value="Travel">
+                        Travel
+                        </option>
+                        <option value="Food">
+                        Food
+                        </option>
+                        <option value="Fitness">
+                        Fitness
+                        </option>
+                        <option value="Technology">
+                        Technology
+                        </option>
+                        <option value="Finance">
+                        Finance
+                        </option>
+                        <option value="Podcasters">
+                        Podcasters
+                        </option>
+                        <option value="Comic content creators">
+                        Comic content creators
+                        </option>
+                        <option value="Dancers">
+                        Dancers
+                        </option>
+                        <option value="Singers">
+                        Singers
+                        </option>
+                        <option value="Artists">
+                        Artists
+                        </option>
+                        <option value="Illustrators">
+                        Illustrators
+                        </option>
+                        <option value="Parent bloggers">
+                        Parent bloggers
+                        </option>
+                        <option value="Interior Designers & Architects">
+                        Interior Designers & Architects
+                        </option>
+                        <option value="Community pages">
+                        Community pages
+                        </option>
+                        <option value="Sports">
+                        Sports
+                        </option>
+                        <option value="Photographers">
+                        Photographers
+                        </option>
+                        <option value="Gaming">
+                        Gaming
+                        </option>
                     </select>
                 </div>
 				
 				
                 <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
+                    <button
+                      onClick={(e) => handleBack(e, 3, pn,sn)}
+                      className="ytthemects"
+                    >
+                      back
+                    </button>
+                    <button
+                      onClick={(e) => handleNext(e, 3, pn,sn)}
+                      className="ytthemects"
+                    >
+                      Next
+                    </button>
+                  </div>
               </div>
             </form>
           </div>
 
-          <div className="stepform">
-          <form>
-              <div className="form-group  row">
-			  
-              <div className="col-md-12">
-                <label><b>Instagram followers</b></label>
-              </div>
-              
-				
-          <div className="col-md-12">
-            <input type="text"className="form-control" placeholder="Followers on Instagram"/>
-          </div>
-				
-				
-				
-				
-                <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-
-          <div className="stepform">
+          <div id="s4" className="stepform" style={{ display: 'none' }}>
           <form>
               <div className="form-group  row">
 			  
@@ -482,6 +832,8 @@ const BecomeACreator = () => {
                     type="text"
                     className="form-control"
                     placeholder="Instagram URL"
+                    onChange={(e) => setInstaId(e.target.value)}
+                    value={instaId}
                   />
                 </div>
 				
@@ -489,13 +841,75 @@ const BecomeACreator = () => {
                
 				
                 <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
+                    <button
+                      onClick={(e) => handleBack(e, 4, instaId)}
+                      className="ytthemects"
+                    >
+                      back
+                    </button>
+                    <button
+                      onClick={(e) => handleNext(e, 4, instaId)}
+                      className="ytthemects"
+                    >
+                      Next
+                    </button>
+                  </div>
               </div>
             </form>
           </div>
 
-          <div className="stepform">
+          <div id="s5" className="stepform" style={{ display: 'none' }}>
+          <form>
+              <div className="form-group  row">
+			  
+              <div className="col-md-12">
+                <label><b>Instagram followers</b></label>
+              </div>
+              
+				
+          <div className="col-md-12">
+                  <select
+                      className="form-control"
+                      onChange={(e) => setInstaFollower(e.target.value)}
+                      value={instaFollower}
+                    >
+                      <option value="">
+                        How many Instagram followers do you currently have?
+                      </option>
+                      <option value="0-1k">0-1k</option>
+                      <option value="1-5k">1-5k</option>
+                      <option value="5-10k">5-10k</option>
+                      <option value="10-20k">10-20k</option>
+                      <option value="20-100k">20-100k</option>
+                      <option value="100k+">100k+</option>
+                    </select>
+              </div>
+				
+				
+				
+				
+              <div className="col-md-12">
+                    <button
+                      onClick={(e) => handleBack(e, 5, instaFollower)}
+                      className="ytthemects"
+                    >
+                      back
+                    </button>
+                    <button
+                      onClick={(e) => handleNext(e, 5, instaFollower)}
+                      className="ytthemects"
+                    >
+                      Next
+                    </button>
+                  </div>
+              </div>
+            </form>
+          </div>
+
+
+        
+
+          <div id="s6" className="stepform" style={{ display: 'none' }}>
           <form>
               <div className="form-group  row">
 			  
@@ -509,6 +923,8 @@ const BecomeACreator = () => {
                     type="text"
                     className="form-control"
                     placeholder="Youtube"
+                    onChange={(e) => setYt(e.target.value)}
+                    value={yt}
                   />
                 </div>
 
@@ -517,6 +933,8 @@ const BecomeACreator = () => {
                     type="text"
                     className="form-control"
                     placeholder="Snapchat"
+                    onChange={(e) => setSnap(e.target.value)}
+                    value={snap}
                   />
                 </div>
 
@@ -525,6 +943,8 @@ const BecomeACreator = () => {
                     type="text"
                     className="form-control"
                     placeholder="Facebook"
+                    onChange={(e) => setFb(e.target.value)}
+                    value={fb}
                   />
                 </div>
 
@@ -534,6 +954,8 @@ const BecomeACreator = () => {
                     type="text"
                     className="form-control"
                     placeholder="Twitter"
+                    onChange={(e) => setTw(e.target.value)}
+                    value={tw}
                   />
                 </div>
 
@@ -542,13 +964,29 @@ const BecomeACreator = () => {
                   <input
                     type="text"
                     className="form-control"
-                    placeholder="Josh/Moj"
+                    placeholder="Other"
+                    onChange={(e) => setOt(e.target.value)}
+                    value={ot}
                   />
                 </div>
 
+
+                
+				
                 <div className="col-md-12">
-                  <button className="ytthemects">Submit</button>
-                </div>
+                    <button
+                      onClick={(e) => handleBack(e, 6, instaFollower)}
+                      className="ytthemects"
+                    >
+                      back
+                    </button>
+                    <button
+                      onClick={(e) => handleNext(e, 6, instaFollower)}
+                      className="ytthemects"
+                    >
+                      Submit
+                    </button>
+                  </div>
               </div>
             </form>
           </div>
@@ -559,6 +997,7 @@ const BecomeACreator = () => {
 
         </div>
       </section>
+
 </div>
 
 
