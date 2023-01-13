@@ -313,7 +313,7 @@ const BecomeAAmbassador = () => {
       <Header />
 
  <div>
-  <section className="connectcrts">
+  <section className="connectcrts grymd">
     <div className="container">
       <div className="slidechngrs">
          <OwlCarousel
@@ -323,20 +323,18 @@ const BecomeAAmbassador = () => {
               nav
             >
           <div className="item">
-            <img src="./images/creators/1.png" />
+            <img src="./images/creators/ab1.jpg" />
           </div>
           <div className="item">
-            <img src="./images/creators/2.png" />
+            <img src="./images/creators/ab2.jpg" />
           </div>
           <div className="item">
-            <img src="./images/creators/3.png" />
+            <img src="./images/creators/ab3.jpg" />
           </div>
           <div className="item">
-            <img src="./images/creators/1.png" />
+            <img src="./images/creators/ab4.jpg" />
           </div>
-          <div className="item">
-            <img src="./images/creators/2.png" />
-          </div>
+          
         </OwlCarousel>
       </div>
       <div className="mainhead whithd text-left">
@@ -376,7 +374,7 @@ const BecomeAAmbassador = () => {
     </div>
   </section>
   <section className="innershowsl revealer whitetxt" data-aos data-aos-duration={1500}>
-    <img src="./images/showbgaback.jpg" className="desktopayout" />
+    <img src="./images/showbgaback2.jpg" className="desktopayout" />
     <div className="container">
       <div className="row">
         <div className="col-md-7 align-self-center">
@@ -395,11 +393,35 @@ const BecomeAAmbassador = () => {
               responsive={state.responsive_mobilessslide} >
 
               <div className="item">
-                <img src="./images/showcasein2.png" className="img-fluid" />
+                <img src="./images/mobshowcase/1.jpg" className="img-fluid" />
               </div>
 
               <div className="item">
-                <img src="./images/showcasein.png" className="img-fluid" />
+                <img src="./images/mobshowcase/3.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/2.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/4.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/5.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/7.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/8.jpg" className="img-fluid" />
+              </div>
+
+              <div className="item">
+                <img src="./images/mobshowcase/9.jpg" className="img-fluid" />
               </div>
               
             </OwlCarousel>
@@ -418,55 +440,55 @@ const BecomeAAmbassador = () => {
               responsive={state.responsive_testnmslide} >
           <div className="item">
             <div className="txtpp">
-              <img src="./images/testmon/1.jpg" />
+              <img src="./images/testmon/ab1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
                 <p>As an ambassador of YouthBeat not only did I enjoy my college but learned a lot of things!</p>
-                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+                <p className="usertstm">Student Ambassador </p>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="txtpp">
-              <img src="./images/testmon/2.jpg" />
+              <img src="./images/testmon/ab2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
                 <p>I met a lot of cool people in my community, and also worked with amazing brands while picking up new skills and interests.</p>
-                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+                <p className="usertstm"> Student Ambassador </p>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="txtpp">
-              <img src="./images/testmon/1.jpg" />
+              <img src="./images/testmon/ab3.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
                 <p>I wish to be a member of YouthBeat forever. </p>
-                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+                <p className="usertstm">Student Ambassador </p>
               </div>
             </div>
           </div>
           <div className="item">
             <div className="txtpp">
-              <img src="./images/testmon/2.jpg" />
+              <img src="./images/testmon/ab4.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
                 <p>YouthBeat has given me an opportunity to not just learn but find my true passion for marketing. </p>
-                <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
+                <p className="usertstm">Student Ambassador </p>
               </div>
             </div>
           </div>
 
-          <div className="item">
+         {/* <div className="item">
             <div className="txtpp">
-              <img src="./images/testmon/1.jpg" />
+              <img src="./images/testmon/ab1.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
                 <p>I will always be thankful for the campaigns I worked on with them and how they helped me grow and find my calling. </p>
                 <p className="usertstm">- Lorem Ipsum, Student Ambassador </p>
               </div>
             </div>
-          </div>
+  </div> */}
           </OwlCarousel>
        
       </div>
