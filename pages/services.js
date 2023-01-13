@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { useState } from 'react'
+import axios from 'axios'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import AOS from 'aos'
@@ -13,12 +14,109 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 })
 
+
+import { notification } from 'antd'
+import { useRouter } from 'next/router'
+
 const Services = () => {
-  useEffect(() => {
-   /* AOS.init({
-      duration: 2000,
-    }) */
-  }, [])
+ 
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [mobile, setMobile] = useState('')
+  const [message, setMessage] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [designation, setDesignation] = useState('')
+  const [serviceRequired, setServiceRequired] = useState('')
+
+  
+  const router = useRouter()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    if (name == '') {
+      openNotificationWithIcon('error', 'Please enter the name!')
+      return false
+    }
+
+    if (email == '') {
+      openNotificationWithIcon('error', 'Please enter the email!')
+      return false
+    }
+
+    if (IsEmail(email) == false) {
+      openNotificationWithIcon('error', 'Please enter the correct email!')
+      return false
+    }
+
+    if (mobile == '') {
+      openNotificationWithIcon('error', 'Please enter the mobile!')
+      return false
+    }
+
+    if (!mobile.match('[0-9]{10}')) {
+      openNotificationWithIcon('error', 'Please enter the valid mobile number!')
+      return false
+    }
+
+    if (designation == '') {
+      openNotificationWithIcon('error', 'Please enter the designation!')
+      return false
+    }
+
+    if (serviceRequired == '') {
+      openNotificationWithIcon('error', 'Please select the service!')
+      return false
+    }
+
+    setLoading(true)
+
+    try {
+      const { data } = await axios.post(
+        `${process.env.NEXT_PUBLIC_API}/service`,
+        {
+          name,
+          email,
+          mobile,
+          designation,
+          service_required: serviceRequired
+        },
+      )
+
+      setLoading(false)
+
+      notification['success']({
+        message: 'success!',
+        description: 'Form has been submitted successfully!',
+        duration: 4,
+        placement: 'bottomRight',
+        bottom: 65,
+      })
+
+      router.push('/thanks')
+    } catch (err) {
+      setLoading(false)
+    }
+  }
+
+  const IsEmail = (email) => {
+    let regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+    if (!regex.test(email)) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  const openNotificationWithIcon = (type, msg) => {
+    notification[type]({
+      message: 'Error!',
+      description: msg,
+      duration: 5,
+      placement: 'bottomRight',
+      bottom: 65,
+    })
+  }
 
   const state = {
     responsive_testimblack: {
@@ -208,43 +306,73 @@ const Services = () => {
         <h3 className="centheads">Client Enquiry Form</h3>
       </div>
       <div className="mnformsty">
-        <form>
+      <form onSubmit={handleSubmit}>
+
           <div className="form-group  row">
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Name" />
-            </div>
+            <input
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        type="text"
+                        className="form-control"
+                        placeholder="Name"
+                        name="name"
+                        id="name"
+                      />
+                                  </div>
 
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Company Email" />
-            </div>
+            <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        id="email"
+                        type="text"
+                        className="form-control"
+                        placeholder="Company Email"
+                        name="email"
+                      />            </div>
 
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Mobile Number" />
-            </div>
+            <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Contact Number"
+                        onChange={(e) => setMobile(e.target.value)}
+                        value={mobile}
+                      />
+                                  </div>
 
             <div className="col-md-6">
-              <input type="text" className="form-control" placeholder="Designation" />
-            </div>
+            <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Designation"
+                        onChange={(e) => setDesignation(e.target.value)}
+                        value={designation}
+                      />
+                                  </div>
             
             
             <div className="col-md-6">
             
               <select
+                 onChange={(e) => setServiceRequired(e.target.value)}
+                 value={serviceRequired}
                     type="text"
                     className="form-control">
-					<option>
+					<option value="">
           Services Required
 					</option>
 					
-					<option>
+					<option value="Ambassador Connect">
           Ambassador Connect
 					</option>
 
-          <option>
+          <option value="Creator Connect">
           Creator Connect
 					</option>
 
-          <option>
+          <option value="Both">
           Both
 					</option>
 				  </select>
