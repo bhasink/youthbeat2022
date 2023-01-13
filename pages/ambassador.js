@@ -475,21 +475,7 @@ const Ambassador = () => {
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              <div className="item">
-                <div className="hhcase-txt">
-                  <img src="./images/madhouse/ab1.jpg" />
-                  <div className="cse-txts">
-                    <p>
-                      Resonate the tunes of famous brands and work with them!
-                    </p>
-                  </div>
-                </div>
-                <h4>
-                  Participate
-                  <br />
-                  &amp; Amplify!
-                </h4>
-              </div>
+              
             </OwlCarousel>
           </div>
         </div>

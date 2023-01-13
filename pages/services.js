@@ -68,7 +68,7 @@ const Services = () => {
 
      <div>
   <section className="innrbanner">
-    <img src="./images/ourservices.jpg" className="desktopayout" />
+    <img src="./images/ourservices2.jpg" className="desktopayout" />
     <div className="container">
       <div className="mainhead whithd">
         <p className="sbhds">What is YouthBeat?</p>
@@ -151,7 +151,7 @@ const Services = () => {
             </h4>
           </div>
           <div className="col-md-6 align-self-center position-relative">
-            <img src="./images/service.jpg" className="img-fluid" />
+            <img src="./images/service2.jpg" className="img-fluid" />
             <img src="./images/genx.png" className="gnround" />
           </div>
         </div>

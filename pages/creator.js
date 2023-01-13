@@ -381,7 +381,7 @@ const Creator = () => {
         autoplaySpeed: '6000',
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
-        dots: true,
+        dots: false,
         loop: true,
       },
     },
@@ -435,7 +435,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/1.jpg"/>
+                    src="./images/madhouse/cb1.jpg"/>
                   <div className="cse-txts">
                     <p>
                     Create content and earn exclusive rewards such as vouchers, collaborations, or even a reimbursement! {' '}
@@ -451,7 +451,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/2.jpg"/>
+                    src="./images/madhouse/cb2.jpg"/>
                   <div className="cse-txts">
                     <p>
                     Push the right buttons with your audience and let your results speak for themselves.
@@ -466,7 +466,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/3.jpg"/>
+                    src="./images/madhouse/cb3.jpg"/>
                   <div className="cse-txts">
                     <p>
                     Partner with various creators and brands to make your content reach new audiences.
@@ -481,7 +481,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <div className="hhcase-txt">
                   <img
-                    src="./images/madhouse/4.jpg"/>
+                    src="./images/madhouse/cb4.jpg"/>
                   <div className="cse-txts">
                     <p>
                     Get invited to exclusive events and impress new people to fall in love with the content you create. 
@@ -538,7 +538,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
       </section>
       <section className="showcaseytbs revealer" data-aos=""
         data-aos-duration={1500}>
-        <img src="./images/backoutservice.jpg" className="desktopayout" />
+        <img src="./images/backoutservice2.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
             <div className="col-md-5">
@@ -680,15 +680,25 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/members/1.jpg"/>
+                  src="./images/members/crt1.png"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/members/2.jpg"/>
+                  src="./images/members/crt2.png"/>
               </div>
               <div className="item">
                 <img
-                  src="./images/members/3.jpg"/>
+                  src="./images/members/crt3.png"/>
+              </div>
+
+              <div className="item">
+                <img
+                  src="./images/members/crt4.png"/>
+              </div>
+
+              <div className="item">
+                <img
+                  src="./images/members/crt5.png"/>
               </div>
             </OwlCarousel>
           </div>

@@ -88,14 +88,31 @@ const JoinUs = () => {
               
             >
               <div className="item">
-                <img src="./images/join1.jpg" />
+                <img src="./images/cmculture/1.jpg" />
               </div>
               <div className="item">
-                <img src="./images/join1.jpg" />
+                <img src="./images/cmculture/2.jpg" />
               </div>
               <div className="item">
-                <img src="./images/join1.jpg" />
+                <img src="./images/cmculture/3.jpg" />
               </div>
+
+              <div className="item">
+                <img src="./images/cmculture/4.jpg" />
+              </div>
+
+              <div className="item">
+                <img src="./images/cmculture/5.jpg" />
+              </div>
+
+              <div className="item">
+                <img src="./images/cmculture/6.jpg" />
+              </div>
+
+              <div className="item">
+                <img src="./images/cmculture/7.jpg" />
+              </div>
+
             </OwlCarousel>
           </div>
         </div>
@@ -118,7 +135,7 @@ const JoinUs = () => {
               <p>Flaunt your social game in your
                 hood, work with creators that are
                 extremely popular! </p>
-              <img src="./images/oppserv/1.jpg" />
+              <img src="./images/oppserv/11.jpg" />
             </div>
           </div>
           <div className="col-md-6 col-6">
@@ -131,7 +148,7 @@ const JoinUs = () => {
                 and interesting campaigns and
                 learn new skills! 
               </p>
-              <img src="./images/oppserv/2.jpg" />
+              <img src="./images/oppserv/12.jpg" />
             </div>
           </div>
           <div className="col-md-6 col-6">
@@ -142,7 +159,7 @@ const JoinUs = () => {
               <p>Meet unique and like-minded
                 individuals and create some
                 of the greatest content ever!</p>
-              <img src="./images/oppserv/3.jpg" />
+              <img src="./images/oppserv/13.jpg" />
             </div>
           </div>
           <div className="col-md-6 col-6">
@@ -153,7 +170,7 @@ const JoinUs = () => {
               <p>A special bonuses to assist you
                 in constructing resumes,
                 YB is the next step in your game!</p>
-              <img src="./images/oppserv/4.jpg" />
+              <img src="./images/oppserv/14.jpg" />
             </div>
           </div>
         </div>

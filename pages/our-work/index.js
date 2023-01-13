@@ -109,7 +109,7 @@ const OurWork = () => {
       `}</style>
 
       <section className="howwedeliv-ytb position-relative">
-        <img src="./images/ourwbbg.jpg" className="desktopayout" />
+        <img src="./images/ourwbbg2.jpg" className="desktopayout" />
         <div className="container">
           <div className="mainhead whithd text-left">
             <h3

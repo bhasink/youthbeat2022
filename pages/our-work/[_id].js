@@ -147,8 +147,8 @@ const OurWorkDetails = () => {
           </div>
         </div>
       </section>
-      <section className="key-ybvisuals">
-        <div className="container">
+      <section className="key-ybvisuals p-4">
+        {/*<div className="container">
           <div className="row">
             <div className="col-md-6 align-self-center">
               <h3>
@@ -190,7 +190,7 @@ const OurWorkDetails = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
       </section>
       <section className="showcs-ytbs">
         <div className="row">
