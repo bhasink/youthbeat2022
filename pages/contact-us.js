@@ -1,4 +1,5 @@
-import { useEffect } from 'react'
+import { useState } from 'react'
+import axios from 'axios'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import AOS from 'aos'
@@ -13,265 +14,209 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 })
 
+import { notification } from 'antd'
+import { useRouter } from 'next/router'
+
 const ContactUs = () => {
-  useEffect(() => {
-    /*AOS.init({
-      duration: 2000,
-    })*/
-  }, [])
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [mobile, setMobile] = useState('')
+  const [message, setMessage] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const state = {
-    responsive_featuredslide: {
-      0: {
-        items: 1,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
-      300: {
-        items: 2,
-        nav: false,
-        center: true,
-        dots: false,
-        margin: 10,
-        loop: true,
-      },
+  const router = useRouter()
 
-      766: {
-        items: 4,
-        nav: true,
-        center: true,
-        dots: false,
-        loop: true,
-      },
+  const handleSubmit = async (e) => {
+    e.preventDefault()
 
-      1200: {
-        items: 4,
-        nav: true,
-        center: false,
-        autoplay: true,
-        margin: 20,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        dots: false,
-        loop: true,
-      },
-    },
+    if (name == '') {
+      openNotificationWithIcon('error', 'Please enter the name!')
+      return false
+    }
 
-    responsive_reviewtestim: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        center: false,
-        autoplayHoverPause: true,
-        loop: true,
-      },
-      300: {
-        items: 3,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
-        dots: false,
-        loop: true,
-      },
+    if (email == '') {
+      openNotificationWithIcon('error', 'Please enter the email!')
+      return false
+    }
 
-      766: {
-        items: 2,
-        nav: true,
-        margin: 0,
-        dots: false,
-        loop: true,
-      },
+    if (IsEmail(email) == false) {
+      openNotificationWithIcon('error', 'Please enter the correct email!')
+      return false
+    }
 
-      1200: {
-        items: 4,
-        margin: 20,
-        nav: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        autoplayHoverPause: true,
-        center: false,
-        dots: false,
-      },
-    },
+    if (mobile == '') {
+      openNotificationWithIcon('error', 'Please enter the mobile!')
+      return false
+    }
 
-    responsive_advantfeat: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: false,
-        dots: false,
-        center: true,
-        loop: true,
-      },
+    if (!mobile.match('[0-9]{10}')) {
+      openNotificationWithIcon('error', 'Please enter the valid mobile number!')
+      return false
+    }
 
-      766: {
-        items: 2,
-        nav: true,
-        dots: false,
-        loop: true,
-      },
+    if (message == '') {
+      openNotificationWithIcon('error', 'Please enter the message!')
+      return false
+    }
 
-      1200: {
-        items: 3,
-        margin: 20,
-        nav: true,
-        center: true,
-        dots: true,
-        loop: true,
-      },
-      300: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-      },
+    setLoading(true)
 
-      766: {
-        items: 1,
-        nav: false,
-        dots: false,
-        loop: false,
-      },
+    try {
+      const { data } = await axios.post(
+        `${process.env.NEXT_PUBLIC_API}/contact`,
+        {
+          name,
+          email,
+          mobile,
+          message,
+        },
+      )
 
-      1200: {
-        items: 1,
-        nav: true,
-        dots: true,
-        loop: false,
-        center: true,
-      },
-    },
+      setLoading(false)
 
-    
-    responsive_brandmembs: {
-      0: {
-        items: 1,
-        nav: false,
-        dots: true,
-        animateOut: 1,
-        animateIn: 0,
-        loop: true,
-        stagepadding:40,
-      },
-      300: {
-        loop: true,
-        autoplay: true,
-        items: 1,
-        nav: false,
-        animate: true,
-        margin:30,
-        center:true,
-        stagepadding:40,
-        autoplaySpeed: '6000',
-        autoplayHoverPause: true,
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-      },
+      notification['success']({
+        message: 'success!',
+        description: 'Form has been submitted successfully!',
+        duration: 4,
+        placement: 'bottomRight',
+        bottom: 65,
+      })
 
-      766: {
-        items: 4,
-        nav: false,
-        dots: false,
-        loop: true,
-      },
+      router.push('/thanks')
+    } catch (err) {
+      setLoading(false)
+    }
+  }
 
-      1200: {
-        items: 3,
-        nav: false,
-        margin:30,
-        autoplay: true,
-        animate: true,
-        autoplaySpeed: '6000',
-        animateOut: 'slideOutUp',
-        animateIn: 'slideInUp',
-        center:true,
-        dots: true,
-        loop: true,
-      },
-    },
+  const IsEmail = (email) => {
+    let regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+    if (!regex.test(email)) {
+      return false
+    } else {
+      return true
+    }
+  }
 
-    
+  const openNotificationWithIcon = (type, msg) => {
+    notification[type]({
+      message: 'Error!',
+      description: msg,
+      duration: 5,
+      placement: 'bottomRight',
+      bottom: 65,
+    })
   }
 
   return (
     <div>
       <Header />
 
-        
-<div>
-{ /* <section className="mapopn">
+      <div>
+        {/* <section className="mapopn">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224246.36813827857!2d77.15449604496055!3d28.574281617598178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8cb290c673%3A0x72690587569280bc!2sSociowash!5e0!3m2!1sen!2sin!4v1671617288617!5m2!1sen!2sin" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
   </section> */}
-  <section className="cultur-comps">
-    <div className="container">
-      <div className="contactsmids">
-        <div className="mainhead text-left">
-          <h3 className="centheads aos-init aos-animate"><img src="./images/telemojis.png" className="flapswing conemojis" />Contact us<br />
-            anytime.</h3>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
-            <h4>NEW DELHI </h4>
-            <p>Plot No. 258,<br />
-              Red Brick Centre, Lane 3,<br />
-              Westend Marg, Saidulajab,<br />
-              Saket - 110030</p>
-            <a href="mailto:hello@youthbeat.in ">hello@youthbeat.in </a>
-          </div>
-          <div className="col-md-6">
-            <h4>MUMBAI </h4>
-            <p>603 The Co-working Space,<br />
-              1F, 27 MIDC, Marol<br />
-              MIDC Industry Estate,<br />
-              Andheri East - 400047</p>
-            <a href="mailto:hello@youthbeat.in">hello@youthbeat.in </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section className="progrmsfrms revealer pt-0">
-    <div className="container">
-      <div className="contactsmids">
-        <div className="mnformsty">
-          <form>
-            <div className="form-group  row">
-              <div className="col-md-12">
-                <input type="text" className="form-control" placeholder="Name" />
+        <section className="cultur-comps">
+          <div className="container">
+            <div className="contactsmids">
+              <div className="mainhead text-left">
+                <h3 className="centheads aos-init aos-animate">
+                  <img
+                    src="./images/telemojis.png"
+                    className="flapswing conemojis"
+                  />
+                  Contact us
+                  <br />
+                  anytime.
+                </h3>
               </div>
-              <div className="col-md-12">
-                <input type="text" className="form-control" placeholder="Email" />
-              </div>
-
-              <div className="col-md-12">
-                <input type="text" className="form-control" placeholder="Contact Number" />
-              </div>
-              <div className="col-md-12">
-                <textarea className="form-control" placeholder="Message" defaultValue={""}>
-                  </textarea>
-              </div>
-              <div className="col-md-12">
-                <button className="ytthemects">Submit</button>
+              <div className="row">
+                <div className="col-md-6">
+                  <h4>NEW DELHI </h4>
+                  <p>
+                    Plot No. 258,
+                    <br />
+                    Red Brick Centre, Lane 3,
+                    <br />
+                    Westend Marg, Saidulajab,
+                    <br />
+                    Saket - 110030
+                  </p>
+                  <a href="mailto:hello@youthbeat.in ">hello@youthbeat.in </a>
+                </div>
+                <div className="col-md-6">
+                  <h4>MUMBAI </h4>
+                  <p>
+                    603 The Co-working Space,
+                    <br />
+                    1F, 27 MIDC, Marol
+                    <br />
+                    MIDC Industry Estate,
+                    <br />
+                    Andheri East - 400047
+                  </p>
+                  <a href="mailto:hello@youthbeat.in">hello@youthbeat.in </a>
+                </div>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+          </div>
+        </section>
+        <section className="progrmsfrms revealer pt-0">
+          <div className="container">
+            <div className="contactsmids">
+              <div className="mnformsty">
+                <form onSubmit={handleSubmit}>
+                  <div className="form-group  row">
+                    <div className="col-md-12">
+                      <input
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        type="text"
+                        className="form-control"
+                        placeholder="Name"
+                        name="name"
+                        id="name"
+                      />
+                    </div>
+                    <div className="col-md-12">
+                      <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        id="email"
+                        type="text"
+                        className="form-control"
+                        placeholder="Email"
+                        name="email"
+                      />
+                    </div>
 
+                    <div className="col-md-12">
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Contact Number"
+                        onChange={(e) => setMobile(e.target.value)}
+                        value={mobile}
+                      />
+                    </div>
+                    <div className="col-md-12">
+                      <textarea
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
+                        className="form-control"
+                        placeholder="Message"
+                        defaultValue={''}
+                      ></textarea>
+                    </div>
+                    <div className="col-md-12">
+                      <button className="ytthemects">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
       <Footer />
     </div>
