@@ -19,11 +19,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-<<<<<<< HEAD
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/creator.js", "pages/ambassador.js"],
-  "exclude": ["node_modules"]
-}
-=======
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -33,4 +28,3 @@
     "node_modules"
   ]
 }
->>>>>>> 67e654800e04f55bfd2b38e61a3cb2f05ea3a72c
