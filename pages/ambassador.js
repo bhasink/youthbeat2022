@@ -417,7 +417,7 @@ const Ambassador = () => {
             >
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/2.jpg" />
+                  <img src="./images/madhouse/ab1.jpg" />
                   <div className="cse-txts">
                     <p>
                       Resonate the tunes of famous brands and work with them!
@@ -433,7 +433,7 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/1.jpg" />
+                  <img src="./images/madhouse/ab2.jpg" />
                   <div className="cse-txts">
                     <p>
                       Get free entry and earn exciting merch from huge brands!{' '}
@@ -448,7 +448,7 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/3.jpg" />
+                  <img src="./images/madhouse/ab3.jpg" />
                   <div className="cse-txts">
                     <p>
                       Hang out with creators and live the trendy Instagram life!
@@ -462,7 +462,7 @@ const Ambassador = () => {
               </div>
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/4.jpg" />
+                  <img src="./images/madhouse/ab4.jpg" />
                   <div className="cse-txts">
                     <p>
                       Learn new skills and earn certificates to land your dream
@@ -477,16 +477,17 @@ const Ambassador = () => {
               </div>
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/1.jpg" />
+                  <img src="./images/madhouse/ab1.jpg" />
                   <div className="cse-txts">
                     <p>
-                      Get free entry and earn exciting merch from huge brands!{' '}
+                      Resonate the tunes of famous brands and work with them!
                     </p>
                   </div>
                 </div>
                 <h4>
-                  Exclusive
-                  <br /> Rewards!
+                  Participate
+                  <br />
+                  &amp; Amplify!
                 </h4>
               </div>
             </OwlCarousel>
@@ -524,7 +525,7 @@ const Ambassador = () => {
         </div>
       </section>
       <section className="showcaseytbs revealer">
-        <img src="./images/backoutservice.jpg" className="desktopayout" />
+        <img src="./images/backoutservice2.jpg" className="desktopayout" />
         <div className="container">
           <div className="row">
             <div className="col-md-5">
