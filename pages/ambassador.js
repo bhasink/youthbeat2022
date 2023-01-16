@@ -18,6 +18,7 @@ import { useRouter } from 'next/router'
 import { Parallax, ParallaxBannerLayer } from 'react-scroll-parallax';
 
 
+
 const Ambassador = () => {
 
   const [name, setName] = useState('')
@@ -216,12 +217,12 @@ const Ambassador = () => {
         items: 4,
         nav: false,
         center: false,
-        autoplay: true,
+        autoplay: false,
         margin: 20,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
         dots: false,
-        loop: true,
+        loop: false,
       },
     },
 
@@ -259,7 +260,8 @@ const Ambassador = () => {
         items: 3,
         margin: 20,
         nav: false,
-        autoplay: true,
+        autoplay: false,
+        loop:false,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
         center: false,
@@ -338,7 +340,7 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         nav: false,
         margin: 30,
         autoplay: true,
@@ -401,10 +403,75 @@ const Ambassador = () => {
               <b>What Our Madhouse Offers</b>
             </p>
           </div>
+
+          <div className="mdhouseslide">
+            <div className='row'>
+            <div className="col-md-3">
+                <div className="hhcase-txt">
+                  <img data-speed="auto"  src="./images/madhouse/ab1.jpg" />
+                  <div className="cse-txts">
+                    <p data-speed="1.25" >
+                      Resonate the tunes of famous brands and work with them!
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Participate
+                  <br />
+                  &amp; Amplify!
+                </h4>
+              </div>
+
+              <div className="col-md-3">
+                <div className="hhcase-txt">
+                  <img data-speed="auto"  src="./images/madhouse/ab2.jpg" />
+                  <div className="cse-txts">
+                    <p data-speed="1.25" >
+                      Get free entry and earn exciting merch from huge brands!{' '}
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Exclusive
+                  <br /> Rewards!
+                </h4>
+              </div>
+
+              <div className="col-md-3">
+                <div className="hhcase-txt">
+                  <img data-speed="auto"  src="./images/madhouse/ab3.jpg" />
+                  <div className="cse-txts">
+                    <p data-speed="1.25" >
+                      Hang out with creators and live the trendy Instagram life!
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Own the
+                  <br /> buzz!
+                </h4>
+              </div>
+              <div className="col-md-3">
+                <div className="hhcase-txt">
+                  <img data-speed="auto"  src="./images/madhouse/ab4.jpg" />
+                  <div className="cse-txts">
+                    <p data-speed="1.25" >
+                      Learn new skills and earn certificates to land your dream
+                      job!
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Upgrade
+                  <br /> your CV!{' '}
+                </h4>
+              </div>
+            </div>
+          </div>
           <div className="mdhouseslide">
             <OwlCarousel
               className="whygridsphn owl-theme owl-carousel"
-              loop
+              
               responsive={state.responsive_featuredslide}
               nav
             >
@@ -671,7 +738,7 @@ const Ambassador = () => {
             <OwlCarousel
               className="bdmembslide owl-carousel owl-theme"
               loop
-              responsive={state.responsive_advantfeat}
+              responsive={state.responsive_brandmembs}
               nav
             >
               <div className="item">
