@@ -516,7 +516,7 @@ const BecomeACreator = () => {
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
               <div className="popcolt">
-                <p>If I have to describe YouthBeat in one word, I choose the word "noise."</p>
+                <p>If I have to describe YouthBeat in one word, I choose the word noise.</p>
                 <p className="usertstm">Student Creator </p>
               </div>
             </div>

@@ -132,7 +132,7 @@ const OurWork = () => {
               >
                 {caseStudy &&
                   caseStudy.map((cs_data, key) => (
-                    <div className="item">
+                    <div className="item" key={key}>
                       <Link href={`our-work/${cs_data.slug}`}>
 
                         <img
