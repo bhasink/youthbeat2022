@@ -78,6 +78,8 @@ const Thanks = () => {
             <img src="./images/bombobjs.png" className="sunbom" />
             
         </h3>
+
+        {/* <a href="/ambassador" id="2" class="ytthemects">Submit</a> */}
       </div>
     </div>
   </section>

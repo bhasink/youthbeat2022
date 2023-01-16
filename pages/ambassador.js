@@ -513,7 +513,7 @@ const Ambassador = () => {
         <Parallax speed={5}>
           <div className="row">
             <div className="col-md-5">
-              <img data-speed="auto"  src="./images/roundlady.png" />
+              <img data-speed="auto"  src="./images/roundlady.png"  class="trnsmvs"/>
             </div>
 
             <div className="col-md-7 align-self-center text-lg-left text-center">
