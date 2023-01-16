@@ -298,9 +298,9 @@ const Ambassador = () => {
       1200: {
         items: 4,
         margin: 20,
-        nav: true,
+        nav: false,
         center: false,
-        dots: true,
+        dots: false,
         loop: true,
       },
     },
@@ -359,7 +359,7 @@ const Ambassador = () => {
 
       <section className="homebannnerk">
 
-      <ParallaxBannerLayer image="./images/hm9.jpg" speed={2} className=" desktopayout" />
+      <ParallaxBannerLayer image="./images/hm9.jpg" speed={3} className=" desktopayout" />
 
         <img data-speed="auto"  src="./images/homemobile.jpg" className="mobstopayout" />
         <div className="container">
@@ -382,7 +382,7 @@ const Ambassador = () => {
         </div>
       </section>
       <section className="letsyoubet revealer">
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
         <div className="container">
           <div className="mainhead">
         
@@ -410,7 +410,7 @@ const Ambassador = () => {
             >
               <div className="item">
                 <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/2.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/ab1.jpg" />
                   <div className="cse-txts">
                     <p data-speed="1.25" >
                       Resonate the tunes of famous brands and work with them!
@@ -426,7 +426,7 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/1.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/ab2.jpg" />
                   <div className="cse-txts">
                     <p data-speed="1.25" >
                       Get free entry and earn exciting merch from huge brands!{' '}
@@ -441,7 +441,7 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/3.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/ab3.jpg" />
                   <div className="cse-txts">
                     <p data-speed="1.25" >
                       Hang out with creators and live the trendy Instagram life!
@@ -455,7 +455,7 @@ const Ambassador = () => {
               </div>
               <div className="item">
                 <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/4.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/ab4.jpg" />
                   <div className="cse-txts">
                     <p data-speed="1.25" >
                       Learn new skills and earn certificates to land your dream
@@ -468,20 +468,7 @@ const Ambassador = () => {
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              <div className="item">
-                <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/1.jpg" />
-                  <div className="cse-txts">
-                    <p data-speed="1.25" >
-                      Get free entry and earn exciting merch from huge brands!{' '}
-                    </p>
-                  </div>
-                </div>
-                <h4>
-                  Exclusive
-                  <br /> Rewards!
-                </h4>
-              </div>
+              
             </OwlCarousel>
           </div>
         </div>
@@ -519,7 +506,7 @@ const Ambassador = () => {
       </section>
       <section className="showcaseytbs revealer">
 
-<ParallaxBannerLayer image="./images/backoutservice.jpg" speed={-20} className="desktopayout" />
+<ParallaxBannerLayer image="./images/backoutservice2.jpg" speed={-20} className="desktopayout" />
 
         <div className="container">
 
@@ -562,7 +549,7 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img data-speed="auto"  src="./images/madhouse/5.jpg" />
+                <img data-speed="auto"  src="./images/casestudy/myntra.jpg" />
                 <p data-speed="1.25" >
                   <b>Myntra</b>
                 </p>
@@ -580,7 +567,7 @@ const Ambassador = () => {
                 </a>
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/madhouse/6.jpg" />
+                <img data-speed="auto"  src="./images/casestudy/oneplus.jpg" />
                 <p data-speed="1.25" >
                   <b>One Plus</b>
                 </p>
@@ -599,7 +586,7 @@ const Ambassador = () => {
                 </a>
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/madhouse/7.jpg" />
+                <img data-speed="auto"  src="./images/casestudy/tinder.jpg" />
 
                 <p data-speed="1.25" >
                   <b>Tinder</b>
@@ -623,7 +610,7 @@ const Ambassador = () => {
         </div>
       </section>
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="ouytbservice revealer">
         <div className="container">
@@ -669,7 +656,7 @@ const Ambassador = () => {
       </Parallax>
 
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="membersytbs revealer">
         <div className="container">
@@ -684,21 +671,30 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img data-speed="auto"  src="./images/members/1.jpg" />
+                <img data-speed="auto"  src="./images/members/ab1.png" />
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/members/2.jpg" />
+                <img data-speed="auto"  src="./images/members/ab2.png" />
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/members/3.jpg" />
+                <img data-speed="auto"  src="./images/members/ab3.png" />
               </div>
+
+              <div className="item">
+                <img data-speed="auto"  src="./images/members/ab4.png" />
+              </div>
+
+              <div className="item">
+                <img data-speed="auto"  src="./images/members/ab5.png" />
+              </div>
+
             </OwlCarousel>
           </div>
         </div>
       </section>
       </Parallax>
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="progrmsfrms revealer">
         <div className="container">
