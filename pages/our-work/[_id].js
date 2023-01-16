@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import Header from '../../components/header/Header'
-import Footer from '../../components/footer/Footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import AOS from 'aos'
 var $ = require('jquery')
 if (typeof window !== 'undefined') {
