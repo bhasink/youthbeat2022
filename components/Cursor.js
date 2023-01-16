@@ -68,7 +68,7 @@ function Cursor() {
 
   const _onMouseDown = () => {
     // console.log('MouseDown')
-    setClicked(true);
+    setClicked(false);
   };
 
   const _onMouseUp = () => {
