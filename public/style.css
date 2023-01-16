@@ -539,7 +539,7 @@ p {
     content: "";
     position: absolute;
     bottom: 0;
-    height: 23%;
+    height: 29%;
     background: #fff;
     width: 100%;
     left: 0;
@@ -2087,8 +2087,29 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     .testimons-ytb .item{padding: 0px;}
 
 	.outstls:after{
-		height: 90%;
+        height: 89%;
+    top: 30px;
+    width: 89%;
+    left: 7px;
 	}
+
+    .outstls .owl-nav {
+        width: 145px;
+    }
+
+    .outstls .owl-carousel.owl-theme .owl-nav button span {
+        width: 57px;
+        display: inline-block;
+        height: 16px;
+        padding: 5px 0;
+    }
+
+    .rightflowrs {
+        right: 0px;
+        width: 85px;
+        top: -11px;
+    }
+
 	.workconts .col-6.col-md-6 {
     padding: 0 5px;
 }
@@ -2101,7 +2122,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .workconts .wrk {
     margin-bottom: 44px;
     padding: 9px;
-    min-height: 296px;
+    min-height: 242px;
 }
 
 .key-ybvisuals h3 {
@@ -2168,11 +2189,23 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 .wrk p {
     width: 100%;
     top: -27px;
+    margin: 0;
+    font-size: 13px;
 }
 
 .wrk h4 {
     font-size: 21px;
     top: -35px;
+    margin: 0;
+}
+
+.wrk img {
+    top: -7px;
+    position: relative;
+}
+
+.yt-footh p br {
+    display: none;
 }
 
 .workconts {
@@ -2568,7 +2601,11 @@ body {
 }
 
 .fstfoldes img {
-    width: 288px;
+    width: 240px;
+}
+
+.ytmarkts.caseinfos .genfrs img {
+    margin-top: 40px;
 }
 
 .fstfoldes .col-md-6:nth-child(1) .objflts {
