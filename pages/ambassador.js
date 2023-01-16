@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import axios from 'axios'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -638,8 +638,11 @@ const Ambassador = () => {
           <div className="servnumcounts numbers">
             <div className="row">
               <div className="col-md-4">
+
                 <p data-speed="1.25"  className="numctn skblues number-item">
-                  <span className="value">250000</span>+
+                  <span className="value">
+                    
+                  250000</span>+
                 </p>
                 <p data-speed="1.25" >
                   Campus Reps &amp; <br /> Ambassadors
@@ -647,7 +650,8 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p data-speed="1.25"  className="numctn rednums number-item">
-                  <span className="value">1500</span>+
+                  <span className="value">
+                  1500</span>+
                 </p>
                 <p data-speed="1.25" >
                   Partnered Universities <br />
@@ -656,7 +660,8 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p data-speed="1.25"  className="numctn yelnums number-item">
-                  <span className="value">250</span>+
+                  <span className="value">
+                  250</span>+
                 </p>
                 <p data-speed="1.25" >Projects Worked On</p>
               </div>
