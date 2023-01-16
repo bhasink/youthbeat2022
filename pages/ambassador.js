@@ -656,12 +656,11 @@ const Ambassador = () => {
       </Parallax>
 
 
-      <Parallax scale={[0.9,1]}>
 
       <section className="membersytbs revealer">
         <div className="container">
           <div className="mainhead">
-            <p data-speed="1.25"  className="sbhds">Our band members</p>
+            <p className="sbhds">Our band members</p>
           </div>
           <div className="membslides">
             <OwlCarousel
@@ -692,9 +691,7 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      </Parallax>
 
-      <Parallax scale={[0.9,1]}>
 
       <section className="progrmsfrms revealer">
         <div className="container">
@@ -989,7 +986,6 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      </Parallax>
 
       <Footer />
     </div>
