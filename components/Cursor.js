@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const StyledCursor = styled.div`
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border: 2px solid #ffffff;
   border-radius: 100%;
   position: fixed;
