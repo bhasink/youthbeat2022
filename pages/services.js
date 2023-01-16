@@ -17,6 +17,8 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 import { notification } from 'antd'
 import { useRouter } from 'next/router'
+import { Parallax } from 'react-scroll-parallax';
+
 
 const Services = () => {
  
@@ -166,63 +168,72 @@ const Services = () => {
 
      <div>
   <section className="innrbanner">
-    <img src="./images/ourservices2.jpg" className="desktopayout" />
+    <img data-speed="auto"  src="./images/ourservices2.jpg" className="desktopayout" />
     <div className="container">
+    <Parallax speed={-5}>
+
       <div className="mainhead whithd">
-        <p className="sbhds">What is YouthBeat?</p>
-        <h3 className="centheads"><img src="./images/bombobjs.png" className="sunbom" />We're youthful, full of energy,<br />
+        <p data-speed="1.25"  className="sbhds">What is YouthBeat?</p>
+        <h3 data-speed="1.25"  className="centheads"><img data-speed="auto"  src="./images/bombobjs.png" className="sunbom" />We are youthful, full of energy,<br />
           and obsessed with making<br />
           companies hotter
         </h3>
       </div>
+
+      </Parallax>
     </div>
   </section>
   <section className="usptargt position-relative whitetxt">
     <div className="container">
       <div className="row">
         <div className="col-md-7 align-self-center">
-          <p><b>YouthBeat is the youth marketing vertical within the ecosystem of Sociowash. </b> Across all campuses around the country, YouthBeat amplifies Gen-Z culture. </p>
-          <p>With Pranav Agarwal and Raghav Bagai as co-founders, YouthBeat helps brands step up their game and create edgy experiences for youth. </p>
+          <Parallax speed={6}>
+            <p  data-speed="1.25" ><b>YouthBeat is the youth marketing vertical within the ecosystem of Sociowash. </b> Across all campuses around the country, YouthBeat amplifies Gen-Z culture. </p>
+          </Parallax>
+
+          <Parallax speed={5}>
+          <p data-speed="1.25" >With Pranav Agarwal and Raghav Bagai as co-founders, YouthBeat helps brands step up their game and create edgy experiences for youth. </p>
+          </Parallax>
         </div>
         <div className="col-md-5">
           <div className="genfrs position-relative">
-            <img src="./images/creobj.png" className="fltsbt" />
-            <img src="./images/genfr.jpg" />
-            <p>Vibe  <br />check!</p>
+            <img data-speed="auto"  src="./images/creobj.png" className="fltsbt" />
+            <img data-speed="auto"  src="./images/genfr.jpg" />
+            <p data-speed="1.25" >Vibe  <br />check!</p>
           </div>
         </div>
       </div>
     </div>
 
-   {/**<div className="usps"><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p><p>// MAIN CHARACTER  </p></div> */} 
+   {/**<div className="usps"><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p></div> */} 
 
     <div className="usps">
-      <img src="./images/usptagsnw.png" />
-      <img src="./images/usptagsnw.png" />
-      <img src="./images/usptagsnw.png" />
+      <img data-speed="auto"  src="./images/usptagsnw.png" />
+      <img data-speed="auto"  src="./images/usptagsnw.png" />
+      <img data-speed="auto"  src="./images/usptagsnw.png" />
     </div>
     <div className="thswhys">
       <div className="container">
-        <p>This is where YouthBeat bridges the gap between<br /> brands and Gen-Zs.
+        <p data-speed="1.25" >This is where YouthBeat bridges the gap between<br /> brands and Gen-Zs.
         </p>
       </div>
     </div>
   </section>
   <section className="whyybt-rights position-relative">
-    <img src="./images/whysiright.png" className="desktopayout" data-aos="fade-right" data-aos-duration={3000} />
+    <img data-speed="auto"  src="./images/whysiright.png" className="desktopayout" data-aos="fade-right" data-aos-duration={3000} />
     <div className="container">
       <div className="mainhead">
-        <p className="sbhds">Why YouthBeat is The Right Move</p>
+        <p data-speed="1.25"  className="sbhds">Why YouthBeat is The Right Move</p>
       </div>
       <div className="pygrphs">
         <div className="row">
           <div className="col-md-6 text-center">
-            <img src="./images/graphpyes.png"/>
-            <img src="./images/targargs.png" className="targars"/>
+            <img data-speed="auto"  src="./images/graphpyes.png"/>
+            <img data-speed="auto"  src="./images/targargs.png" className="targars"/>
           </div>
           <div className="col-md-6 align-self-center">
             <div className="mainhead text-left">
-              <h3 className="centheads">Traffic <br />generated<br />
+              <h3 data-speed="1.25"  className="centheads">Traffic <br />generated<br />
                 by millennials<br />
                 and Gen-Z
               </h3>
@@ -234,23 +245,27 @@ const Services = () => {
   </section>
   <section className="ytmarkts"> 
     <div className="mainhead">
-      <p className="sbhds">Why Youth Marketing</p>
+      <p data-speed="1.25"  className="sbhds">Why Youth Marketing</p>
     </div>
     <div className="whyytmrk whitetxt"> 
       <div className="container">
         <div className="row">
+       
           <div className="col-md-6 align-self-center">
-            <p><b>With many new trends rolling out almost everyday, things may get a little challenging for brands. </b></p>
-            <p>Sometimes the road of social media might be rocky; this is when an experienced driver takes control.</p>
-            <h4>This is where 
+          <Parallax speed={6}>
+            <p data-speed="1.25" ><b>With many new trends rolling out almost everyday, things may get a little challenging for brands. </b></p>
+            <p data-speed="1.25" >Sometimes the road of social media might be rocky; this is when an experienced driver takes control.</p>
+            <h4 data-speed="1.25" >This is where 
               you give<br /> your
               marketing keys<br />
               to YouthBeat.
             </h4>
+            </Parallax>
           </div>
+         
           <div className="col-md-6 align-self-center position-relative">
-            <img src="./images/service2.jpg" className="img-fluid" />
-            <img src="./images/genx.png" className="gnround" />
+            <img data-speed="auto"  src="./images/service2.jpg" className="img-fluid" />
+            <img data-speed="auto"  src="./images/genx.png" className="gnround" />
           </div>
         </div>
       </div>
@@ -259,7 +274,7 @@ const Services = () => {
   <section className="testimons-ytb revealer">
     <div className="container">
       <div className="mainhead">
-        <p className="sbhds">What they say about us on the ‘Gram</p>
+        <p data-speed="1.25"  className="sbhds">What they say about us on the ‘Gram</p>
       </div>
       <div className="testslid">
         
@@ -271,29 +286,29 @@ const Services = () => {
               >
           <div className="item">
             <div className="dv-shads">
-              <p>These guys are passionate about their art and extraordinary creative capabilities. They are young, ambitious, and extremely efficient. Most importantly, they work as an unified and balanced unit.
+              <p data-speed="1.25" >These guys are passionate about their art and extraordinary creative capabilities. They are young, ambitious, and extremely efficient. Most importantly, they work as an unified and balanced unit.
                 YouthBeat provides a wide range of solutions, proving to be complete youth marketing geniuses.</p>
             </div>
-            <p className="usertstm">Mercy Thoras, Tinder</p>
+            <p data-speed="1.25"  className="usertstm">Mercy Thoras, Tinder</p>
           </div>
           <div className="item">
             <div className="dv-shads">
-              <p>If I have to describe YouthBeat in one word, I choose the word "craziness." The team is adaptable, even when unforeseen challenges arise toward the end, they handle it. They are extremely efficient as well as possess excellent creativity</p>
+              <p data-speed="1.25" >If I have to describe YouthBeat in one word, I choose the word craziness. The team is adaptable, even when unforeseen challenges arise toward the end, they handle it. They are extremely efficient as well as possess excellent creativity</p>
             </div>
-            <p className="usertstm">XYZ, OnePlus</p>
+            <p data-speed="1.25"  className="usertstm">XYZ, OnePlus</p>
           </div>
           <div className="item">
             <div className="dv-shads">
-              <p>These guys are passionate about their art and extraordinary creative capabilities. They are young, ambitious, and extremely efficient. Most importantly, they work as an unified and balanced unit.
+              <p data-speed="1.25" >These guys are passionate about their art and extraordinary creative capabilities. They are young, ambitious, and extremely efficient. Most importantly, they work as an unified and balanced unit.
                 YouthBeat provides a wide range of solutions, proving to be complete youth marketing geniuses.</p>
             </div>
-            <p className="usertstm">Mercy Thoras, Tinder</p>
+            <p data-speed="1.25"  className="usertstm">Mercy Thoras, Tinder</p>
           </div>
           <div className="item">
             <div className="dv-shads">
-              <p>If I have to describe YouthBeat in one word, I choose the word "craziness." The team is adaptable, even when unforeseen challenges arise toward the end, they handle it. They are extremely efficient as well as possess excellent creativity</p>
+              <p data-speed="1.25" >If I have to describe YouthBeat in one word, I choose the word craziness. The team is adaptable, even when unforeseen challenges arise toward the end, they handle it. They are extremely efficient as well as possess excellent creativity</p>
             </div>
-            <p className="usertstm">XYZ, OnePlus</p>
+            <p data-speed="1.25"  className="usertstm">XYZ, OnePlus</p>
           </div>
          </OwlCarousel>
         
@@ -303,7 +318,7 @@ const Services = () => {
   <section className="progrmsfrms revealer">
     <div className="container">
       <div className="mainhead text-left">
-        <h3 className="centheads">Client Enquiry Form</h3>
+        <h3 data-speed="1.25"  className="centheads">Client Enquiry Form</h3>
       </div>
       <div className="mnformsty">
       <form onSubmit={handleSubmit}>

@@ -1,8 +1,32 @@
+import { useEffect } from 'react';
 import Head from 'next/head'
+import Cursor from "../components/Cursor";
+// import {gsap} from "gsap-trial/dist/gsap";
+// import {ScrollTrigger} from "gsap-trial/dist/ScrollTrigger";
+// import { ScrollSmoother } from "gsap-trial/dist/ScrollSmoother";
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+`
+    ScrollSmoother.create({
+      smooth: 3,
+      effects: true
+    });`
+
+  },[])
+
   return (
     <>
+
+<ParallaxProvider>
+
+     <Cursor />
+
       <Head>
         <meta charSet="utf-8" />
         <meta
@@ -36,6 +60,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
+
+      </ParallaxProvider>
     </>
   )
 }

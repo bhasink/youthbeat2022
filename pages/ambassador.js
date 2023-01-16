@@ -14,15 +14,11 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
   ssr: false,
 })
 import { notification } from 'antd'
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router'
+import { Parallax, ParallaxBannerLayer } from 'react-scroll-parallax';
 
 
 const Ambassador = () => {
-  // useEffect(() => {
-  /*AOS.init({
-      duration: 2000,
-    })*/
-  // }, [])
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -35,11 +31,10 @@ const Ambassador = () => {
   const [what_are_you_stdn_planning, setWareYouStng] = useState('')
   const [upcoming_clg_yr, setUpcomingClgYr] = useState('')
   const [currentValue, setCurrentValue] = useState(0)
-  const [lastSaveId, setLastSaveId] = useState(null)  
+  const [lastSaveId, setLastSaveId] = useState(null)
   const [loading, setLoading] = useState(false)
 
-  const router = useRouter();
-
+  const router = useRouter()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -109,7 +104,6 @@ const Ambassador = () => {
       $('#s2').css('fadeIn', 'slow')
       $('#s2').css('display', 'block')
       $('#s' + back_val).css('display', 'none')
-
     } catch (err) {
       setLoading(false)
     }
@@ -154,19 +148,16 @@ const Ambassador = () => {
       return false
     }
 
-    if(page != 7){
-    $('#s' + page).css('fadeIn', 'slow')
-    $('#s' + page).css('display', 'none')
-    $('#s' + next_val).css('display', 'block')
+    if (page != 7) {
+      $('#s' + page).css('fadeIn', 'slow')
+      $('#s' + page).css('display', 'none')
+      $('#s' + next_val).css('display', 'block')
     }
 
-    if(page == 7){
-
+    if (page == 7) {
       setLoading(true)
 
       try {
-        
-
         const { data } = await axios.post(
           `${process.env.NEXT_PUBLIC_API}/ambs-form-update`,
           {
@@ -175,7 +166,7 @@ const Ambassador = () => {
             instaFollower,
             college,
             what_are_you_stdn_planning,
-            upcoming_clg_yr
+            upcoming_clg_yr,
           },
         )
 
@@ -190,14 +181,10 @@ const Ambassador = () => {
         })
 
         router.push('/thanks')
-
       } catch (err) {
         setLoading(false)
       }
-
     }
-
-    
   }
 
   const state = {
@@ -369,42 +356,48 @@ const Ambassador = () => {
   return (
     <div>
       <Header />
-      
 
       <section className="homebannnerk">
-        <img src="./images/hm9.jpg" className="desktopayout" />
-        <img src="./images/homemobile.jpg" className="mobstopayout" />
+
+      <ParallaxBannerLayer image="./images/hm9.jpg" speed={2} className=" desktopayout" />
+
+        <img data-speed="auto"  src="./images/homemobile.jpg" className="mobstopayout" />
         <div className="container">
           <div className="layerfires"></div>
 
           <div>
+          <Parallax translateX={[-5,-10]}>
             <h1 className="mainbn-hd">
               WE ARE THE VOICE
               <br />
               OF{' '}
               <span className="str-yells">
                 GEN-Zs
-                <img src="./images/strokeyello.png" />
+                <img data-speed="auto"  src="./images/strokeyello.png" />
               </span>{' '}
               ALL AROUND
             </h1>
+            </Parallax>
           </div>
         </div>
       </section>
       <section className="letsyoubet revealer">
+      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
         <div className="container">
           <div className="mainhead">
+        
             <h3 className="centheads">
-              <img src="./images/smilheads.png" className="anmemojs" />
+              <img data-speed="auto"  src="./images/smilheads.png" className="anmemojs" />
               Let YouthBeat
               <br />
               take the wheel!
             </h3>
-            <p className="sbhds">
+           
+            <p data-speed="1.25"  className="sbhds">
               We’re young, always evolving, and hungry for more
             </p>
 
-            <p className="subbol">
+            <p data-speed="1.25"  className="subbol">
               <b>What Our Madhouse Offers</b>
             </p>
           </div>
@@ -417,9 +410,9 @@ const Ambassador = () => {
             >
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/ab1.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/2.jpg" />
                   <div className="cse-txts">
-                    <p>
+                    <p data-speed="1.25" >
                       Resonate the tunes of famous brands and work with them!
                     </p>
                   </div>
@@ -433,9 +426,9 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/ab2.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/1.jpg" />
                   <div className="cse-txts">
-                    <p>
+                    <p data-speed="1.25" >
                       Get free entry and earn exciting merch from huge brands!{' '}
                     </p>
                   </div>
@@ -448,9 +441,9 @@ const Ambassador = () => {
 
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/ab3.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/3.jpg" />
                   <div className="cse-txts">
-                    <p>
+                    <p data-speed="1.25" >
                       Hang out with creators and live the trendy Instagram life!
                     </p>
                   </div>
@@ -462,9 +455,9 @@ const Ambassador = () => {
               </div>
               <div className="item">
                 <div className="hhcase-txt">
-                  <img src="./images/madhouse/ab4.jpg" />
+                  <img data-speed="auto"  src="./images/madhouse/4.jpg" />
                   <div className="cse-txts">
-                    <p>
+                    <p data-speed="1.25" >
                       Learn new skills and earn certificates to land your dream
                       job!
                     </p>
@@ -475,15 +468,29 @@ const Ambassador = () => {
                   <br /> your CV!{' '}
                 </h4>
               </div>
-              
+              <div className="item">
+                <div className="hhcase-txt">
+                  <img data-speed="auto"  src="./images/madhouse/1.jpg" />
+                  <div className="cse-txts">
+                    <p data-speed="1.25" >
+                      Get free entry and earn exciting merch from huge brands!{' '}
+                    </p>
+                  </div>
+                </div>
+                <h4>
+                  Exclusive
+                  <br /> Rewards!
+                </h4>
+              </div>
             </OwlCarousel>
           </div>
         </div>
+        </Parallax>
       </section>
       <section className="partnersincr revealer">
         <div className="container">
           <div className="mainhead">
-            <p className="sbhds">Meet our partners in creativity</p>
+            <p data-speed="1.25"  className="sbhds">Meet our partners in creativity</p>
           </div>
         </div>
         <div className="blacklayers">
@@ -495,28 +502,33 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img src="./images/ourpatner/1.png" />
+                <img data-speed="auto"  src="./images/ourpatner/1.png" />
               </div>
               <div className="item">
-                <img src="./images/ourpatner/2.png" />
+                <img data-speed="auto"  src="./images/ourpatner/2.png" />
               </div>
               <div className="item">
-                <img src="./images/ourpatner/3.png" />
+                <img data-speed="auto"  src="./images/ourpatner/3.png" />
               </div>
               <div className="item">
-                <img src="./images/ourpatner/4.png" />
+                <img data-speed="auto"  src="./images/ourpatner/4.png" />
               </div>
             </OwlCarousel>
           </div>
         </div>
       </section>
       <section className="showcaseytbs revealer">
-        <img src="./images/backoutservice2.jpg" className="desktopayout" />
+
+<ParallaxBannerLayer image="./images/backoutservice.jpg" speed={-20} className="desktopayout" />
+
         <div className="container">
+
+        <Parallax speed={5}>
           <div className="row">
             <div className="col-md-5">
-              <img src="./images/roundlady.png" />
+              <img data-speed="auto"  src="./images/roundlady.png" />
             </div>
+
             <div className="col-md-7 align-self-center text-lg-left text-center">
               <h2>
                 Ready to{' '}
@@ -532,14 +544,16 @@ const Ambassador = () => {
                     style={{ enableBackground: 'new 0 0 152.9 43.4' }}
                     xmlSpace="preserve"
                   >
-                    <path d="M151.9,13.6c0,0,3.3-9.5-85-8.3c-97,1.3-58.3,29-58.3,29s9.7,8.1,69.7,8.1c68.3,0,69.3-23.1,69.3-23.1 s1.7-10.5-14.7-18.4" />
                   </svg>
                 </span>
                 <br></br> campus{' '}
               </h2>
-              <p className="curvtxt">Create with YouthBeat</p>
+              <p data-speed="1.25"  className="curvtxt">Create with YouthBeat</p>
             </div>
           </div>
+          </Parallax>
+
+          <Parallax speed={-5}>
           <div className="mdhouseslide">
             <OwlCarousel
               className="casestslide owl-carousel owl-theme"
@@ -548,8 +562,8 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img src="./images/madhouse/5.jpg" />
-                <p>
+                <img data-speed="auto"  src="./images/madhouse/5.jpg" />
+                <p data-speed="1.25" >
                   <b>Myntra</b>
                 </p>
                 <h4>
@@ -559,14 +573,14 @@ const Ambassador = () => {
                   read more
                   <br />
                   <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
+                    <img data-speed="auto"  src="./images/readmorec.png" />
                   </div>
                   <div className="rdstrokes"></div>
                 </a>
               </div>
               <div className="item">
-                <img src="./images/madhouse/6.jpg" />
-                <p>
+                <img data-speed="auto"  src="./images/madhouse/6.jpg" />
+                <p data-speed="1.25" >
                   <b>One Plus</b>
                 </p>
                 <h4>
@@ -578,15 +592,15 @@ const Ambassador = () => {
                   read more
                   <br />
                   <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
+                    <img data-speed="auto"  src="./images/readmorec.png" />
                   </div>
                   <div className="rdstrokes"></div>
                 </a>
               </div>
               <div className="item">
-                <img src="./images/madhouse/7.jpg" />
+                <img data-speed="auto"  src="./images/madhouse/7.jpg" />
 
-                <p>
+                <p data-speed="1.25" >
                   <b>Tinder</b>
                 </p>
                 <h4>
@@ -598,58 +612,68 @@ const Ambassador = () => {
                   read more
                   <br />
                   <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
+                    <img data-speed="auto"  src="./images/readmorec.png" />
                   </div>
                 </a>
               </div>
             </OwlCarousel>
           </div>
+          </Parallax>
         </div>
       </section>
+
+      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+
       <section className="ouytbservice revealer">
         <div className="container">
           <div className="mainhead">
-            <p className="sbhds">Become the hot trend in your campus! </p>
+            <p data-speed="1.25"  className="sbhds">Become the hot trend in your campus! </p>
             <h3 className="centheads mt-3">
               Join YouthBeat and
               <br />
               earn new skills!{' '}
-              <img src="./images/keycta.png" className="keyemojs" />
+              <img data-speed="auto"  src="./images/keycta.png" className="keyemojs" />
             </h3>
           </div>
           <div className="servnumcounts numbers">
             <div className="row">
               <div className="col-md-4">
-                <p className="numctn skblues number-item">
+                <p data-speed="1.25"  className="numctn skblues number-item">
                   <span className="value">250000</span>+
                 </p>
-                <p>
+                <p data-speed="1.25" >
                   Campus Reps &amp; <br /> Ambassadors
                 </p>
               </div>
               <div className="col-md-4">
-                <p className="numctn rednums number-item">
+                <p data-speed="1.25"  className="numctn rednums number-item">
                   <span className="value">1500</span>+
                 </p>
-                <p>
+                <p data-speed="1.25" >
                   Partnered Universities <br />
                   &amp; Institutions
                 </p>
               </div>
               <div className="col-md-4">
-                <p className="numctn yelnums number-item">
+                <p data-speed="1.25"  className="numctn yelnums number-item">
                   <span className="value">250</span>+
                 </p>
-                <p>Projects Worked On</p>
+                <p data-speed="1.25" >Projects Worked On</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      </Parallax>
+
+
+      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+
       <section className="membersytbs revealer">
         <div className="container">
           <div className="mainhead">
-            <p className="sbhds">Our band members</p>
+            <p data-speed="1.25"  className="sbhds">Our band members</p>
           </div>
           <div className="membslides">
             <OwlCarousel
@@ -659,18 +683,21 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img src="./images/members/1.jpg" />
+                <img data-speed="auto"  src="./images/members/1.jpg" />
               </div>
               <div className="item">
-                <img src="./images/members/2.jpg" />
+                <img data-speed="auto"  src="./images/members/2.jpg" />
               </div>
               <div className="item">
-                <img src="./images/members/3.jpg" />
+                <img data-speed="auto"  src="./images/members/3.jpg" />
               </div>
             </OwlCarousel>
           </div>
         </div>
       </section>
+      </Parallax>
+
+      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
 
       <section className="progrmsfrms revealer">
         <div className="container">
@@ -726,15 +753,12 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                  
-<select
+                    <select
                       className="form-control"
                       onChange={(e) => setGender(e.target.value)}
                       value={gender}
                     >
-                      <option value="">
---Gender--
-                      </option>
+                      <option value="">--Gender--</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                       <option value="Other">Other</option>
@@ -763,8 +787,10 @@ const Ambassador = () => {
                       <br />
                     </label>
 
-                    <p>
-                    Thank you for showing your interest, can you give us the scoop on yourself so we can connect you with the hottest brands?
+                    <p data-speed="1.25" >
+                      Thank you for showing your interest, can you give us the
+                      scoop on yourself so we can connect you with the hottest
+                      brands?
                     </p>
                   </div>
 
@@ -797,7 +823,6 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                  
                     <button
                       onClick={(e) => handleNext(e, 3, instaId)}
                       className="ytthemects"
@@ -903,13 +928,17 @@ const Ambassador = () => {
 
                   <div className="col-md-12">
                     <button
-                      onClick={(e) => handleBack(e, 6,what_are_you_stdn_planning)}
+                      onClick={(e) =>
+                        handleBack(e, 6, what_are_you_stdn_planning)
+                      }
                       className="ytthemects"
                     >
                       back
                     </button>
                     <button
-                      onClick={(e) => handleNext(e, 6,what_are_you_stdn_planning)}
+                      onClick={(e) =>
+                        handleNext(e, 6, what_are_you_stdn_planning)
+                      }
                       className="ytthemects"
                     >
                       Next
@@ -929,30 +958,33 @@ const Ambassador = () => {
                         session for the year 2023-24
                       </b>
                     </label>
-                    <select 
-                    className="form-control" 
-                    onChange={(e) => setUpcomingClgYr(e.target.value)}
-                    value={upcoming_clg_yr}
+                    <select
+                      className="form-control"
+                      onChange={(e) => setUpcomingClgYr(e.target.value)}
+                      value={upcoming_clg_yr}
                     >
                       <option value="">--select--</option>
                       <option value="I">I</option>
-                      <option  value="II">II</option>
-                      <option  value="III">III</option>
-                      <option  value="IV">IV</option>
-                      <option  value="V">V</option>
+                      <option value="II">II</option>
+                      <option value="III">III</option>
+                      <option value="IV">IV</option>
+                      <option value="V">V</option>
                     </select>
                   </div>
 
                   <div className="col-md-12">
                     <button
-                      onClick={(e) => handleBack(e, 7,upcoming_clg_yr)}
+                      onClick={(e) => handleBack(e, 7, upcoming_clg_yr)}
                       className="ytthemects"
                     >
                       back
                     </button>
-                    <button 
-                     onClick={(e) => handleNext(e, 7,upcoming_clg_yr)}
-                    className="ytthemects">Submit</button>
+                    <button
+                      onClick={(e) => handleNext(e, 7, upcoming_clg_yr)}
+                      className="ytthemects"
+                    >
+                      Submit
+                    </button>
                   </div>
                 </div>
               </form>
@@ -960,6 +992,7 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
+      </Parallax>
 
       <Footer />
     </div>
