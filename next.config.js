@@ -2,7 +2,6 @@ const webpack = require("webpack");
 
 const nextConfig = {
     reactStrictMode: false,
-    future: { webpack5: true },
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
 
         config.plugins.push(new webpack.ProvidePlugin({
