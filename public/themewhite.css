@@ -139,7 +139,9 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px){
-	
+	.site-header.topmain nav.navbar{
+        border:none;
+    }
 
 .site-header .navbar-light .navbar-toggler {
     color: #000;

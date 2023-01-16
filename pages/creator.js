@@ -545,7 +545,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <img
                 src="./images/roundlady.png"/>
             </div>
-            <div className="col-md-7 align-self-center">
+            <div className="col-md-7 align-self-center text-lg-left text-center">
               <h2>
               Want your <span className="txstrks">
                     content to stand{' '}
