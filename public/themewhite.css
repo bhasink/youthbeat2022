@@ -121,7 +121,22 @@
      color: #000;
 }
 
+.homebannnerk {
+    background: #000;
+}
+
 /* css */
+
+
+@keyframes movelinecreat{
+	0%{
+		height:0px;
+	}
+	100%{
+		    height: 328px;
+            
+	}
+}
 
 @media screen and (max-width: 767px) and (min-width: 320px){
 	
@@ -132,6 +147,27 @@
 
 .site-header.topmain.heightexps .collapse:not(.show) {
     background: #fff;
+}
+
+.layerfires.cregreen {
+    left: 33px;
+    width: 111px;
+    top: 53px;
+    height: 318px;
+}
+
+.homebannnerk .mobstopayout{
+    width: 100%;
+}
+
+@keyframes movelinecreat{
+	0%{
+		height:0px;
+	}
+	100%{
+        height: 318px;
+            
+	}
 }
 
 }

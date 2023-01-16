@@ -548,58 +548,47 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
-                <img src="./images/madhouse/5.jpg" />
-                <p>
-                  <b>Myntra</b>
-                </p>
+                <img
+                  src="./images/casestudy/myntra.jpg"/>
+                <p><b>Myntra</b></p>
                 <h4>
-                  Read our <br /> case studies
+                Read our 
+                  <br /> case  studies
                 </h4>
-                <a href="#">
+                <a href="/our-work/myntra">
                   read more
                   <br />
-                  <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
-                  </div>
-                  <div className="rdstrokes"></div>
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
               <div className="item">
-                <img src="./images/madhouse/6.jpg" />
-                <p>
-                  <b>One Plus</b>
-                </p>
+                <img
+                  src="./images/casestudy/oneplus.jpg"/>
+                 <p><b>One Plus</b></p>
                 <h4>
                   See the
                   <br /> innovation
                   <br /> we bring
                 </h4>
-                <a href="#">
+                <a href="/our-work/one-plus">
                   read more
                   <br />
-                  <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
-                  </div>
-                  <div className="rdstrokes"></div>
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
               <div className="item">
-                <img src="./images/madhouse/7.jpg" />
-
-                <p>
-                  <b>Tinder</b>
-                </p>
+                <img
+                  src="./images/casestudy/tinder.jpg"/>
+                 <p><b>Tinder</b></p>
                 <h4>
                   Learn the ways
                   <br />
                   of YouthBeat
                 </h4>
-                <a href="#">
+                <a href="/our-work/tinder">
                   read more
                   <br />
-                  <div className="rdstrokes">
-                    <img src="./images/readmorec.png" />
-                  </div>
+                  <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
                 </a>
               </div>
             </OwlCarousel>

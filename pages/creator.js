@@ -399,10 +399,10 @@ const Creator = () => {
       <Header />
 
       <section className="homebannnerk revealer">
-        <img src="./images/hm9.jpg" className="desktopayout" />
-        <img src="./images/homemobile.jpg" className="mobstopayout" />
+        <img src="./images/creatorbanner.jpg" className="desktopayout" />
+        <img src="./images/creatormobile.jpg" className="mobstopayout" />
         <div className="container">
-		<div  className="layerfires"></div>
+		<div  className="layerfires cregreen"></div>
 		
 		<div><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
 OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
@@ -578,13 +578,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/madhouse/1.jpg"/>
+                  src="./images/casestudy/myntra.jpg"/>
                 <p><b>Myntra</b></p>
                 <h4>
                 Read our 
                   <br /> case  studies
                 </h4>
-                <a href="#">
+                <a href="/our-work/myntra">
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
@@ -592,14 +592,14 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="item">
                 <img
-                  src="./images/madhouse/2.jpg"/>
+                  src="./images/casestudy/oneplus.jpg"/>
                  <p><b>One Plus</b></p>
                 <h4>
                   See the
                   <br /> innovation
                   <br /> we bring
                 </h4>
-                <a href="#">
+                <a href="/our-work/one-plus">
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
@@ -607,14 +607,14 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="item">
                 <img
-                  src="./images/madhouse/3.jpg"/>
+                  src="./images/casestudy/tinder.jpg"/>
                  <p><b>Tinder</b></p>
                 <h4>
                   Learn the ways
                   <br />
                   of YouthBeat
                 </h4>
-                <a href="#">
+                <a href="/our-work/tinder">
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
@@ -699,6 +699,27 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <img
                   src="./images/members/crt5.png"/>
+              </div>
+
+              <div className="item">
+                <img
+                  src="./images/members/crt6.png"/>
+              </div>
+
+              <div className="item">
+                <img
+                  src="./images/members/crt7.png"/>
+              </div>
+
+              <div className="item">
+                <img
+                  src="./images/members/crt8.png"/>
+              </div>
+
+
+              <div className="item">
+                <img
+                  src="./images/members/crt9.png"/>
               </div>
             </OwlCarousel>
           </div>

@@ -250,13 +250,28 @@ p {
     background-size: cover;
 }
 
+.layerfires.cregreen {
+    background: url(./images/girlmoves.png);
+    width: 183px;
+    height: 327px;
+    background-size: cover;
+    top: 112px;
+    left: 179px;
+}
+
+
 .homebannnerk.revealer.aos-init .layerfires {
     animation: none;
 }
 
-.homebannnerk.revealer.aos-init.aos-animate .layerfires {
+.homebannnerk .layerfires {
     animation: moveline 2s infinite;
 }
+
+.homebannnerk .layerfires.cregreen{
+    animation: movelinecreat 2s infinite;
+}
+
 
 
 .homebannnerk .mainbn-hd {
