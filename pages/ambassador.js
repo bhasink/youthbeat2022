@@ -366,7 +366,7 @@ const Ambassador = () => {
           <div className="layerfires"></div>
 
           <div>
-          <Parallax translateX={[-5,-10]}>
+          <Parallax translateX={[0,-10]}>
             <h1 className="mainbn-hd">
               WE ARE THE VOICE
               <br />
@@ -520,7 +520,7 @@ const Ambassador = () => {
               <h2>
                 Ready to{' '}
                 <span className="txstrks">
-                  rule your
+                  rule <span className="antxon1">your</span>
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -533,7 +533,7 @@ const Ambassador = () => {
                   >
                   </svg>
                 </span>
-                <br></br> campus{' '}
+                <br></br> <span className="antxon1">campus</span>{' '}
               </h2>
               <p data-speed="1.25"  className="curvtxt">Create with YouthBeat</p>
             </div>

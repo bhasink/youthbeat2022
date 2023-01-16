@@ -548,7 +548,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             <div className="col-md-7 align-self-center text-lg-left text-center">
               <h2>
               Want your <span className="txstrks">
-                    content to stand{' '}
+                    content to <span className="antxon1">stand</span>{' '}
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -563,7 +563,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   </svg>
                 </span>
                 <br />
-                out from the crowd?{' '}
+                out from the <span className="antxon2">crowd?</span>{' '}
                 <br />
               </h2>
               <p className="curvtxt">Create with YouthBeat</p>

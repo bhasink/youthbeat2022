@@ -527,8 +527,8 @@ p {
 
 .showcaseytbs {
     position: relative;
-	padding: 50px 0 0 0;
-    top: -40px;
+	padding: 50px 0 30px 0;
+    top: -42px;
 }
 
 .showcaseytbs .mdhouseslide .owl-item.active:nth-child(even) {
@@ -553,6 +553,37 @@ p {
 .showcaseytbs h2 {
     font-family: 'Proxima Nova';
     font-size: 43px;
+}
+
+
+span.antxon1 {
+    font-weight: 100;
+    transition: all ease 3s;
+    animation: mvfontone 1s infinite;
+    position: relative;
+    margin: 0 0px 0 0;
+}
+
+
+@keyframes mvfontone {
+    0%{
+      font-weight: 100;  
+    }
+    50%{
+          font-weight: 300;
+    }
+    100%{
+           font-weight: 600; 
+    }
+}
+
+span.antxon2 {
+    animation: mvfontone 0.8s infinite;
+}
+
+.showcaseytbs h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
 }
 
 .showcaseytbs p.curvtxt {
