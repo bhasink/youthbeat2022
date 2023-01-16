@@ -697,7 +697,6 @@ const Ambassador = () => {
       </section>
       </Parallax>
 
-      <Parallax scale={[0.9,1]}>
 
       <section className="progrmsfrms revealer">
         <div className="container">
@@ -992,7 +991,6 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
-      </Parallax>
 
       <Footer />
     </div>
