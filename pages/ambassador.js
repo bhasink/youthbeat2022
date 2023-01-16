@@ -382,7 +382,7 @@ const Ambassador = () => {
         </div>
       </section>
       <section className="letsyoubet revealer">
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
         <div className="container">
           <div className="mainhead">
         
@@ -622,7 +622,7 @@ const Ambassador = () => {
         </div>
       </section>
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="ouytbservice revealer">
         <div className="container">
@@ -668,7 +668,7 @@ const Ambassador = () => {
       </Parallax>
 
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="membersytbs revealer">
         <div className="container">
@@ -697,7 +697,7 @@ const Ambassador = () => {
       </section>
       </Parallax>
 
-      <Parallax scale={[0.9,1]} opacity={[0.7,1]}>
+      <Parallax scale={[0.9,1]}>
 
       <section className="progrmsfrms revealer">
         <div className="container">
