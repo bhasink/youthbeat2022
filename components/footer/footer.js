@@ -50,13 +50,13 @@ const Footer = () => {
                   <ul>
                     <li>
                       {' '}
-                      <a href="javascript:void(0);">
+                      <a href="#">
                         <i className="fab fa-instagram" />
                       </a>
                     </li>
                     <li>
                       {' '}
-                      <a href="javascript:void(0);">
+                      <a href="#">
                         <i className="fab fa-facebook-f" />
                       </a>
                     </li>
