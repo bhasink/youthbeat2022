@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
 
 <ParallaxProvider>
 
-     <Cursor />
+   {/*<Cursor /> */}  
 
       <Head>
         <meta charSet="utf-8" />
