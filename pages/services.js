@@ -198,7 +198,7 @@ const Services = () => {
         <div className="col-md-5">
           <div className="genfrs position-relative">
             <img data-speed="auto"  src="./images/creobj.png" className="fltsbt" />
-            <img data-speed="auto"  src="./images/genfr.jpg" />
+            <img data-speed="auto"  src="./images/genfr.png" />
             <p data-speed="1.25" >Vibe  <br />check!</p>
           </div>
         </div>
@@ -219,26 +219,122 @@ const Services = () => {
       </div>
     </div>
   </section>
+
+  <section className='letstaskabs'>
+      <div className="mainhead">
+        <p data-speed="1.25"  className="sbhds">Let’s talk about some buzzness</p>
+        <p>Want to experience some next-level services that'll make you say "WOW"?<br/> We got you covered!</p>
+      </div>
+
+      <div className='poinrsd'>
+      <img className='ladylurights'  src="./images/knowbs/ladyluck.png" />
+          <div className=' container'>
+            <div className='row'>
+              <div className='col-md-6 col-lg-6 pl-lg-0'>
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                        <img src="./images/knowbs/1.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Ambassadors & Influencers</h6>
+                      <p>Hit up all the dope creators and link with <br/>hundreds of lit ambassadors!</p>
+                    </div>
+                  </div>
+
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                      <img src="./images/knowbs/2.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Retail Store Activations</h6>
+                      <p>Witness how we launch brands to the<br/> mooooon! <img src="./images/knowbs/rockets.png" className="txemojs"/></p>
+                    </div>
+                  </div>
+
+
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                      <img src="./images/knowbs/3.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Social Media</h6>
+                      <p>Show off your likes and make your mark <br/>on the most popular spot for us humans! #FamousAF</p>
+                    </div>
+                  </div>
+
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                      <img src="./images/knowbs/4.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Campus</h6>
+                      <p>Echo your brand tunes through hundreds <br/>of campuses!</p>
+                    </div>
+                  </div>
+
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                      <img src="./images/knowbs/5.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Creative & Branding</h6>
+                      <p>Get your brand trending with our fire <br/>services that make it the center of attention!</p>
+                    </div>
+                  </div>
+
+                  <div className='iconrowss'>
+                    <div className='icnclrn'>
+                      <img src="./images/knowbs/6.png"/>
+                    </div>
+                    <div className='align-self-center icparans'>
+                      <h6>Mobile Tours & Pop-ups</h6>
+                      <p>Whether it's online or IRL, we're committed to<br/> getting you that clout.</p>
+                    </div>
+                  </div>
+
+
+              </div>
+
+              <div className='col-md-6 col-lg-6'>
+                  
+              </div>
+            </div>
+          </div>
+      </div>
+  </section>
   <section className="whyybt-rights position-relative">
-    <img data-speed="auto"  src="./images/whysiright.png" className="desktopayout" data-aos="fade-right" data-aos-duration={3000} />
+   
     <div className="container">
       <div className="mainhead">
         <p data-speed="1.25"  className="sbhds">Why YouthBeat is The Right Move</p>
       </div>
       <div className="pygrphs">
         <div className="row">
-          <div className="col-md-6 text-center">
-            <img data-speed="auto"  src="./images/graphpyes.png"/>
-            <img data-speed="auto"  src="./images/targargs.png" className="targars"/>
-          </div>
-          <div className="col-md-6 align-self-center">
-            <div className="mainhead text-left">
-              <h3 data-speed="1.25"  className="centheads">Traffic <br />generated<br />
-                by millennials<br />
+
+        <div className="col-md-12 align-self-center text-center">
+            <div className="mainhead">
+              <h3 data-speed="1.25"  className="centheads">Traffic generated <br />
+                 by millennials
                 and Gen-Z
               </h3>
             </div>
           </div>
+
+          <div className="col-md-4 text-center">
+            <img data-speed="auto"  src="./images/milenone.png"/>
+            
+          </div>
+
+          <div className="col-md-4 text-center align-self-center">
+            <h6 className='numstsd'>~90%</h6>
+            
+          </div>
+
+          <div className="col-md-4 text-center">
+            <img data-speed="auto"  src="./images/milentwo.png"/>
+            
+          </div>
+          
         </div>
       </div>
     </div>
@@ -394,7 +490,7 @@ const Services = () => {
             </div>
             
             <div className="col-md-12">
-              <button className="ytthemects">Submit</button>
+              <button className="ytthemects"><span class="inrshd">Submit</span></button>
             </div>
           </div>
         </form>

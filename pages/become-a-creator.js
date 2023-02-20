@@ -640,7 +640,7 @@ const BecomeACreator = () => {
                       onClick={(e) => setCurrentValue(2)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd">Submit</span>
                     </button>
                   </div>
             
@@ -652,12 +652,9 @@ const BecomeACreator = () => {
               <form>
                 <div className="form-group  row">
                   <div className="col-md-12">
-                    <label>
-                      {/* <b>!!</b> */}
-                      <br />
-                    </label>
+                   
 
-                    <p style={{color:"#ffffff"}}>
+                    <p>
                     Thank you for showing your interest, can you give us the scoop on yourself so we can connect you with the hottest brands?
                     </p>
                   </div>
@@ -667,7 +664,7 @@ const BecomeACreator = () => {
                       onClick={(e) => handleNext(e, 2)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">Next</span> 
                     </button>
                   </div>
                 </div>
@@ -828,13 +825,13 @@ const BecomeACreator = () => {
                       onClick={(e) => handleBack(e, 3, pn,sn)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd"> back</span> 
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 3, pn,sn)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span> 
                     </button>
                   </div>
               </div>
@@ -868,13 +865,13 @@ const BecomeACreator = () => {
                       onClick={(e) => handleBack(e, 4, instaId)}
                       className="ytthemects"
                     >
-                      back
+                     <span class="inrshd"> back</span>  
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 4, instaId)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">  Next</span>  
                     </button>
                   </div>
               </div>
@@ -916,13 +913,13 @@ const BecomeACreator = () => {
                       onClick={(e) => handleBack(e, 5, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>  
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 5, instaFollower)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">  Next</span>  
                     </button>
                   </div>
               </div>
@@ -1001,13 +998,13 @@ const BecomeACreator = () => {
                       onClick={(e) => handleBack(e, 6, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                       <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 6, instaFollower)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd">Submit</span>
                     </button>
                   </div>
               </div>

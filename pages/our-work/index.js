@@ -85,7 +85,7 @@ const OurWork = () => {
       1200: {
         items: 4,
         margin: 40,
-        nav: true,
+        nav: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
@@ -117,9 +117,9 @@ const OurWork = () => {
               data-aos="flip-down"
               data-aos-duration={3000}
             >
-              See how we deliver <img src="./images/twik.png" />
+              See how we deliver 
               <br />
-              quality
+              quality <img src="./images/twik.png" />
             </h3>
           </div>
           <div>

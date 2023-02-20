@@ -566,7 +566,7 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => setCurrentValue(2)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd">Submit</span>
                     </button>
                   </div>
                 </div>
@@ -577,11 +577,7 @@ const BecomeAAmbassador = () => {
               <form>
                 <div className="form-group  row">
                   <div className="col-md-12">
-                    <label>
-                      {/* <b>!!</b> */}
-                      <br />
-                    </label>
-
+                   
                     <p>
                       Thank you for showing your interest, can you give us the
                       scoop on yourself so we can connect you with the hottest
@@ -594,7 +590,7 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => handleNext(e, 2)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span>
                     </button>
                   </div>
                 </div>
@@ -622,7 +618,7 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => handleNext(e, 3, instaId)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">Next</span>
                     </button>
                   </div>
                 </div>
@@ -658,13 +654,13 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => handleBack(e, 4, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 4, instaFollower)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">Next</span>
                     </button>
                   </div>
                 </div>
@@ -692,13 +688,13 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => handleBack(e, 5, college)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 5, college)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span>
                     </button>
                   </div>
                 </div>
@@ -728,7 +724,7 @@ const BecomeAAmbassador = () => {
                       }
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) =>
@@ -736,7 +732,7 @@ const BecomeAAmbassador = () => {
                       }
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span>
                     </button>
                   </div>
                 </div>
@@ -772,13 +768,13 @@ const BecomeAAmbassador = () => {
                       onClick={(e) => handleBack(e, 7, upcoming_clg_yr)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 7, upcoming_clg_yr)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd">Submit</span>
                     </button>
                   </div>
                 </div>

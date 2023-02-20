@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Medium.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 @font-face {
@@ -9,14 +26,6 @@
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: url('./fonts/ProximaNova-Extrabld.woff2') format('woff2'),
-        url('./fonts/ProximaNova-Extrabld.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'Caveat';
@@ -27,15 +36,59 @@
     font-display: swap;
 }
 
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Black.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/ProximaNova-Extrabold.woff2') format('woff2'),
+        url('./fonts/ProximaNova-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body{
 	font-family: 'Proxima Nova Rg';
-	    padding-top: 55px;
+	    padding-top: 84px;
 }
 
 
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Proxima Nova';
 	color:#000;
+    font-weight: 700;
 }
 
 p {
@@ -73,13 +126,14 @@ p {
 	font-family: 'Proxima Nova';
 	padding: 0 16px;
 	text-transform: uppercase;
-	    font-size: 15px;
+	    font-size: 14px;
+        font-weight: 700;
 }
 
 .site-header.topmain .navbar-brand {
     margin: 0;
     padding: 11px 17px;
-    width: 89px;
+    width: 70px;
     text-align: center;
     border-right: 1px solid #fff;
 }
@@ -160,7 +214,8 @@ p {
     
     bottom: -24px;
     position: absolute;
-    animation: bombani 1s linear 0s infinite;
+    transition: transform 2s ease-in-out;
+    animation: bombani 2s ease-out 0s infinite normal;
 }
 
 
@@ -170,28 +225,31 @@ p {
     top: -25px;
     z-index: 2;
     position: absolute;
-    animation: flipmyic 1s linear 0s infinite;
+    animation: flipmyic 10s linear 0s infinite;
 }
 
 @keyframes flipmyic {
     0%{
         transform: rotate(0deg);
     }
-    50%{
-        transform: rotate(5deg);
-    }
+    
     100%{
-        transform: rotate(11deg);
+        transform: rotate(360deg);
     }
 }
 
 @keyframes bombani {
     0%{
-        transform: scale3d(1, 1, 0);
-    }
-    100%{
-        transform: scale3d(0.8, 0.8, 0.8);
-    }
+        transform: rotate(0deg);
+     }
+ 
+     50%{
+         transform: rotate(18deg);
+     }
+ 
+     100%{
+         transform: rotate(0deg);
+     }
 }
 
 @keyframes leftslides{
@@ -250,13 +308,17 @@ p {
     background-size: cover;
 }
 
-.layerfires.cregreen {
+.cregreen {
     background: url(./images/girlmoves.png);
-    width: 183px;
-    height: 327px;
+    width: 173px;
+    height: 305px;
     background-size: cover;
-    top: 112px;
-    left: 179px;
+    top: 89px;
+    left: 119px;
+    position: absolute;
+    right: 0;
+    padding: 0;
+    margin: auto;
 }
 
 
@@ -268,8 +330,8 @@ p {
     animation: moveline 2s infinite;
 }
 
-.homebannnerk .layerfires.cregreen{
-    animation: movelinecreat 2s infinite;
+.homebannnerk .cregreen{
+   animation: movelinecreat 2s infinite; 
 }
 
 
@@ -277,6 +339,7 @@ p {
 .homebannnerk .mainbn-hd {
     font-size: 44px;
     color: #fff;
+    font-weight: 700;
 }
 
 .homebannnerk .str-yells img {
@@ -305,6 +368,11 @@ p {
     margin: auto;
 }
 
+.homebannnerk.revealer.creatorsbanons .desktopayout {
+    height: 85%;
+    object-fit: cover;
+}
+
 .homebannnerk img {
     width: 100%;
 }
@@ -322,12 +390,20 @@ p {
 
 /* css for second section */
 
+.mdhouseslide.desktlyts {
+    display: block;
+}
+
+.mdhouseslide.moblyts {
+    display: none;
+}
+
 .mdhouseslide img {
     width: 100%;
 }
 
 .mdhouseslide h4 {
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     color: #000;
     font-size: 27px;
@@ -369,7 +445,7 @@ p {
 }
 
 .mainhead .centheads {
-	font-weight: bold;
+	font-weight: 700;
 	font-family: 'Proxima Nova';
 	font-size: 49px;
 	line-height: 43px;
@@ -449,7 +525,7 @@ p {
     color: #fff;
     left: 0;
     margin: auto;
-    transform: translate(21px, 21px);
+    transform: scale(1.1);
     transition: all ease 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -459,13 +535,13 @@ p {
     position: absolute;
     margin: auto;
     bottom: 0;
-    padding:65px 15px;
+    padding:15px 15px 8px;
 }
 
 .hhcase-txt:hover .cse-txts {
     opacity: 1;
     visibility: visible;
-    transform: translate(0px, 0px);
+    transform: scale(1.0);
 }
 
 
@@ -553,38 +629,62 @@ p {
 .showcaseytbs h2 {
     font-family: 'Proxima Nova';
     font-size: 43px;
+    font-weight: 700;
 }
 
 
 span.antxon1 {
     font-weight: 100;
-    transition: all ease 3s;
     animation: mvfontone 1s infinite;
     position: relative;
     margin: 0 0px 0 0;
+    animation-delay: calc(0 * 150ms);
+    transition: ease-in-out .4s ease-in-out;
 }
 
+span.antxon1.anoanim {
+    animation: mvfontone2 1s infinite 0s normal;
+    animation-delay: calc(2 * 150ms);
+    transition: ease-in-out .4s ease-in-out;
+}
 
 @keyframes mvfontone {
-    0%{
-      font-weight: 100;  
-    }
-    50%{
-          font-weight: 300;
-    }
-    100%{
-           font-weight: 600; 
-    }
+    0%{font-weight: 100; }
+
+    20%{font-weight: 700;}
+
+   30%{font-weight: 700; }
+
+   40%{ font-weight: 700; }
+
+   60%{ font-weight: 700; }
+
+   80%{font-weight: 300; }
+
+   100%{font-weight: 100; }
+}
+
+@keyframes mvfontone2 {
+   0%{font-weight: 700; }
+
+   20%{font-weight: 300;}
+
+  30%{font-weight: 100; }
+
+  40%{ font-weight: 100; }
+
+  60%{ font-weight: 100; }
+
+  80%{font-weight: 300; }
+
+  100%{font-weight: 700; }
 }
 
 span.antxon2 {
     animation: mvfontone 0.8s infinite;
 }
 
-.showcaseytbs h2 {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-}
+
 
 .showcaseytbs p.curvtxt {
     font-family: 'Caveat';
@@ -635,7 +735,7 @@ span.antxon2 {
     display: none;
 }
 
-.mdhouseslide .owl-carousel a img {
+.mdhouseslide .owl-carousel .rdmorecta img {
     width: 80px;
     display: block;
 }
@@ -706,6 +806,7 @@ span.antxon2 {
     font-family: 'Proxima Nova';
     font-size: 44px;
     margin: 0;
+    font-weight: 700;
 }
 
 .servnumcounts  p {
@@ -713,6 +814,7 @@ span.antxon2 {
     font-size: 20px;
     line-height: 21px;
     margin: 20px 0 0 0;
+    font-weight: 700;
 }
 
 .ouytbservice {
@@ -736,8 +838,21 @@ span.antxon2 {
     width: 100%;
 }
 
-
 .ytthemects {
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ytthemects:focus{
+    outline: none;
+}
+
+.inrshd {
     background: #fff;
     color: #000;
     border-top: none;
@@ -748,17 +863,17 @@ span.antxon2 {
     z-index: 6;
     display: inline-block;
     vertical-align: middle;
-    width: auto;
+    width: 132px;
     margin: 10px 0 9px;
     font-weight: 700;
     border-radius: 0;
     outline: 0;
     transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out,transform .3s cubic-bezier(.29,.11,.2,.96);
     transform-style: preserve-3d;
-    padding: 7px 34px;
+    padding: 7px 0px;
 }
 
-.ytthemects:before {
+.inrshd:before {
    content: '';
     position: absolute;
     display: inline-block;
@@ -773,14 +888,14 @@ span.antxon2 {
     clip-path: inset(0 0 0 0);
 }
 
-.ytthemects:hover:before{
+.ytthemects:hover .inrshd:before{
         top: 1px;
         left: 0px;
         height: calc(100% + -1px);
 		    width: calc(93% + 10px);
 }
 
-.ytthemects:hover {
+.ytthemects:hover .inrshd{
     transform: translate3d(5px,5px,0);
 }
 
@@ -889,12 +1004,23 @@ section {
     width: 16px;
 }
 
-.cultur-comps h6 {
+.cultur-comps .seelike  h6 {
+    margin: 30px auto 20px;
+    max-width: 399px;
+    text-align: left;
+    font-size: 30px;
+    line-height: 32px;
     font-family: 'Proxima Nova';
     font-size: 24px;
-       margin: 40px 0px 30px 40px;
 }
 
+.seelike p {
+    font-size: 18px;
+}
+
+.cultur-comps .mainhead {
+    margin-bottom: 5px;
+}
 
 
 .centheads .flapswing.conemojis {
@@ -1051,6 +1177,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .yt-footh ul li a {
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .yt-footh ul li a:hover {
@@ -1068,9 +1195,9 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .rightflowrs {
     position: absolute;
-    right: -70px;
+    right: -48px;
     top: -40px;
-    width: 204px;
+    width: 169px;
 }
 
 .outstls {
@@ -1403,6 +1530,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .whyybt-rights {
     padding: 100px 0 50px 0;
+    background: #f6f6f6;
 }
 
 
@@ -1412,8 +1540,13 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     width: 100%;
 }
 
+.pygrphs {
+    max-width: 1030px;
+    margin: auto;
+}
+
 .pygrphs img {
-    width: 62%;
+    width: 100%;
 }
 
 .pygrphs .targars {
@@ -1429,8 +1562,20 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     font-size: 18px;
 }
 
-.pygrphs {
-    padding: 40px 0;
+.txemojs {
+    width: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.numstsd {
+    font-size: 120px;
+    color: #ee5018;
+}
+
+.pygrphs .mainhead .centheads {
+    font-size: 36px;
+    line-height: 40px;
 }
 
 .whyytmrk {
@@ -1453,7 +1598,8 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 }
 
 .ytmarkts {
-    padding-top: 40px;
+    padding-top: 0px;
+    background: #f6f6f6;
 }
 
 .whyytmrk p {
@@ -1480,6 +1626,62 @@ footer.yt-footh.revealer.aos-init.aos-animate {
   100% { left: -100%; }
 }
 
+/* lets business section */
+
+.icnclrn img {
+    width: 100%;
+}
+
+.icnclrn {
+    width: 85px;
+    margin: 0 auto auto 0;
+}
+
+.iconrowss {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.icparans {
+    width: 80%;
+}
+
+.icparans p {
+    margin: 0;
+}
+
+.icparans h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.letstaskabs {
+    padding: 100px 0 50px;
+}
+
+.ladylurights {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: 550px;
+    top: 8%;
+}
+
+.poinrsd {
+    padding-top: 35px;
+    position: relative;
+}
+
+.letstaskabs p {
+    padding-top: 25px;
+}
+
+.letstaskabs .iconrowss p {
+    padding-top: 0;
+}
 
 /* testimonials section */
 
@@ -1673,6 +1875,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     font-size: 32px;
     border-radius: 30px;
     margin: auto 7px;
+    font-weight: 700;
 }
 
 .tags-ytb.orng-cl span {
@@ -1797,7 +2000,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 /* css our work main */
 
 .howwedeliv-ytb {
-    height: 718px;
+    height: 618px;
     display: flex;
 	padding: 80px 0; 
 	    background: #000;
@@ -2074,10 +2277,87 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     padding-top: 100px;
 }
 
+.txstrks{
+    max-width: 83px;
+    width: 62px;
+}
+
+.txstrks.btxe {
+    width: 90px;
+    max-width: initial;
+}
+
+.mainhead .centheads .keyemojs {
+    display: none;
+}
+
 /* css for responsive media */
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
+
+    .letstaskabs p br {
+        display: none;
+    }
+    
+    .ladylurights {position: relative;right: 0;margin-bottom: 20px;}
+    
+    .poinrsd {
+        padding-top: 0;
+    }
+    
+    .icnclrn {
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+    
+    .whyybt-rights {
+        padding: 51px 0 50px 0;
+    }
+
+    .pygrphs .mainhead .centheads {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    .pygrphs .mainhead .centheads br {
+        display: none;
+    }
+
+    .numstsd{ font-size: 90px; }
+
+    .usptargt:after {
+        clip-path: polygon(-76% 5%, 92% 49%, 101% 19%);
+        height: 17%;
+    }
+    
+    .thswhys {
+        padding: 25px 0;
+    }
+
+    .letstaskabs{
+        padding: 76px 0 38px;
+    }
+
+    .cremg h2 br {
+        display: none;
+    }
+
+    .mdhouseslide.desktlyts {
+        display: none;
+    }
+    
+    .mdhouseslide.moblyts {
+        display: block; 
+    }
+    
+    .homebannnerk .cregreen {
+        left: 76px;
+        width: 146px;
+        height: 249px;
+        top: 67px;
+    }
+
     .innershowsl {
         height: auto;
         padding: 50px 0 0;
@@ -2159,7 +2439,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .usptargt:before {
     width: 100%;
-    height: 35%;
+    height: 36%;
     top: -76px;
 }
 
@@ -2316,9 +2596,17 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 	
 .cultur-comps {
     margin: 0px 0 0 0;
+    padding-bottom: 18px;
 }
 
-	
+.lastfrms h4 {
+    font-size: 30px;
+}
+
+.coolstds img {
+    width: 75px;
+}
+
 .mdhouseslide .owl-item.active:nth-child(even) {
     padding-top: 0;
 }
@@ -2385,14 +2673,14 @@ body {
 
 .homebannnerk {
     min-height: auto;
-    height: 465px;
+    height: 84vh;
 }
 
 .homebannnerk .mobstopayout {
 	position: absolute;
     top: 0;
     display: block;
-	width: 119%;
+	width: 100%;
 }
 
 .homebannnerk .mainbn-hd{
@@ -2405,8 +2693,9 @@ body {
 }
 
 .layerfires {
-    width: 329px;
-    height: 343px;
+    width: 353px;
+    height: 368px;
+    top: 109px;
 }
 
 .homebannnerk .container {
@@ -2418,7 +2707,7 @@ body {
 		height:0px;
 	}
 	100%{
-		    height: 343px;
+        height: 368px;
 	}
 }
 
@@ -2634,7 +2923,7 @@ body {
     max-width: 1500px;
 }
 
-p {
+p, .seelike p {
     font-size: 24px;
 }
 
@@ -2666,8 +2955,50 @@ p {
     position: relative;
 }
 
-.cultur-comps h6 {
+.cultur-comps .seelike h6 {
     font-size: 36px;
+}
+
+.ladylurights {
+    max-width: 705px;
+}
+
+.icparans h6 {
+    font-size: 30px;
+}
+
+.icnclrn {
+    width: 144px;
+}
+
+.innrbanner, .howwedeliv-ytb{
+    height: 86vh;
+}
+
+.homebannnerk {
+    height: 84vh;
+}
+
+.homebannnerk.revealer.creatorsbanons .desktopayout{height: 100%;}
+
+.letsyoubet {
+    padding: 70px 0;
+}
+
+.layerfires {
+    top: 64px;
+    height: 708px;
+    width: 680px;
+}
+
+
+@keyframes moveline{
+	0%{
+		height:0px;
+	}
+	100%{
+		    height: 708px;
+	}
 }
 
 }

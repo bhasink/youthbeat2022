@@ -115,7 +115,7 @@ const ContactUs = () => {
         {/* <section className="mapopn">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224246.36813827857!2d77.15449604496055!3d28.574281617598178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8cb290c673%3A0x72690587569280bc!2sSociowash!5e0!3m2!1sen!2sin!4v1671617288617!5m2!1sen!2sin" style={{border: 0}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
   </section> */}
-        <section className="cultur-comps">
+        <section className="cultur-comps mt-2">
           <div className="container">
             <div className="contactsmids">
               <div className="mainhead text-left">
@@ -208,7 +208,7 @@ const ContactUs = () => {
                       ></textarea>
                     </div>
                     <div className="col-md-12">
-                      <button className="ytthemects">Submit</button>
+                      <button className="ytthemects"><span class="inrshd">Submit</span></button>
                     </div>
                   </div>
                 </form>

@@ -47,7 +47,7 @@ const Header = () => {
           <div className="container-fluid p-0">
             {/* Brand */}
 
-            <Link className="navbar-brand" href="/">
+            <Link className="navbar-brand" href="/ambassador">
 
               <img
                 src="/images/logo.png"

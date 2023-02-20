@@ -257,7 +257,7 @@ const Creator = () => {
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
         dots: false,
-        loop: true,
+        loop: false,
       },
     },
 
@@ -326,12 +326,12 @@ const Creator = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         margin: 20,
         nav: true,
-        center: true,
+        center: false,
         dots: true,
-        loop: true,
+        loop: false,
         autoplay: true,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
@@ -381,7 +381,7 @@ const Creator = () => {
         autoplaySpeed: '6000',
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
-        dots: false,
+        dots: true,
         loop: true,
       },
     },
@@ -398,11 +398,11 @@ const Creator = () => {
 
       <Header />
 
-      <section className="homebannnerk revealer">
-        <img src="./images/creatorbanner.jpg" className="desktopayout" />
+      <section className="homebannnerk revealer creatorsbanons">
+        <img src="./images/creatorbanner2.png" className="desktopayout" />
         <img src="./images/creatormobile.jpg" className="mobstopayout" />
         <div className="container">
-		<div  className="layerfires cregreen"></div>
+		<div  className="cregreen"></div>
 		
 		<div><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
 OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>
@@ -545,10 +545,10 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <img
                 src="./images/roundlady.png"/>
             </div>
-            <div className="col-md-7 align-self-center text-lg-left text-center">
+            <div className="col-md-7 align-self-center text-lg-left text-center cremg">
               <h2>
-              Want your <span className="txstrks">
-                    content to <span className="antxon1">stand</span>{' '}
+              Want your  content to <span className="txstrks  btxe">
+                    <span className="antxon1">stand</span>{' '}
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -584,7 +584,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 Read our 
                   <br /> case  studies
                 </h4>
-                <a href="/our-work/myntra">
+                <a href="/our-work/myntra" className='rdmorecta'>
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
@@ -599,7 +599,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <br /> innovation
                   <br /> we bring
                 </h4>
-                <a href="/our-work/one-plus">
+                <a href="/our-work/one-plus" className='rdmorecta'>
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
@@ -614,10 +614,30 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <br />
                   of YouthBeat
                 </h4>
-                <a href="/our-work/tinder">
+                <a href="/our-work/tinder" className='rdmorecta'>
                   read more
                   <br />
                   <div className='rdstrokes'><img src="./images/readmorec.png" /></div>
+                </a>
+              </div>
+
+              <div className="item">
+              <a href="/our-work/urbanic"> <img data-speed="auto"  src="./images/casestudy/urbanic.jpg" />
+              </a>
+                <p data-speed="1.25" >
+                  <b>Urbanic</b>
+                </p>
+                <h4>
+                See how we 
+                  <br />
+                  made  fashionable
+                </h4>
+                <a href="/our-work/urbanic" className='rdmorecta'>
+                  read more
+                  <br />
+                  <div className="rdstrokes">
+                    <img data-speed="auto"  src="./images/readmorec.png" />
+                  </div>
                 </a>
               </div>
             </OwlCarousel>
@@ -680,46 +700,46 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             >
               <div className="item">
                 <img
-                  src="./images/members/crt1.png"/>
+                  src="./images/members/creatos/1.jpg"/>
               </div>
               <div className="item">
-                <img
-                  src="./images/members/crt2.png"/>
+              <img
+                  src="./images/members/creatos/2.jpg"/>
               </div>
               <div className="item">
-                <img
-                  src="./images/members/crt3.png"/>
-              </div>
-
-              <div className="item">
-                <img
-                  src="./images/members/crt4.png"/>
+              <img
+                  src="./images/members/creatos/3.jpg"/>
               </div>
 
               <div className="item">
-                <img
-                  src="./images/members/crt5.png"/>
+              <img
+                  src="./images/members/creatos/4.jpg"/>
               </div>
 
               <div className="item">
-                <img
-                  src="./images/members/crt6.png"/>
+              <img
+                  src="./images/members/creatos/5.jpg"/>
               </div>
 
               <div className="item">
-                <img
-                  src="./images/members/crt7.png"/>
+              <img
+                  src="./images/members/creatos/6.jpg"/>
               </div>
 
               <div className="item">
-                <img
-                  src="./images/members/crt8.png"/>
+              <img
+                  src="./images/members/creatos/7.jpg"/>
+              </div>
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/8.jpg"/>
               </div>
 
 
               <div className="item">
-                <img
-                  src="./images/members/crt9.png"/>
+              <img
+                  src="./images/members/creatos/9.jpg"/>
               </div>
             </OwlCarousel>
           </div>
@@ -814,7 +834,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => setCurrentValue(2)}
                       className="ytthemects"
                     >
-                      Submit
+                     <span class="inrshd">Submit</span> 
                     </button>
                   </div>
             
@@ -841,7 +861,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => handleNext(e, 2)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd"> Next</span>
                     </button>
                   </div>
                 </div>
@@ -1002,13 +1022,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => handleBack(e, 3, pn,sn)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd"> back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 3, pn,sn)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd"> Next</span>
                     </button>
                   </div>
               </div>
@@ -1042,13 +1062,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => handleBack(e, 4, instaId)}
                       className="ytthemects"
                     >
-                      back
+                    <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 4, instaId)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span>
                     </button>
                   </div>
               </div>
@@ -1090,13 +1110,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => handleBack(e, 5, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd"> back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 5, instaFollower)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">Next</span>
                     </button>
                   </div>
               </div>
@@ -1175,13 +1195,13 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                       onClick={(e) => handleBack(e, 6, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 6, instaFollower)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd"> Submit</span>
                     </button>
                   </div>
               </div>

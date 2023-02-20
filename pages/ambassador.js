@@ -257,7 +257,7 @@ const Ambassador = () => {
       },
 
       1200: {
-        items: 3,
+        items: 4,
         margin: 20,
         nav: false,
         autoplay: false,
@@ -348,7 +348,7 @@ const Ambassador = () => {
         autoplaySpeed: '6000',
         animateOut: 'slideOutUp',
         animateIn: 'slideInUp',
-        center: true,
+        center: false,
         dots: true,
         loop: true,
       },
@@ -361,9 +361,9 @@ const Ambassador = () => {
 
       <section className="homebannnerk">
 
-      <ParallaxBannerLayer image="./images/hm9.jpg" speed={3} className=" desktopayout" />
+      <img src="./images/imageactual.jpg" speed={3} className=" desktopayout" />
 
-        <img data-speed="auto"  src="./images/homemobile.jpg" className="mobstopayout" />
+        <img data-speed="auto"  src="./images/homemobile3.jpg" className="mobstopayout" />
         <div className="container">
           <div className="layerfires"></div>
 
@@ -384,7 +384,7 @@ const Ambassador = () => {
         </div>
       </section>
       <section className="letsyoubet revealer">
-      <Parallax scale={[0.9,1]}>
+     
         <div className="container">
           <div className="mainhead">
         
@@ -404,7 +404,7 @@ const Ambassador = () => {
             </p>
           </div>
 
-          <div className="mdhouseslide">
+          <div className="mdhouseslide desktlyts">
             <div className='row'>
             <div className="col-md-3">
                 <div className="hhcase-txt">
@@ -468,7 +468,7 @@ const Ambassador = () => {
               </div>
             </div>
           </div>
-          <div className="mdhouseslide">
+          <div className="mdhouseslide moblyts">
             <OwlCarousel
               className="whygridsphn owl-theme owl-carousel"
               
@@ -539,7 +539,7 @@ const Ambassador = () => {
             </OwlCarousel>
           </div>
         </div>
-        </Parallax>
+        
       </section>
       <section className="partnersincr revealer">
         <div className="container">
@@ -565,7 +565,7 @@ const Ambassador = () => {
                 <img data-speed="auto"  src="./images/ourpatner/3.png" />
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/ourpatner/4.png" />
+                <img data-speed="auto"  src="./images/ourpatner/5.png" />
               </div>
             </OwlCarousel>
           </div>
@@ -585,9 +585,9 @@ const Ambassador = () => {
 
             <div className="col-md-7 align-self-center text-lg-left text-center">
               <h2>
-                Ready to{' '}
+                Ready to rule{' '}
                 <span className="txstrks">
-                  rule <span className="antxon1">your</span>
+                   <span className="antxon1">your</span>
                   <svg
                     version="1.1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -600,7 +600,7 @@ const Ambassador = () => {
                   >
                   </svg>
                 </span>
-                <br></br> <span className="antxon1">campus</span>{' '}
+                <br></br> <span className="antxon1 anoanim">campus</span>{' '}
               </h2>
               <p data-speed="1.25"  className="curvtxt">Create with YouthBeat</p>
             </div>
@@ -616,7 +616,9 @@ const Ambassador = () => {
               nav
             >
               <div className="item">
+              <a href="/our-work/myntra">
                 <img data-speed="auto"  src="./images/casestudy/myntra.jpg" />
+              </a>
                 <p data-speed="1.25" >
                   <b>Myntra</b>
                 </p>
@@ -624,7 +626,7 @@ const Ambassador = () => {
                 Read our 
                   <br /> case  studies
                 </h4>
-                <a href="/our-work/myntra">
+                <a href="/our-work/myntra" className='rdmorecta'>
                   read more
                   <br />
                   <div className="rdstrokes">
@@ -634,7 +636,9 @@ const Ambassador = () => {
                 </a>
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/casestudy/oneplus.jpg" />
+              <a href="/our-work/one-plus">
+                 <img data-speed="auto"  src="./images/casestudy/oneplus.jpg" />
+              </a>
                 <p data-speed="1.25" >
                   <b>One Plus</b>
                 </p>
@@ -643,7 +647,7 @@ const Ambassador = () => {
                   <br /> innovation
                   <br /> we bring
                 </h4>
-                <a href="/our-work/one-plus">
+                <a href="/our-work/one-plus" className='rdmorecta'>
                   read more
                   <br />
                   <div className="rdstrokes">
@@ -653,8 +657,9 @@ const Ambassador = () => {
                 </a>
               </div>
               <div className="item">
+              <a href="/our-work/tinder">
                 <img data-speed="auto"  src="./images/casestudy/tinder.jpg" />
-
+              </a>
                 <p data-speed="1.25" >
                   <b>Tinder</b>
                 </p>
@@ -663,7 +668,27 @@ const Ambassador = () => {
                   <br />
                   of YouthBeat
                 </h4>
-                <a href="/our-work/tinder">
+                <a href="/our-work/tinder" className='rdmorecta'>
+                  read more
+                  <br />
+                  <div className="rdstrokes">
+                    <img data-speed="auto"  src="./images/readmorec.png" />
+                  </div>
+                </a>
+              </div>
+
+              <div className="item">
+              <a href="/our-work/urbanic"> <img data-speed="auto"  src="./images/casestudy/urbanic.jpg" />
+              </a>
+                <p data-speed="1.25" >
+                  <b>Urbanic</b>
+                </p>
+                <h4>
+                See how we 
+                  <br />
+                  made  fashionable
+                </h4>
+                <a href="/our-work/urbanic" className='rdmorecta'>
                   read more
                   <br />
                   <div className="rdstrokes">
@@ -832,13 +857,14 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                    <button
+                   <div className='ovrfl'> 
+                   <button
                       id={'2'}
                       onClick={(e) => setCurrentValue(2)}
                       className="ytthemects"
                     >
-                      Submit
-                    </button>
+                     <span class="inrshd"> Submit</span>
+                    </button></div>
                   </div>
                 </div>
               </form>
@@ -861,12 +887,12 @@ const Ambassador = () => {
                   </div>
 
                   <div className="col-md-12">
-                    <button
+                  <div className='ovrfl'>  <button
                       onClick={(e) => handleNext(e, 2)}
                       className="ytthemects"
                     >
-                      Next
-                    </button>
+                      <span class="inrshd">Next</span> 
+                    </button></div>
                   </div>
                 </div>
               </form>
@@ -893,7 +919,7 @@ const Ambassador = () => {
                       onClick={(e) => handleNext(e, 3, instaId)}
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd">Next</span> 
                     </button>
                   </div>
                 </div>
@@ -929,13 +955,13 @@ const Ambassador = () => {
                       onClick={(e) => handleBack(e, 4, instaFollower)}
                       className="ytthemects"
                     >
-                      back
+                     <span class="inrshd">back</span>  
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 4, instaFollower)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span> 
                     </button>
                   </div>
                 </div>
@@ -963,13 +989,13 @@ const Ambassador = () => {
                       onClick={(e) => handleBack(e, 5, college)}
                       className="ytthemects"
                     >
-                      back
+                     <span class="inrshd">back</span>  
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 5, college)}
                       className="ytthemects"
                     >
-                      Next
+                      <span class="inrshd">Next</span>  
                     </button>
                   </div>
                 </div>
@@ -999,7 +1025,7 @@ const Ambassador = () => {
                       }
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd">back</span>  
                     </button>
                     <button
                       onClick={(e) =>
@@ -1007,7 +1033,7 @@ const Ambassador = () => {
                       }
                       className="ytthemects"
                     >
-                      Next
+                     <span class="inrshd"> Next</span>  
                     </button>
                   </div>
                 </div>
@@ -1043,13 +1069,13 @@ const Ambassador = () => {
                       onClick={(e) => handleBack(e, 7, upcoming_clg_yr)}
                       className="ytthemects"
                     >
-                      back
+                      <span class="inrshd"> back</span>  
                     </button>
                     <button
                       onClick={(e) => handleNext(e, 7, upcoming_clg_yr)}
                       className="ytthemects"
                     >
-                      Submit
+                      <span class="inrshd">Submit</span>
                     </button>
                   </div>
                 </div>

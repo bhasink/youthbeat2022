@@ -66,19 +66,25 @@ const JoinUs = () => {
       <Header />
 
 <div>
-  <section className="cultur-comps">
+  <section className="cultur-comps mt-0">
     <div className="container">
       <div className="mainhead">
-        <h3 className="centheads aos-init aos-animate" data-aos="flip-down" data-aos-duration={3000}><img src="./images/flapon.png" className="flapswing" />Company<br />
+        <h3 className="centheads">Company<br />
           <span className="skblues">Culture</span></h3>
       </div>
+      <div className='seelike'>
       <div className="row">
-        <div className="col-md-7 align-self-center mx-auto">
+        <div className="col-md-12 align-self-center mx-auto text-center">
           <p>We keep our clients close and our culture even closer!  </p>
           <h6>What is our culture like? <br />
             See for yourself  <img src="./images/handbots.png" className="handemos" /></h6>
         </div>
-        <div className="col-md-7 mx-auto">
+        
+      </div>
+      </div>
+    </div>
+
+    <div className="col-md-9 mx-auto">
           <img src="./images/shockyel2.png" className="rightflowrs" />
           <div className="outstls">
             <OwlCarousel
@@ -116,8 +122,7 @@ const JoinUs = () => {
             </OwlCarousel>
           </div>
         </div>
-      </div>
-    </div>
+
   </section>
  
   <section className="opps-services">
@@ -183,12 +188,10 @@ const JoinUs = () => {
         <p className="sbhds"> <span className="coolstds">Work with us <img src="./images/workwistrok.png" /></span></p>
       </div>
 
-      <p>Want to work with crazy brands, live the Insta-trendy lifestyle, and hangout with the best of creators out there? 
+      <p>Want to work with crazy brands, live the Insta-trendy lifestyle, and hangout with the best of creators out there? <br/>
+      No need to look any further! Join YouthBeat now!
 </p>
 
-<p>No need to look any further! Join YouthBeat now!
- 
-</p>
       {/* <div className="jobslts">
         <h4>Account Manager <img src="./images/arropinks.png" /></h4>
       </div>
@@ -203,9 +206,9 @@ const JoinUs = () => {
       </div>*/ }
     </div>
   </section>
-  <section className="lastfrms text-center mb-5">
+  <section className="lastfrms text-center mb-5 pt-2">
     <div className="container">
-      <button className="ytthemects">Click Here</button>
+      <button className="ytthemects bggct"><span class="inrshd">Click Here</span></button>
       <h4>To become <span className="coolstds">cool <img src="./images/toocoolsv.png" /></span> today! </h4>
     </div>
   </section>
