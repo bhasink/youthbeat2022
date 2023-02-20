@@ -168,13 +168,13 @@ const Services = () => {
 
      <div>
   <section className="innrbanner">
-    <img data-speed="auto"  src="./images/ourservices2.jpg" className="desktopayout" />
+    <img data-speed="auto"  src="/images/ourservices2.jpg" className="desktopayout" />
     <div className="container">
     <Parallax speed={-5}>
 
       <div className="mainhead whithd">
         <p data-speed="1.25"  className="sbhds">What is YouthBeat?</p>
-        <h3 data-speed="1.25"  className="centheads"><img data-speed="auto"  src="./images/bombobjs.png" className="sunbom" />We are youthful, full of energy,<br />
+        <h3 data-speed="1.25"  className="centheads"><img data-speed="auto"  src="/images/bombobjs.png" className="sunbom" />We are youthful, full of energy,<br />
           and obsessed with making<br />
           companies hotter
         </h3>
@@ -197,8 +197,8 @@ const Services = () => {
         </div>
         <div className="col-md-5">
           <div className="genfrs position-relative">
-            <img data-speed="auto"  src="./images/creobj.png" className="fltsbt" />
-            <img data-speed="auto"  src="./images/genfr.png" />
+            <img data-speed="auto"  src="/images/creobj.png" className="fltsbt" />
+            <img data-speed="auto"  src="/images/genfr.png" />
             <p data-speed="1.25" >Vibe  <br />check!</p>
           </div>
         </div>
@@ -208,9 +208,9 @@ const Services = () => {
    {/**<div className="usps"><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p><p data-speed="1.25" >// MAIN CHARACTER  </p></div> */} 
 
     <div className="usps">
-      <img data-speed="auto"  src="./images/usptagsnw.png" />
-      <img data-speed="auto"  src="./images/usptagsnw.png" />
-      <img data-speed="auto"  src="./images/usptagsnw.png" />
+      <img data-speed="auto"  src="/images/usptagsnw.png" />
+      <img data-speed="auto"  src="/images/usptagsnw.png" />
+      <img data-speed="auto"  src="/images/usptagsnw.png" />
     </div>
     <div className="thswhys">
       <div className="container">
@@ -227,13 +227,13 @@ const Services = () => {
       </div>
 
       <div className='poinrsd'>
-      <img className='ladylurights'  src="./images/knowbs/ladyluck.png" />
+      <img className='ladylurights'  src="/images/knowbs/ladyluck.png" />
           <div className=' container'>
             <div className='row'>
               <div className='col-md-6 col-lg-6 pl-lg-0'>
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                        <img src="./images/knowbs/1.png"/>
+                        <img src="/images/knowbs/1.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Ambassadors & Influencers</h6>
@@ -243,18 +243,18 @@ const Services = () => {
 
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                      <img src="./images/knowbs/2.png"/>
+                      <img src="/images/knowbs/2.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Retail Store Activations</h6>
-                      <p>Witness how we launch brands to the<br/> mooooon! <img src="./images/knowbs/rockets.png" className="txemojs"/></p>
+                      <p>Witness how we launch brands to the<br/> mooooon! <img src="/images/knowbs/rockets.png" className="txemojs"/></p>
                     </div>
                   </div>
 
 
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                      <img src="./images/knowbs/3.png"/>
+                      <img src="/images/knowbs/3.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Social Media</h6>
@@ -264,7 +264,7 @@ const Services = () => {
 
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                      <img src="./images/knowbs/4.png"/>
+                      <img src="/images/knowbs/4.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Campus</h6>
@@ -274,7 +274,7 @@ const Services = () => {
 
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                      <img src="./images/knowbs/5.png"/>
+                      <img src="/images/knowbs/5.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Creative & Branding</h6>
@@ -284,7 +284,7 @@ const Services = () => {
 
                   <div className='iconrowss'>
                     <div className='icnclrn'>
-                      <img src="./images/knowbs/6.png"/>
+                      <img src="/images/knowbs/6.png"/>
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Mobile Tours & Pop-ups</h6>
@@ -321,7 +321,7 @@ const Services = () => {
           </div>
 
           <div className="col-md-4 text-center">
-            <img data-speed="auto"  src="./images/milenone.png"/>
+            <img data-speed="auto"  src="/images/milenone.png"/>
             
           </div>
 
@@ -331,7 +331,7 @@ const Services = () => {
           </div>
 
           <div className="col-md-4 text-center">
-            <img data-speed="auto"  src="./images/milentwo.png"/>
+            <img data-speed="auto"  src="/images/milentwo.png"/>
             
           </div>
           
@@ -360,8 +360,8 @@ const Services = () => {
           </div>
          
           <div className="col-md-6 align-self-center position-relative">
-            <img data-speed="auto"  src="./images/service2.jpg" className="img-fluid" />
-            <img data-speed="auto"  src="./images/genx.png" className="gnround" />
+            <img data-speed="auto"  src="/images/service2.jpg" className="img-fluid" />
+            <img data-speed="auto"  src="/images/genx.png" className="gnround" />
           </div>
         </div>
       </div>
@@ -490,7 +490,7 @@ const Services = () => {
             </div>
             
             <div className="col-md-12">
-              <button className="ytthemects"><span class="inrshd">Submit</span></button>
+              <button className="ytthemects"><span className="inrshd">Submit</span></button>
             </div>
           </div>
         </form>
