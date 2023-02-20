@@ -491,7 +491,7 @@ const Services = () => {
             
             <div className="col-md-12">
               <button className="ytthemects"><span className="inrshd">Submit</span></button>
-            </div>
+            </div> 
           </div>
         </form>
       </div>

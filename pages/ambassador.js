@@ -361,9 +361,9 @@ const Ambassador = () => {
 
       <section className="homebannnerk">
 
-      <img src="./images/imageactual.jpg" speed={3} className=" desktopayout" />
+      <img src="/images/imageactual.jpg" speed={3} className=" desktopayout" />
 
-        <img data-speed="auto"  src="./images/homemobile3.jpg" className="mobstopayout" />
+        <img data-speed="auto"  src="/images/homemobile3.jpg" className="mobstopayout" />
         <div className="container">
           <div className="layerfires"></div>
 
@@ -375,7 +375,7 @@ const Ambassador = () => {
               OF{' '}
               <span className="str-yells">
                 GEN-Zs
-                <img data-speed="auto"  src="./images/strokeyello.png" />
+                <img data-speed="auto"  src="/images/strokeyello.png" />
               </span>{' '}
               ALL AROUND
             </h1>
@@ -389,7 +389,7 @@ const Ambassador = () => {
           <div className="mainhead">
         
             <h3 className="centheads">
-              <img data-speed="auto"  src="./images/smilheads.png" className="anmemojs" />
+              <img data-speed="auto"  src="/images/smilheads.png" className="anmemojs" />
               Let YouthBeat
               <br />
               take the wheel!
@@ -408,7 +408,7 @@ const Ambassador = () => {
             <div className='row'>
             <div className="col-md-3">
                 <div className="hhcase-txt">
-                  <img data-speed="auto"  src="./images/madhouse/ab1.jpg" />
+                  <img data-speed="auto"  src="/images/madhouse/ab1.jpg" />
                   <div className="cse-txts">
                     <p data-speed="1.25" >
                       Resonate the tunes of famous brands and work with them!
