@@ -222,8 +222,8 @@ const Services = () => {
 
   <section className='letstaskabs'>
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">Let's talk about some buzzness</p>
-        <p>Want to experience some next-level services that'll make you say "WOW"?<br/> We got you covered!</p>
+        <p data-speed="1.25"  className="sbhds">Let{"’"}s talk about some buzzness</p>
+        <p>Want to experience some next-level services that{"’"}ll make you say {"WOW"}?<br/> We got you covered!</p>
       </div>
 
       <div className='poinrsd'>
@@ -370,7 +370,7 @@ const Services = () => {
   <section className="testimons-ytb revealer">
     <div className="container">
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">What they say about us on the 'Gram</p>
+        <p data-speed="1.25"  className="sbhds">What they say about us on the ‘Gram</p>
       </div>
       <div className="testslid">
         

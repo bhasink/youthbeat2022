@@ -192,6 +192,9 @@ const JoinUs = () => {
       No need to look any further! Join YouthBeat now!
 </p>
 
+<p>
+ 
+</p>
       {/* <div className="jobslts">
         <h4>Account Manager <img src="./images/arropinks.png" /></h4>
       </div>
