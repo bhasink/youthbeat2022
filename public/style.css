@@ -310,11 +310,11 @@ p {
 
 .cregreen {
     background: url(./images/girlmoves.png);
-    width: 173px;
-    height: 305px;
+    width: 161px;
+    height: 281px;
     background-size: cover;
-    top: 89px;
-    left: 119px;
+    top: 112px;
+    left: 113px;
     position: absolute;
     right: 0;
     padding: 0;
@@ -357,7 +357,7 @@ p {
 .homebannnerk .container {
     z-index: 3;
     margin: auto;
-    margin-bottom: 77px;
+    margin-bottom: 100px;
 }
 
 .homebannnerk .desktopayout {
@@ -366,11 +366,6 @@ p {
     left: 0;
     right: 0;
     margin: auto;
-}
-
-.homebannnerk.revealer.creatorsbanons .desktopayout {
-    height: 85%;
-    object-fit: cover;
 }
 
 .homebannnerk img {
@@ -635,7 +630,7 @@ p {
 
 span.antxon1 {
     font-weight: 100;
-    animation: mvfontone 1s infinite;
+    animation: mvfontone 2s infinite;
     position: relative;
     margin: 0 0px 0 0;
     animation-delay: calc(0 * 150ms);
@@ -643,9 +638,13 @@ span.antxon1 {
 }
 
 span.antxon1.anoanim {
-    animation: mvfontone2 1s infinite 0s normal;
+    animation: mvfontone2 2s infinite 0s normal;
     animation-delay: calc(2 * 150ms);
     transition: ease-in-out .4s ease-in-out;
+}
+
+span.antxon2 {
+    animation: mvfontone 2s infinite;
 }
 
 @keyframes mvfontone {
@@ -679,12 +678,6 @@ span.antxon1.anoanim {
 
   100%{font-weight: 700; }
 }
-
-span.antxon2 {
-    animation: mvfontone 0.8s infinite;
-}
-
-
 
 .showcaseytbs p.curvtxt {
     font-family: 'Caveat';
@@ -846,6 +839,8 @@ span.antxon2 {
     padding: 0 10px;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
 }
 
 .ytthemects:focus{
@@ -2167,14 +2162,12 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .strbcks {
     position: relative;
-    display: inline-block;
-    width: 32%;
 }
 
 .strbcks  img {
         position: absolute;
     width: 50px;
-    right: 0;
+    left: 125px;
     bottom: -21px;
 }
 
@@ -2352,10 +2345,10 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     }
     
     .homebannnerk .cregreen {
-        left: 76px;
-        width: 146px;
-        height: 249px;
-        top: 67px;
+        left: 79px;
+        width: 170px;
+        height: 299px;
+        top: 211px;
     }
 
     .innershowsl {
@@ -2673,7 +2666,7 @@ body {
 
 .homebannnerk {
     min-height: auto;
-    height: 84vh;
+    height: 100vh;
 }
 
 .homebannnerk .mobstopayout {
@@ -2979,7 +2972,14 @@ p, .seelike p {
     height: 84vh;
 }
 
-.homebannnerk.revealer.creatorsbanons .desktopayout{height: 100%;}
+.homebannnerk .cregreen {
+    width: 247px;
+    height: 437px;
+    top: 160px;
+    left: 166px;
+}
+
+
 
 .letsyoubet {
     padding: 70px 0;

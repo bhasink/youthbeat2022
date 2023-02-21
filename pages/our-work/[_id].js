@@ -216,8 +216,8 @@ const OurWorkDetails = () => {
               <div className="strbcks">
 
                 
-                <a rel="noreferrer" target={'_blank'} href={process.env.NEXT_PUBLIC_B_API+'/case-study/cs_pdf/'+caseStudy.cs_pdf} className="ytthemects">View Here </a>
-                <img src="/images/bluestrs.png" />
+                <a rel="noreferrer" target={'_blank'} href={process.env.NEXT_PUBLIC_B_API+'/case-study/cs_pdf/'+caseStudy.cs_pdf} className="ytthemects"><span className="inrshd">View Here</span> <img src="/images/bluestrs.png"/> </a>
+                
               </div>
             </div>
           </div>

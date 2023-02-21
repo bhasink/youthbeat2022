@@ -399,7 +399,7 @@ const Creator = () => {
       <Header />
 
       <section className="homebannnerk revealer creatorsbanons">
-        <img src="./images/creatorbanner2.png" className="desktopayout" />
+        <img src="./images/creatorbanner.jpg" className="desktopayout" />
         <img src="./images/creatormobile.jpg" className="mobstopayout" />
         <div className="container">
 		<div  className="cregreen"></div>
