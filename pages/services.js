@@ -223,7 +223,7 @@ const Services = () => {
   <section className='letstaskabs'>
       <div className="mainhead">
         <p data-speed="1.25"  className="sbhds">Let’s talk about some buzzness</p>
-        <p>Want to experience some next-level services that'll make you say "WOW"?<br/> We got you covered!</p>
+        <p>Want to experience some next-level services that\u0027ll make you say \u0022WOW\u0022?<br/> We got you covered!</p>
       </div>
 
       <div className='poinrsd'>
@@ -288,7 +288,7 @@ const Services = () => {
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Mobile Tours & Pop-ups</h6>
-                      <p>Whether it's online or IRL, we're committed to<br/> getting you that clout.</p>
+                      <p>Whether it\u0027s online or IRL, we\u0027re committed to<br/> getting you that clout.</p>
                     </div>
                   </div>
 
