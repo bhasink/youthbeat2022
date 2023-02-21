@@ -288,7 +288,7 @@ const Services = () => {
                     </div>
                     <div className='align-self-center icparans'>
                       <h6>Mobile Tours {"&"} Pop-ups</h6>
-                      <p>Whether it's online or IRL, we're committed to<br/> getting you that clout.</p>
+                      <p>Whether it&apos;s online or IRL, we&apos;re committed to<br/> getting you that clout.</p>
                     </div>
                   </div>
 

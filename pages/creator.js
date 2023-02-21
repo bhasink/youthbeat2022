@@ -419,7 +419,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               take the wheel!
             </h3>
             <p className="sbhds">
-              We're young, always evolving, and hungry for more
+              We&apos;re young, always evolving, and hungry for more
             </p>
           </div>
           <div className="mdhouseslide">
