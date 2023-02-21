@@ -396,7 +396,7 @@ const Ambassador = () => {
             </h3>
            
             <p data-speed="1.25"  className="sbhds">
-              We’re young, always evolving, and hungry for more
+              We're young, always evolving, and hungry for more
             </p>
 
             <p data-speed="1.25"  className="subbol">

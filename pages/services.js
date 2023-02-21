@@ -222,7 +222,7 @@ const Services = () => {
 
   <section className='letstaskabs'>
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">Let’s talk about some buzzness</p>
+        <p data-speed="1.25"  className="sbhds">Let's talk about some buzzness</p>
         <p>Want to experience some next-level services that'll make you say "WOW"?<br/> We got you covered!</p>
       </div>
 
@@ -236,7 +236,7 @@ const Services = () => {
                         <img src="/images/knowbs/1.png"/>
                     </div>
                     <div className='align-self-center icparans'>
-                      <h6>Ambassadors & Influencers</h6>
+                      <h6>Ambassadors {"&"} Influencers</h6>
                       <p>Hit up all the dope creators and link with <br/>hundreds of lit ambassadors!</p>
                     </div>
                   </div>
@@ -277,7 +277,7 @@ const Services = () => {
                       <img src="/images/knowbs/5.png"/>
                     </div>
                     <div className='align-self-center icparans'>
-                      <h6>Creative & Branding</h6>
+                      <h6>Creative {"&"} Branding</h6>
                       <p>Get your brand trending with our fire <br/>services that make it the center of attention!</p>
                     </div>
                   </div>
@@ -287,7 +287,7 @@ const Services = () => {
                       <img src="/images/knowbs/6.png"/>
                     </div>
                     <div className='align-self-center icparans'>
-                      <h6>Mobile Tours & Pop-ups</h6>
+                      <h6>Mobile Tours {"&"} Pop-ups</h6>
                       <p>Whether it's online or IRL, we're committed to<br/> getting you that clout.</p>
                     </div>
                   </div>
@@ -370,7 +370,7 @@ const Services = () => {
   <section className="testimons-ytb revealer">
     <div className="container">
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">What they say about us on the ‘Gram</p>
+        <p data-speed="1.25"  className="sbhds">What they say about us on the 'Gram</p>
       </div>
       <div className="testslid">
         
