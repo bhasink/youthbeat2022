@@ -16,7 +16,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 
 import { notification } from 'antd'
 import { useRouter } from "next/router";
-
+import CountUp, { useCountUp } from 'react-countup';
 
 const Creator = () => {
   // useEffect(() => {
@@ -24,6 +24,27 @@ const Creator = () => {
       duration: 2000,
     })*/
   // }, [])
+
+  useCountUp({
+    ref: 'sp4',
+    end: 50000,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
+
+  useCountUp({
+    ref: 'sp5',
+    end: 300000,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
+
+  useCountUp({
+    ref: 'sp6',
+    end: 200,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
@@ -660,7 +681,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
             <div className="row">
               <div className="col-md-4">
                 <p className="numctn skblues number-item">
-                  <span className="value">50000</span>+
+                <span className="value" id="sp4" />+
                 </p>
                 <p>
                 Content creators 
@@ -668,15 +689,15 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                  <span className="value">300000</span>+
-                </p>
+                <span className="value" id="sp5" /> +
+                </p> 
                 <p>
                   Assets Delivered
                 </p>
               </div>
               <div className="col-md-4">
                 <p className="numctn yelnums number-item">
-                  <span className="value">200</span>+
+                <span className="value" id="sp6" /> +
                 </p>
                 <p>
                   Project Worked On

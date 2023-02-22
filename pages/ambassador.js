@@ -2,6 +2,8 @@ import { useState, useRef } from 'react'
 import axios from 'axios'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
+
+
 // import AOS from 'aos'
 var $ = require('jquery')
 if (typeof window !== 'undefined') {
@@ -16,11 +18,34 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
 import { notification } from 'antd'
 import { useRouter } from 'next/router'
 import { Parallax, ParallaxBannerLayer } from 'react-scroll-parallax';
+import CountUp, { useCountUp } from 'react-countup';
 
 
 
 const Ambassador = () => {
-
+  useCountUp({
+    ref: 'counter',
+    end: 250000,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
+  
+  
+  useCountUp({
+    ref: 'sp2',
+    end: 1500,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  });
+  
+  useCountUp({
+    ref: 'sp3',
+    end: 250,
+    enableScrollSpy: true,
+    scrollSpyDelay: 1000,
+  
+  });
+  
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [mobile, setMobile] = useState('')
@@ -719,10 +744,12 @@ const Ambassador = () => {
             <div className="row">
               <div className="col-md-4">
 
+
                 <p data-speed="1.25"  className="numctn skblues number-item">
-                  <span className="value">
-                    
-                  250000</span>+
+                 
+                
+      <span className="value" id="counter" />
+                  +
                 </p>
                 <p data-speed="1.25" >
                   Campus Reps &amp; <br /> Ambassadors
@@ -730,8 +757,7 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p data-speed="1.25"  className="numctn rednums number-item">
-                  <span className="value">
-                  1500</span>+
+                <span className="value" id="sp2" /> +
                 </p>
                 <p data-speed="1.25" >
                   Partnered Universities <br />
@@ -740,8 +766,7 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p data-speed="1.25"  className="numctn yelnums number-item">
-                  <span className="value">
-                  250</span>+
+                <span className="value" id="sp3" />+
                 </p>
                 <p data-speed="1.25" >Projects Worked On</p>
               </div>
