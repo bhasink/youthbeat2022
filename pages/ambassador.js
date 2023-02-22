@@ -45,7 +45,7 @@ const Ambassador = () => {
     scrollSpyDelay: 1000,
   
   });
-  
+
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [mobile, setMobile] = useState('')
@@ -746,10 +746,7 @@ const Ambassador = () => {
 
 
                 <p data-speed="1.25"  className="numctn skblues number-item">
-                 
-                
-      <span className="value" id="counter" />
-                  +
+                <span className="value" id="counter" />+
                 </p>
                 <p data-speed="1.25" >
                   Campus Reps &amp; <br /> Ambassadors
@@ -757,7 +754,7 @@ const Ambassador = () => {
               </div>
               <div className="col-md-4">
                 <p data-speed="1.25"  className="numctn rednums number-item">
-                <span className="value" id="sp2" /> +
+                <span className="value" id="sp2" />+
                 </p>
                 <p data-speed="1.25" >
                   Partnered Universities <br />

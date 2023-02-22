@@ -584,7 +584,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   </svg>
                 </span>
                 <br />
-                out from the <span className="antxon2">crowd?</span>{' '}
+                out from the <span className="antxon1 anoanim">crowd?</span>{' '}
                 <br />
               </h2>
               <p className="curvtxt">Create with YouthBeat</p>
@@ -689,7 +689,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="col-md-4">
                 <p className="numctn rednums number-item">
-                <span className="value" id="sp5" /> +
+                <span className="value" id="sp5" />+
                 </p> 
                 <p>
                   Assets Delivered
@@ -697,7 +697,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="col-md-4">
                 <p className="numctn yelnums number-item">
-                <span className="value" id="sp6" /> +
+                <span className="value" id="sp6" />+
                 </p>
                 <p>
                   Project Worked On
