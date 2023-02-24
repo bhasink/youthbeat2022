@@ -27,6 +27,7 @@ const Creator = () => {
 
   useCountUp({
     ref: 'sp4',
+    start:1000,
     end: 50000,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
@@ -34,6 +35,7 @@ const Creator = () => {
 
   useCountUp({
     ref: 'sp5',
+    start:3000,
     end: 300000,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
@@ -41,6 +43,7 @@ const Creator = () => {
 
   useCountUp({
     ref: 'sp6',
+    start:10,
     end: 200,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,

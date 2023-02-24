@@ -211,8 +211,8 @@ const JoinUs = () => {
   </section>
   <section className="lastfrms text-center mb-5 pt-2">
     <div className="container">
-      <button className="ytthemects bggct"><span class="inrshd">Click Here</span></button>
-      <h4>To become <span className="coolstds">cool <img src="./images/toocoolsv.png" /></span> today! </h4>
+      <a href='https://sociowash.zohorecruit.com/jobs/Careers' target="_blank" className="ytthemects bggct"><span class="inrshd">Click Here</span></a>
+      <h4>To become <span className="coolstds">cool <img src="./images/toocoolsv.png" /></span> today. </h4>
     </div>
   </section>
 </div>

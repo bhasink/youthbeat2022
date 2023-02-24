@@ -25,6 +25,7 @@ import CountUp, { useCountUp } from 'react-countup';
 const Ambassador = () => {
   useCountUp({
     ref: 'counter',
+    start:10000,
     end: 250000,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
@@ -33,6 +34,7 @@ const Ambassador = () => {
   
   useCountUp({
     ref: 'sp2',
+    start:100,
     end: 1500,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
@@ -40,6 +42,7 @@ const Ambassador = () => {
   
   useCountUp({
     ref: 'sp3',
+    start:10,
     end: 250,
     enableScrollSpy: true,
     scrollSpyDelay: 1000,
@@ -788,22 +791,48 @@ const Ambassador = () => {
               responsive={state.responsive_brandmembs}
               nav
             >
-              <div className="item">
-                <img data-speed="auto"  src="./images/members/ab1.png" />
+               <div className="item">
+                <img
+                  src="./images/members/creatos/1.jpg"/>
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/members/ab2.png" />
+              <img
+                  src="./images/members/creatos/2.jpg"/>
               </div>
               <div className="item">
-                <img data-speed="auto"  src="./images/members/ab3.png" />
+              <img
+                  src="./images/members/creatos/3.jpg"/>
               </div>
 
               <div className="item">
-                <img data-speed="auto"  src="./images/members/ab4.png" />
+              <img
+                  src="./images/members/creatos/4.jpg"/>
               </div>
 
               <div className="item">
-                <img data-speed="auto"  src="./images/members/ab5.png" />
+              <img
+                  src="./images/members/creatos/5.jpg"/>
+              </div>
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/6.jpg"/>
+              </div>
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/7.jpg"/>
+              </div>
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/8.jpg"/>
+              </div>
+
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/9.jpg"/>
               </div>
 
             </OwlCarousel>

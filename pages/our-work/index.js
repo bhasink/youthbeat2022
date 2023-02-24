@@ -85,8 +85,9 @@ const OurWork = () => {
       1200: {
         items: 4,
         margin: 40,
+        loop:false,
         nav: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 3000,
         autoplayHoverPause: true,
         center: false,
