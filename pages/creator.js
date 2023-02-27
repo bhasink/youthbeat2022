@@ -617,7 +617,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               <div className="item">
                 <img
                   src="./images/casestudy/oneplus.jpg"/>
-                 <p><b>One Plus</b></p>
+                 <p><b>OnePlus</b></p>
                 <h4>
                   See the
                   <br /> innovation

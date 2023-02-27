@@ -668,7 +668,7 @@ const Ambassador = () => {
                  <img data-speed="auto"  src="./images/casestudy/oneplus.jpg" />
               </a>
                 <p data-speed="1.25" >
-                  <b>One Plus</b>
+                  <b>OnePlus</b>
                 </p>
                 <h4>
                   See the

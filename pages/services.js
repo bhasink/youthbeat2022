@@ -306,7 +306,7 @@ const Services = () => {
    
     <div className="container">
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">Why YouthBeat is The Right Move</p>
+        <p data-speed="1.25"  className="sbhds">Why YouthBeat Is The Right Move</p>
       </div>
       <div className="pygrphs">
         <div className="row">

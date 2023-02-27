@@ -71,11 +71,11 @@ const Thanks = () => {
     <img src="./images/ourservices.jpg" className="desktopayout" />
     <div className="container">
       <div className="mainhead whithd">
-        <p className="sbhds">Thanks!! <br />
-        Form has been submitted successfully!!
+        <p className="sbhds">Thanks! <br />
+        Form has been submitted successfully.
         </p>
         <h3 className="centheads">
-            <img src="./images/bombobjs.png" className="sunbom" />
+            
             
         </h3>
 
