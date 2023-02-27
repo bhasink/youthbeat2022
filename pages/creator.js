@@ -423,10 +423,12 @@ const Creator = () => {
       <Header />
 
       <section className="homebannnerk revealer creatorsbanons">
+
+      <div  className="cregreen"></div>
         <img src="./images/creatorbanner.jpg" className="desktopayout" />
         <img src="./images/creatormobile.jpg" className="mobstopayout" />
         <div className="container">
-		<div  className="cregreen"></div>
+		
 		
 		<div><h1 className="mainbn-hd">WE ARE THE VOICE<br/>
 OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span> ALL AROUND</h1></div>

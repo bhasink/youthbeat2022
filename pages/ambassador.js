@@ -254,6 +254,45 @@ const Ambassador = () => {
       },
     },
 
+    responsive_brandlogos: {
+      0: {
+        items: 1,
+        nav: true,
+        dots: false,
+        loop: true,
+      },
+      300: {
+        items: 3,
+        nav: false,
+        center: false,
+        autoplaySpeed: 3000,
+        autoplay:true,
+        dots: false,
+        margin: 10,
+        loop: true,
+      },
+
+      766: {
+        items: 4,
+        nav: true,
+        center: true,
+        dots: false,
+        loop: true,
+      },
+
+      1200: {
+        items: 4,
+        nav: false,
+        center: false,
+        autoplay: false,
+        margin: 20,
+        autoplaySpeed: 3000,
+        autoplayHoverPause: true,
+        dots: false,
+        loop: false,
+      },
+    },
+
     responsive_reviewtestim: {
       0: {
         items: 1,
@@ -580,7 +619,7 @@ const Ambassador = () => {
             <OwlCarousel
               className="partnrslide owl-carousel owl-theme"
               loop
-              responsive={state.responsive_featuredslide}
+              responsive={state.responsive_brandlogos}
               nav
             >
               <div className="item">

@@ -332,7 +332,7 @@ p {
 }
 
 .homebannnerk .cregreen{
-   animation: movelinecreat 2s infinite; 
+   animation: movelinecreat 3s infinite; 
 }
 
 
@@ -2749,8 +2749,9 @@ body {
     padding-top: 17px;
 }
 
-.partnrslide.owl-carousel img {
-    width: 76%;
+.partnrslide.owl-carousel img,
+.blacklayers .owl-carousel .item img {
+    width: 75%;
 	margin:auto;
 }
 
@@ -2986,7 +2987,7 @@ p, .seelike p {
 }
 
 .homebannnerk {
-    height: 84vh;
+    height: 80vh;
 }
 
 
