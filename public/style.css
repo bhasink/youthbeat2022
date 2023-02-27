@@ -295,30 +295,31 @@ p {
 }
 
 .layerfires {
-    background: url('./images/flamesprd.png');
+    background: url('./images/flamesprdfull.png');
     padding: 0;
     position: absolute;
     left: 0;
     right: 0;
-    width: 480px;
-    height: 494px;
+    width: 100%;
+    height: 90%;
     transition: all ease 2s;
     margin: auto;
-    top: 18px;
+    top: 0px;
     background-size: cover;
 }
 
 .cregreen {
-    background: url(./images/girlmoves.png);
-    width: 161px;
-    height: 281px;
+    background: url(./images/girlmovesfull.png);
+    width: 100%;
+    height: 89%;
     background-size: cover;
-    top: 112px;
-    left: 113px;
+    top: 0;
+    left: 0;
     position: absolute;
     right: 0;
     padding: 0;
     margin: auto;
+    z-index: 4;
 }
 
 
@@ -335,6 +336,14 @@ p {
 }
 
 
+@keyframes moveline{
+	0%{
+		height:0px;
+	}
+	100%{
+		    height: 90%;
+	}
+}
 
 .homebannnerk .mainbn-hd {
     font-size: 44px;
@@ -2215,17 +2224,6 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 }
 
 
-
-
-@keyframes moveline{
-	0%{
-		height:0px;
-	}
-	100%{
-		    height: 494px;
-	}
-}
-
 .mnformsty label {
     text-align: left;
     width: 100%;
@@ -2362,10 +2360,9 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     }
     
     .homebannnerk .cregreen {
-        left: 79px;
-        width: 170px;
-        height: 299px;
-        top: 211px;
+        background: url(./images/girlmovesmobile.png);
+        height: 100%;
+        background-size: cover;
     }
 
     .innershowsl {
@@ -2706,10 +2703,8 @@ body {
     width: 353px;
     height: 368px;
     top: 109px;
-}
-
-.homebannnerk .container {
-    margin-bottom: 42px;
+    background: url(./images/flamesprd.png);
+    background-size: cover;
 }
 
 @keyframes moveline{
@@ -2717,9 +2712,14 @@ body {
 		height:0px;
 	}
 	100%{
-        height: 368px;
+		    height: 368px;
 	}
 }
+
+.homebannnerk .container {
+    margin-bottom: 42px;
+}
+
 
 .homebannnerk .desktopayout {
       display: none;
@@ -2989,33 +2989,12 @@ p, .seelike p {
     height: 84vh;
 }
 
-.homebannnerk .cregreen {
-    width: 247px;
-    height: 437px;
-    top: 160px;
-    left: 166px;
-}
-
-
 
 .letsyoubet {
     padding: 70px 0;
 }
 
-.layerfires {
-    top: 64px;
-    height: 708px;
-    width: 680px;
-}
 
 
-@keyframes moveline{
-	0%{
-		height:0px;
-	}
-	100%{
-		    height: 708px;
-	}
-}
 
 }
