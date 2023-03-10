@@ -189,7 +189,7 @@ const JoinUs = () => {
       </div>
 
       <p>Want to work with crazy brands, live the Insta-trendy lifestyle, and hangout with the best of creators out there? <br/>
-      No need to look any further! Join YouthBeat now!
+      No need to look any further! Join YouthBeat now.
 </p>
 
 <p>

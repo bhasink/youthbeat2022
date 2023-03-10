@@ -30,7 +30,7 @@ const Creator = () => {
     start:1000,
     end: 50000,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   });
 
   useCountUp({
@@ -38,7 +38,7 @@ const Creator = () => {
     start:3000,
     end: 300000,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   });
 
   useCountUp({
@@ -46,7 +46,7 @@ const Creator = () => {
     start:10,
     end: 200,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   });
 
   const [name, setName] = useState('')
@@ -445,7 +445,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               take the wheel!
             </h3>
             <p className="sbhds">
-              We&apos;re young, always evolving, and hungry for more
+              We&apos;re young, always evolving, and hungry for more.
             </p>
           </div>
           <div className="mdhouseslide">

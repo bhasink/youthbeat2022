@@ -28,7 +28,7 @@ const Ambassador = () => {
     start:10000,
     end: 250000,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   });
   
   
@@ -37,7 +37,7 @@ const Ambassador = () => {
     start:100,
     end: 1500,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   });
   
   useCountUp({
@@ -45,7 +45,7 @@ const Ambassador = () => {
     start:10,
     end: 250,
     enableScrollSpy: true,
-    scrollSpyDelay: 1000,
+    scrollSpyDelay: 300,
   
   });
 
@@ -463,7 +463,7 @@ const Ambassador = () => {
             </h3>
            
             <p data-speed="1.25"  className="sbhds">
-              We’re young, always evolving, and hungry for more
+              We’re young, always evolving, and hungry for more.
             </p>
 
             <p data-speed="1.25"  className="subbol">
@@ -778,7 +778,7 @@ const Ambassador = () => {
             <h3 className="centheads mt-3">
               Join YouthBeat and
               <br />
-              earn new skills!{' '}
+              earn new skills.{' '}
               <img data-speed="auto"  src="./images/keycta.png" className="keyemojs" />
             </h3>
           </div>
