@@ -142,8 +142,9 @@ const OurWork = () => {
                             cs_data.thumbnail
                           }
                         />
+                         <h4>{cs_data.name}</h4>
                      </Link>
-                      <h4>{cs_data.name}</h4>
+                     
                     </div>
                   ))}
               </OwlCarousel>

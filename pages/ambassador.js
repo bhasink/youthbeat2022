@@ -690,9 +690,9 @@ const Ambassador = () => {
                   <b>Myntra</b>
                 </p>
                 <h4>
-                Read our 
-                  <br /> case  studies
+                Doorstop delivery  <br /> of campaigns.
                 </h4>
+
                 <a href="/our-work/myntra" className='rdmorecta'>
                   read more
                   <br />
@@ -731,9 +731,9 @@ const Ambassador = () => {
                   <b>Tinder</b>
                 </p>
                 <h4>
-                  Learn the ways
-                  <br />
-                  of YouthBeat
+                  Learn the<br />
+                   ways of
+                   <br />YouthBeat
                 </h4>
                 <a href="/our-work/tinder" className='rdmorecta'>
                   read more
@@ -751,9 +751,9 @@ const Ambassador = () => {
                   <b>Urbanic</b>
                 </p>
                 <h4>
-                See how we 
+                Witness our
                   <br />
-                  made  fashionable
+                  drip
                 </h4>
                 <a href="/our-work/urbanic" className='rdmorecta'>
                   read more
@@ -872,6 +872,11 @@ const Ambassador = () => {
               <div className="item">
               <img
                   src="./images/members/creatos/9.jpg"/>
+              </div>
+
+              <div className="item">
+              <img
+                  src="./images/members/creatos/10.jpg"/>
               </div>
 
             </OwlCarousel>

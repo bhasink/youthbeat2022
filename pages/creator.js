@@ -548,7 +548,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
               </div>
               <div className="item">
                 <img
-                  src="./images/ourpatner/2.png"/>
+                  src="./images/ourpatner/2blc.png"/>
               </div>
               <div className="item">
                 <img
@@ -607,8 +607,7 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   src="./images/casestudy/myntra.jpg"/>
                 <p><b>Myntra</b></p>
                 <h4>
-                Read our 
-                  <br /> case  studies
+                Doorstop delivery  <br /> of campaigns.
                 </h4>
                 <a href="/our-work/myntra" className='rdmorecta'>
                   read more
@@ -635,10 +634,10 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                 <img
                   src="./images/casestudy/tinder.jpg"/>
                  <p><b>Tinder</b></p>
-                <h4>
-                  Learn the ways
-                  <br />
-                  of YouthBeat
+                 <h4>
+                  Learn the<br />
+                   ways of
+                   <br />YouthBeat
                 </h4>
                 <a href="/our-work/tinder" className='rdmorecta'>
                   read more
@@ -654,9 +653,9 @@ OF <span className="str-yells">GEN-Zs<img src="./images/strokeyello.png"/></span
                   <b>Urbanic</b>
                 </p>
                 <h4>
-                See how we 
+                Witness our
                   <br />
-                  made  fashionable
+                  drip
                 </h4>
                 <a href="/our-work/urbanic" className='rdmorecta'>
                   read more

@@ -13,7 +13,8 @@ const Index = () => {
         <div className="col-md-6">
           <Link href="/creator">
             <img src="/images/creatorcta.png" className="sfttop"/>
-            <img src="/images/bombobjs.png" className="objflts"/>
+            <img src="/images/sunbomb.png" className="objflts"/>
+            <img src="/images/bomonly.png" className="objflts bomonsd"/>
           </Link>
         </div>
       </div>

@@ -154,7 +154,7 @@ p {
     border-radius: 37px;
 }
 
-.site-header.topmain .navbar li.nav-item.commctas .nav-link:nth-child(1) {
+.site-header.topmain .navbar li.nav-item.commctas .nav-link.active {
     background: #fff;
     color: #000;
 }
@@ -226,6 +226,13 @@ p {
     z-index: 2;
     position: absolute;
     animation: flipmyic 10s linear 0s infinite;
+}
+
+.fstfoldes .col-md-6:nth-child(2)  .objflts.bomonsd {
+    animation: none;
+    width: 28px;
+    position: absolute;
+    transform: translate(-18px, 19px);
 }
 
 @keyframes flipmyic {
@@ -1026,9 +1033,9 @@ section {
 }
 
 .cultur-comps .seelike  h6 {
-    margin: 30px auto 20px;
-    max-width: 399px;
-    text-align: left;
+    margin: 0px auto 20px;
+   
+    text-align: center;
     font-size: 30px;
     line-height: 32px;
     font-family: 'Proxima Nova';
@@ -1037,12 +1044,16 @@ section {
 
 .seelike p {
     font-size: 18px;
+    margin: 0;
 }
 
 .cultur-comps .mainhead {
     margin-bottom: 5px;
 }
 
+.casestslide a {
+    text-decoration: none;
+}
 
 .centheads .flapswing.conemojis {
     bottom: 0;
@@ -2303,6 +2314,12 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
+
+    .fstfoldes .col-md-6:nth-child(2) .objflts.bomonsd {
+        width: 25px;
+        position: absolute;
+        transform: translate(-13px, 16px);
+    }
 
     .letstaskabs p br {
         display: none;

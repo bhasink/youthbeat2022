@@ -511,7 +511,7 @@ const BecomeACreator = () => {
               </div>
             </div>
           </div>
-          <div className="item">
+        {/*  <div className="item">
             <div className="txtpp">
               <img src="./images/testmon/2.jpg" />
               <img src="./images/quotsv.png" className="quoteic" />
@@ -544,7 +544,7 @@ const BecomeACreator = () => {
               </div>
             </div>
           </div>
-
+        */}
 
           
         </OwlCarousel>

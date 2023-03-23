@@ -76,7 +76,7 @@ const JoinUs = () => {
       <div className="row">
         <div className="col-md-12 align-self-center mx-auto text-center">
           <p>We keep our clients close and our culture even closer!  </p>
-          <h6>What is our culture like? <br />
+          <h6>What is our culture like? 
             See for yourself  <img src="./images/handbots.png" className="handemos" /></h6>
         </div>
         
