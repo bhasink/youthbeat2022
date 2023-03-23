@@ -165,6 +165,81 @@ p {
 	    margin: auto;
 }
 
+/* css for conditional headers */
+
+/* for white heder */
+
+.site-header.topmain.white-hdr {
+    background: #fff;
+}
+
+.site-header.topmain.white-hdr nav.navbar {
+    border: 1.5px solid #000;
+}
+
+.site-header.topmain.white-hdr .navbar .navbar-nav li a {
+    color: #000;
+}
+
+.site-header.topmain.white-hdr .navbar-brand img {
+    filter: invert(1);
+}
+
+.site-header.topmain.white-hdr .navbar li.nav-item.commctas {
+    border: 1.5px solid #000;
+    background: #000;
+}
+
+.site-header.topmain.white-hdr .navbar li.nav-item.commctas .nav-link {
+    background: #000;
+    color: #fff;
+}
+
+
+.site-header.topmain.white-hdr .navbar li.nav-item.commctas .nav-link.active {
+    background: #fff;
+    color: #000;
+}
+
+.site-header.topmain.white-hdr .navbar-brand{
+    border-right: 1.5px solid #000;
+}
+
+
+/* css for black header */
+
+.site-header.topmain.black-hdr{
+	background: #000;
+}
+
+.site-header.topmain.black-hdr nav.navbar {
+    border: 1.5px solid #fff;
+}
+
+.site-header.topmain.black-hdr .navbar .navbar-nav li a {
+    color: #fff;
+}
+
+.site-header.topmain.black-hdr .navbar li.nav-item.commctas {
+    border: 1.5px solid #fff;
+    background: #000;
+}
+
+.site-header.topmain.black-hdr .navbar li.nav-item.commctas .nav-link{
+     background: #000;
+    color: #fff;
+}
+
+.site-header.topmain.black-hdr .navbar li.nav-item.commctas .nav-link.active{
+     background: #fff;
+    color: #000;
+}
+
+
+.site-header.topmain.black-hdr .navbar-brand{
+    border-right: 1.5px solid #fff;
+}
+
 
 /* css for web page load */
 
@@ -1149,6 +1224,39 @@ section {
     position: relative;
 	transition: all ease 0.5s;
     /*transform: rotateX(70deg) translateZ(76px);*/
+}
+
+/* for white theme footer */
+
+.yt-footh.white-ftrs,
+.yt-footh.white-ftrs .backshadows {
+    background: rgb(255, 255, 255);
+}
+
+.yt-footh.white-ftrs h4, .yt-footh.white-ftrs ul li a, .yt-footh.white-ftrs p {
+    color: #000;
+}
+
+.yt-footh.white-ftrs .bottomstrips img,
+.yt-footh.white-ftrs:after {
+    filter: invert(1);
+}
+
+
+
+/* for black theme footer */
+
+.yt-footh.black-ftrs {
+    background: #000;
+}
+
+.yt-footh.black-ftrs .backshadows{
+    background: #000;
+}
+
+
+.yt-footh.black-ftrs h4, .yt-footh.black-ftrs ul li a, .yt-footh.black-ftrs p {
+    color: #fff;
 }
 
 footer.yt-footh.revealer.aos-init {
