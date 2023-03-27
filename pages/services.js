@@ -370,7 +370,7 @@ const Services = () => {
   <section className="testimons-ytb revealer">
     <div className="container">
       <div className="mainhead">
-        <p data-speed="1.25"  className="sbhds">Peep into what our clients gotta say 'bout us</p>
+        <p className="sbhds">Peep into what our clients gotta say 'bout us</p>
       </div>
       <div className="testslid">
         
