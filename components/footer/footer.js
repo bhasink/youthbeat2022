@@ -70,13 +70,13 @@ const Footer = () => {
                   <ul>
                     <li>
                       {' '}
-                      <a href="#">
+                      <a href="https://www.instagram.com/youthbeat.ind/" target="_blank" rel="noreferrer">
                         <i className="fab fa-instagram" />
                       </a>
                     </li>
                     <li>
                       {' '}
-                      <a href="#">
+                      <a href="https://www.facebook.com/youthbeat" target="_blank" rel="noreferrer">
                         <i className="fab fa-facebook-f" />
                       </a>
                     </li>
