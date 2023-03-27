@@ -6,7 +6,6 @@ const Header = () => {
 
   const [isActive, setActive] = useState("false");
   const [isActivee, setActivee] = useState("");
-  const [isActiveeq, setActiveeq] = useState("");
   const router = useRouter()
 
   useEffect(() => {
@@ -15,29 +14,11 @@ const Header = () => {
   
       if(router.pathname == '/creator'){
         setActivee("false");
-        localStorage.setItem('items', 'false');
       }
 
       if(router.pathname == '/ambassador'){
         setActivee("true");
-        localStorage.setItem('items', 'true');
       }
-
-      if (localStorage) {
-        const items = localStorage.getItem("items");
-        setActiveeq(items)
-      }
-
-      // if(router.pathname == '/become-a-ambassador'){
-      //   setActivee("true");
-      //   localStorage.setItem('items', 'true');
-      // }
-
-      // if(router.pathname == '/become-a-creator'){
-      //   setActivee("false");
-      //   localStorage.setItem('items', 'false');
-      // }
-      
     }
 
   },[router.isReady])
@@ -61,7 +42,7 @@ const Header = () => {
   // };
 
     return (
-        <header className={`${isActiveeq == 'true' ? "black-hdr" : "white-hdr"} site-header topmain mobexheight norm ${isActive ? "" : "heightexps"}`}>
+        <header className={`site-header topmain mobexheight norm ${isActive ? "" : "heightexps"}`}>
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="container-fluid p-0">
             {/* Brand */}
@@ -113,7 +94,7 @@ const Header = () => {
                 <li className="nav-item">
                
              
-                {isActiveeq == "true" ? 
+                {isActivee == "true" ? 
                 
                 (
                  <Link className="nav-link active" href="/become-a-ambassador">
@@ -138,12 +119,12 @@ const Header = () => {
                     </Link>
                 </li>
                 <li className="nav-item commctas">
-                  <Link className={`nav-link ${isActiveeq == 'true' ? "active" : ""}`} href="/ambassador">
+                  <Link className="nav-link active" href="/ambassador">
 
                     Ambassador
                   </Link>
 
-                  <Link className={`nav-link ${isActiveeq == 'false' ? "active" : ""}`} href="/creator">
+                  <Link className="nav-link " href="/creator">
                     Creator
                     </Link>
 

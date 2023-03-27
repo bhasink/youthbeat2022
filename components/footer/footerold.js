@@ -1,33 +1,13 @@
 import Link from 'next/link'
-import { useState,useEffect } from "react"
-import { useRouter } from 'next/router'
 
 const Footer = () => {
-
-  const [isActivee, setActivee] = useState("");
-  const [isActiveeq, setActiveeq] = useState("");
-  const router = useRouter()
-
-  useEffect(() => {
-
-    if (router.isReady) {
-  
-      if (localStorage) {
-        const items = localStorage.getItem("items");
-        setActiveeq(items)
-      }
-
-    }
-
-    },[router.isReady])
- 
     return (
-        <footer className={`${isActiveeq == 'true' ? "black-ftrs" : "white-ftrs"} yt-footh revealer`}>
+        <footer className="yt-footh revealer">
         <div className="backshadows">
           <div className="container">
             <div className="row">
               <div className="col-md-8">
-                <h4>About Us {/*{isActiveeq} */}</h4>
+                <h4>About Us</h4>
                 <p>
                   We are a youth community network that gives brands
                   <br /> tailored insights and strategies aiding them in <br />
