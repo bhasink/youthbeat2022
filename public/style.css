@@ -972,6 +972,7 @@ span.antxon2 {
     border-radius: 0;
     outline: 0;
     transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out,transform .3s cubic-bezier(.29,.11,.2,.96);
+    -webkit-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out,transform .3s cubic-bezier(.29,.11,.2,.96);
     transform-style: preserve-3d;
     padding: 7px 0px;
 }
@@ -986,7 +987,9 @@ span.antxon2 {
     height: calc(100% + 10px);
     background: linear-gradient(36deg,transparent 6px,currentColor 6px,currentColor calc(100% - 4px),transparent calc(100% - 10px),transparent 100%);
     transition: .25s cubic-bezier(.22,.61,.36,1);
+    -webkit-transition: .25s cubic-bezier(.22,.61,.36,1);
     transform: translateZ(-1px);
+    -webkit-transform: translateZ(-1px);
     -webkit-clip-path: inset(0 0 0 0);
     clip-path: inset(0 0 0 0);
 }
@@ -2433,6 +2436,14 @@ footer.yt-footh.revealer.aos-init.aos-animate {
         display: none;
     }
     
+    .site-header.topmain.white-hdr .collapse:not(.show) {
+        background: #fff;
+    }
+
+    .site-header.white-hdr .navbar-light .navbar-toggler{
+        color:#000
+    }
+    
     .ladylurights {position: relative;right: 0;margin-bottom: 20px;}
     
     .poinrsd {
@@ -3048,6 +3059,29 @@ body {
     width: 60px;
     right: 85px;
 }
+
+}
+
+
+@media only screen and (min-width: 732px) and (orientation: portrait)
+
+{ /* for pixel devices */
+    .container {
+        max-width: 387px;
+        width: 100%;
+    }
+
+    .mainhead .centheads{
+        font-size: 40px;
+    line-height: 39px;
+    
+    }
+
+    .mdhouseslide h4 {
+        font-size: 30px;
+    }
+
+
 
 }
 
