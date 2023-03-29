@@ -2436,14 +2436,6 @@ footer.yt-footh.revealer.aos-init.aos-animate {
         display: none;
     }
     
-    .site-header.topmain.white-hdr .collapse:not(.show) {
-        background: #fff;
-    }
-
-    .site-header.white-hdr .navbar-light .navbar-toggler{
-        color:#000
-    }
-    
     .ladylurights {position: relative;right: 0;margin-bottom: 20px;}
     
     .poinrsd {
@@ -2999,6 +2991,19 @@ body {
 
 .openhdas.crossshwos .fa-times {
     display: block;
+}
+
+.site-header.topmain.white-hdr .collapse:not(.show) {
+    background: #fff;
+}
+
+.site-header.white-hdr .navbar-light .navbar-toggler{
+    color:#000
+}
+
+
+.site-header.topmain.white-hdr .navbar li.nav-item.commctas {
+    border: 1.5px solid #fff;
 }
 
 .site-header.topmain .navbar .navbar-nav li {
