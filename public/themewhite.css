@@ -74,14 +74,33 @@
     border: 1px solid #625656;
 }
 
-.inrshd:before {
-    background: #fff;
-    transition: .25s cubic-bezier(.22,.61,.36,1);
-    top: -1px;
+.ytthemects::before {
+    bottom: -11px;
     left: 0px;
-    width: calc(100% + 9px);
-    clip-path: polygon(94% 0, 100% 9%, 100% 60%, 100% 100%, 8% 100%, 0 86%, 0 0);
-    height: calc(99% + 9px);
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    z-index: 0;
+}
+
+.ytthemects::after {
+    background-color: #000;
+    right: -11px;
+    top: -1px;
+    z-index: 0;
+}
+
+.ytthemects:hover::before {
+    bottom: -11px;
+}
+
+.ytthemects:hover::after {
+    top: -10px;
+    right: -11px;
+}
+
+.ytthemects {
+    box-shadow: 6px 6px 0 #fff;
 }
 
 
