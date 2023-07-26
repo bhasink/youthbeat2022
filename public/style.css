@@ -2490,8 +2490,8 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 
 .popups .closectas {
     position: absolute;
-    right: 14px;
-    top: 5px;
+    right: 20px;
+    top: 20px;
     font-size: 15px;
     z-index: 6;
     border: 1px solid #000;
@@ -2499,6 +2499,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     width: 21px;
     text-align: center;
     height: 21px;
+    cursor: pointer;
 }
 
 /* css for responsive media */
