@@ -2450,6 +2450,7 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     transition: all ease 0.5s;
     opacity: 0;
     visibility: hidden;
+    border-radius: 10px;
 }
 
 .disclaim.popups.open {
@@ -2491,8 +2492,13 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     position: absolute;
     right: 14px;
     top: 5px;
-    font-size: 26px;
+    font-size: 15px;
     z-index: 6;
+    border: 1px solid #000;
+    border-radius: 100%;
+    width: 21px;
+    text-align: center;
+    height: 21px;
 }
 
 /* css for responsive media */
