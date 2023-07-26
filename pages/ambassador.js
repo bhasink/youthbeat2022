@@ -23,6 +23,11 @@ import CountUp, { useCountUp } from 'react-countup';
 
 
 const Ambassador = () => {
+
+  const handleClick = event => {
+    $('.popups').removeClass('open');
+  };
+
   useCountUp({
     ref: 'counter',
     start:10000,
@@ -1179,6 +1184,37 @@ const Ambassador = () => {
           </div>
         </div>
       </section>
+
+      <div className="disclaim popups">
+        <span className="closectas" onClick={handleClick}><i class="fal fa-times"></i></span>
+            <div class="row">
+            <div class="col-md-12 text-center">
+              <img src='./images/sociowash-post2.jpg'/>
+            </div>
+             {/*<!-- <div class="col-md-6">
+                <img src='./images/swlogo2.png' className='swmainlogos'/>
+                    <h4 class="blackhds">Public Safety<br></br>
+Announcement</h4>
+                      <p class="orgctms hsmds">#ScammerAlert</p>
+                      <p>Beware of fraudulent job offers from
+individuals impersonating themselves as
+Sociowash employees on WhatsApp and other social media platforms. It is important to note that at Sociowash, we do not engage in any form of monetary exchange for the purpose of hiring or offering
+business opportunities.</p>
+
+<p>All Sociowash employees can be
+authenticated by their email IDs, which have either <a href="#" class="orgctms">sociowash.com" </a> or <a href="#" class="orgctms">"youthbeat.in"</a> domain.</p>
+
+<p>To ensure your safety and protect others from falling victim to such scams, we urge you to report any suspicious messages or interactions immediately. </p>
+
+<p>Stay vigilant and stay safe.</p>
+              </div>
+
+              <div class="col-md-6 text-center">
+                      <img src="./images/sw-scamalert.png"/>
+                    </div>--> */}
+
+            </div>
+      </div>
 
       <Footer />
     </div>

@@ -2433,10 +2433,83 @@ footer.yt-footh.revealer.aos-init.aos-animate {
     display: none;
 }
 
+/* pop ups on shows */
+
+.popups {
+    max-width: 480px;
+    margin: auto;
+    background: #fff;
+    padding: 6px;
+    position: fixed;
+    top: 17%;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: #c9c2c2 0px 0px 4px 0px;
+    transition: all ease 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.disclaim.popups.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popups img {
+    width: 100%;
+}
+
+.popups  .swmainlogos {
+    max-width: 55px;
+    margin: 10px 0 35px;
+}
+
+.popups  .blackhds {
+    font-size: 26px;
+    line-height: 25px;
+}
+
+.popups .orgctms {
+    color: #fe6902;
+}
+
+.popups .hsmds {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.popups p {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.popups .closectas {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    font-size: 26px;
+    z-index: 6;
+}
+
 /* css for responsive media */
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
+
+    .popups {
+        height: 546px;
+        overflow-y: scroll;
+        width: 92%;
+        top: 11%;
+    }
+    
+    .popups img {
+        margin-top: 18px;
+    }
 
     .fstfoldes .col-md-6:nth-child(2) .objflts.bomonsd {
         width: 25px;

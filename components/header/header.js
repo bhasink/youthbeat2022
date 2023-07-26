@@ -9,6 +9,20 @@ const Header = () => {
   const [isActiveeq, setActiveeq] = useState("");
   const router = useRouter()
 
+
+ 
+  
+  
+
+  useEffect(() => {
+
+    const timer = setTimeout(() => {
+      $('.popups').addClass('open');
+    }, 2000);
+    return () => clearTimeout(timer);
+    
+  }, [])
+
   useEffect(() => {
 
     if (router.isReady) {
@@ -153,6 +167,8 @@ const Header = () => {
           </div>
         </nav>
       </header>
+
+
     )
   }
   
