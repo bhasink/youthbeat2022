@@ -2501,8 +2501,6 @@ footer.yt-footh.revealer.aos-init.aos-animate {
 @media screen and (max-width: 767px) and (min-width: 320px){
 
     .popups {
-        height: 546px;
-        overflow-y: scroll;
         width: 92%;
         top: 11%;
     }
