@@ -1185,7 +1185,7 @@ const Ambassador = () => {
         </div>
       </section>
 
-      <div className="disclaim popups">
+     {/* <div className="disclaim popups">
         <span className="closectas" onClick={handleClick}><i class="fal fa-times"></i></span>
             <div class="row">
             <div class="col-md-12 text-center">
@@ -1211,10 +1211,10 @@ authenticated by their email IDs, which have either <a href="#" class="orgctms">
 
               <div class="col-md-6 text-center">
                       <img src="./images/sw-scamalert.png"/>
-                    </div>--> */}
+                    </div>--> 
 
-            </div>
-      </div>
+            </div> 
+      </div> */}
 
       <Footer />
     </div>
