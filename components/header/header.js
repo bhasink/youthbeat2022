@@ -13,7 +13,7 @@ const Header = () => {
  
   
   
-
+{/*
   useEffect(() => {
 
     const timer = setTimeout(() => {
@@ -21,7 +21,7 @@ const Header = () => {
     }, 2000);
     return () => clearTimeout(timer);
     
-  }, [])
+  }, []) */}
 
   useEffect(() => {
 
