@@ -132,28 +132,16 @@ const ContactUs = () => {
               <div className="row">
                 <div className="col-md-6">
                   <h4>NEW DELHI </h4>
-                  <p>
-                    Plot No. 258,
-                    <br />
-                    Red Brick Centre, Lane 3,
-                    <br />
-                    Westend Marg, Saidulajab,
-                    <br />
-                    Saket - 110030
-                  </p>
+				  
+				  <p>E-40/ 7, Second Floor,<br />Okhla Phase 2, <br />New Delhi- 110020,</p>
+                  
                   <a href="mailto:hello@youthbeat.in ">hello@youthbeat.in </a>
                 </div>
                 <div className="col-md-6">
                   <h4>MUMBAI </h4>
-                  <p>
-                    603 The Co-working Space,
-                    <br />
-                    1F, 27 MIDC, Marol
-                    <br />
-                    MIDC Industry Estate,
-                    <br />
-                    Andheri East - 400047
-                  </p>
+				  
+				  <p>2nd Floor, Plot, Powerweave House,<br /> 27, Rd Number 11, M.I.D.C,<br /> Andheri East, Mumbai 400093</p>
+				  
                   <a href="mailto:hello@youthbeat.in">hello@youthbeat.in </a>
                 </div>
               </div>
