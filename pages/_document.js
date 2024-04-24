@@ -12,19 +12,17 @@ class MyDocument extends Document {
       <Html>
         <Head>
 
+              <script async src="https://www.googletagmanager.com/gtag/js?id=G-SE7X4ER3QS"></script>
 
        <script
             dangerouslySetInnerHTML={{
               __html: `
 
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-SE7X4ER3QS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-SE7X4ER3QS');
-</script>
               
               `
             }}
