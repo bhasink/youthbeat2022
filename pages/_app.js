@@ -35,6 +35,7 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1, user-scalable=0"
         />
         <title>YouthBeat</title>
+        <link href="/images/logo-favicon.png" rel="shortcut icon" type="image/x-icon"/>
         <link
           href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css?ver=5.3.2"
           rel="stylesheet"
