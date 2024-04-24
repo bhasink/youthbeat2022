@@ -10,7 +10,23 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head></Head>
+        <Head>
+     
+      <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SE7X4ER3QS"
+        />
+
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-SE7X4ER3QS');
+          `}
+        </Script>
+      
+        </Head>
 
         <body>
           <Main />
